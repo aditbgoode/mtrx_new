@@ -25,7 +25,7 @@ textarea:focus, input:focus{
 
 /* Header */
 .most_top{
-	padding: 0 10%;
+	padding: 0 5%;
 	height: 40px;
 	background-color: #a1e7e6;
 }
@@ -62,6 +62,7 @@ textarea:focus, input:focus{
 	margin: -25px 0 -15px 0px;
 	padding: 12px;
 	text-decoration: none;
+	margin-right: 10%;
 }
 
 .header .logo span{
@@ -77,7 +78,7 @@ textarea:focus, input:focus{
 	height: 35%;
 	width: 8%;
 	margin-top: 2%;
-	margin-left: 1%;
+	margin-left: 5px;
 	text-decoration: none;
 	color: #666;
 	padding:5px;
