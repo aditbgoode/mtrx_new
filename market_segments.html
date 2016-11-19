@@ -3,6 +3,7 @@
 <head>
 	<title>matreex</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
 <body>
@@ -22,6 +23,9 @@
 			opacity: 0.8 !important;
 			background-color: #a1e7e6;
 		}
+		.tring:hover{
+			opacity: 0.5 !important;
+		}
 	</style>
 	<div class="header">
 		<a class="logo kluk" href="index.html"><img src="aset/logo.png" style="width: 80px;"><span><b>matreex</b></span></a>
@@ -36,21 +40,188 @@
 	<div class="content">
 		<div class="atas">
 			<div class="judul">Market Segments</div>
-			In 2010, we assisted the CEO of Upstream NOC (PERTAMINA) to develop organization matrix map to align operation indicators of 7 subsidiaries to overall Upstream strategy and enable CEO to find root cause of problem of any under performance in operation. Now we plan to revisit and offer a more comprehensive assistance
+			Indonesia SOEs play a major role in the economy. In terms of their number, there are 119 SOEs as of November 2015, 26 of which contributed more than 90 percent of total SOE profit. SOEs are present in almost all sectors/industries.  By the end of 2014, SOEs employ around 781,760 people and contribute an estimated 40 percent of the country’s GDP. Given the massive stake SOEs have in the economy, the GOI must monitor the performance of its SOEs closely in order to fulfill its fiduciary responsibilities to the country. That’s where Matreex provides platform for the Government of Indonesia and its SOEs to better communicate and collaborate to fulfill its fiduciary responsibility
 		</div>
-		<div class="bawah center">
-			<img src="aset/img/market_segments.png" style="img-responsive" alt="">
+		<!-- <a href="#openModal">Open Modal</a> -->
+
+		<div id="openModal1" class="modalAgri">
+			<div>	
+				<a href="#close" title="Close" class="close">X</a>
+				<center><h5>AGRI., FORESTRY, FISHING & HUNTING</h5></center>
+				<ul>
+					<li>PT Pertani</li>
+					<li>PT Sang Hyang Seri</li>
+					<li>PT Rajawali Nusantara Indonesia</li>
+					<li>PT Perkebunan Nusantara III</li>
+					<li>Perum Perhutani</li>
+					<li>PT Perikanan Nusantara</li>
+					<li>Perum Prasarana Perikanan Samudera</li>
+				</ul>
+			</div>
+		</div>
+		<div id="openModal2" class="modalMining">
+			<div>	
+				<a href="#close" title="Close" class="close">X</a>
+				<center><h2>MINING</h2></center>
+				<ul>
+					<li>PT Pertamina Persero</li>
+					<li>PT Bukit Asam</li>
+					<li>PT Aneka Tambang</li>
+					<li>PT Timah</li>
+				</ul>
+			</div>
+		</div>
+		<!-- <div id="openModal3" class="modalUtilities">
+			<div>	
+				<a href="#close" title="Close" class="close">X</a>
+				<center><h2>UTILITIES</h2></center>
+				<ul>
+					<li>PT Perusahaan Gas Negara</li>
+					<li>PT Perusahaan Listrik Negara</li>
+					<li>Perum Jasa Tirta I</li>
+					<li>Perum Jasa Tirta II</li>
+				</ul>
+			</div>
+		</div>
+		<div id="openModal4" class="modalConstruction">
+			<div>	
+				<a href="#close" title="Close" class="close">X</a>
+				<center><h2>CONSTRUCTION</h2></center>
+				<ul>
+					<li>Perum Pembangunan Perumahan Nasional</li>
+					<li>PT Adhi Karya</li>
+					<li>PT Amarta Karya</li>
+					<li>PT Hutama Karya</li>
+					<li>PT Waskita Karya</li>
+					<li>PT Nindya Karya</li>
+					<li>PT Pembangunan Perumahan</li>
+					<li>PT Pengerukan Indonesia</li>
+					<li>PT Wijaya Karya</li>
+				</ul>
+			</div>
+		</div> -->
+		<div id="openModal5" class="modalMFG1">
+			<div>	
+				<a href="#close" title="Close" class="close">X</a>
+				<center><h2>MFG - CEMENT</h2></center>
+				<ul>
+					<li>PT</li>
+				</ul>
+			</div>
+		</div>
+		<div id="openModal5" class="modalMFG2">
+			<div>	
+				<a href="#close" title="Close" class="close">X</a>
+				<center><h2>MFG - DEFENSE</h2></center>
+				<ul>
+					<li>PT</li>
+				</ul>
+			</div>
+		</div>
+		<!-- <div id="openModal" class="modal">
+			<div>	
+				<a href="#close" title="Close" class="close">X</a>
+				<center><h2></h2></center>
+				<ul>
+					<li>PT</li>
+				</ul>
+			</div>
+		</div>
+		<div id="openModal" class="modal">
+			<div>	
+				<a href="#close" title="Close" class="close">X</a>
+				<center><h2></h2></center>
+				<ul>
+					<li>PT</li>
+				</ul>
+			</div>
+		</div>
+		<div id="openModal" class="modal">
+			<div>	
+				<a href="#close" title="Close" class="close">X</a>
+				<center><h2></h2></center>
+				<ul>
+					<li>PT</li>
+				</ul>
+			</div>
+		</div>
+		<div id="openModal" class="modal">
+			<div>	
+				<a href="#close" title="Close" class="close">X</a>
+				<center><h2></h2></center>
+				<ul>
+					<li>PT</li>
+				</ul>
+			</div>
+		</div>
+		<div id="openModal" class="modal">
+			<div>	
+				<a href="#close" title="Close" class="close">X</a>
+				<center><h2></h2></center>
+				<ul>
+					<li>PT</li>
+				</ul>
+			</div>
+		</div>
+		<div id="openModal" class="modal">
+			<div>	
+				<a href="#close" title="Close" class="close">X</a>
+				<center><h2></h2></center>
+				<ul>
+					<li>PT</li>
+				</ul>
+			</div>
+		</div>
+		<div id="openModal" class="modal">
+			<div>	
+				<a href="#close" title="Close" class="close">X</a>
+				<center><h2></h2></center>
+				<ul>
+					<li>PT</li>
+				</ul>
+			</div>
+		</div>
+		<div id="openModal" class="modal">
+			<div>	
+				<a href="#close" title="Close" class="close">X</a>
+				<center><h2></h2></center>
+				<ul>
+					<li>PT</li>
+				</ul>
+			</div>
+		</div> -->
+		<div class="bawah">
+			<img src="aset/img/market_segments_new.png" class="img-responsive" alt="">
+			<img src="" alt="" class="">
+			<a href="#openModal1"><img src="aset/img/1.png" alt="" class="tring satu"></a>
+			<a href="#openModal2"><img src="aset/img/2.png" alt="" class="tring dua"></a>
+			<a href="#openModal3"><img src="aset/img/2.png" alt="" class="tring tiga"></a>
+			<a href="#openModal4"><img src="aset/img/2.png" alt="" class="tring empat"></a>
+			<a href="#openModal5"><img src="aset/img/2.png" alt="" class="tring lima"></a>
+			<a href="#openModal6"><img src="aset/img/3.png" alt="" class="tring enam"></a>
+			<a href="#openModal7"><img src="aset/img/3.png" alt="" class="tring tujuh"></a>
+			<a href="#openModal8"><img src="aset/img/4.png" alt="" class="tring delapan"></a>
+			<a href="#openModal9"><img src="aset/img/5.png" alt="" class="tring sembilan"></a>
+			<a href="#openModal10"><img src="aset/img/6.png" alt="" class="tring sepuluh"></a>
+			<a href="#openModal11"><img src="aset/img/7.png" alt="" class="tring sebelas"></a>
+			<a href="#openModal12"><img src="aset/img/8.png" alt="" class="tring duabelas"></a>
+			<a href="#openModal13"><img src="aset/img/2.png" alt="" class="tring tigabelas"></a>
 		</div>
 	</div>
 	<div class="footer">
-		<div class="kiri">Copyright © 2016 Matreex Inc.</div>
-		<div class="kiri">Email Us</div>
-		<div class="kiri">teukuyordan@matreex.co</div>
-		<div class="kiri">royadhie@matreex.co</div>
-		<div class="kanan"><img src="aset/sosmed/logo_ln.png"></div>
-		<div class="kanan"><img src="aset/sosmed/logo_g.png"></div>
-		<div class="kanan"><img src="aset/sosmed/logo_twitter.png"></div>
-		<div class="kanan"><img src="aset/sosmed/logo_facebook.png"></div>
+		<div class="kiri">
+			Copyright &copy; 2016 Matreex Inc. &nbsp;&nbsp;&nbsp;
+			Email Us &nbsp;&nbsp;&nbsp;
+			teukuyordan@matreex.co &nbsp;&nbsp;&nbsp;
+			royadhie@matreex.co &nbsp;&nbsp;&nbsp;
+		</div>
+		<div class="kanan">
+			<a href="#"><img src="aset/sosmed/logo_ln.png"></a>
+			<a href="#"><img src="aset/sosmed/logo_g.png"></a>
+			<a href="#"><img src="aset/sosmed/logo_twitter.png"></a>
+			<a href="#"><img src="aset/sosmed/logo_facebook.png"></a>
+		</div>
 	</div>
+	<script type="text/javascript" src="js/modal.js"></script>
 </body>
 </html>
