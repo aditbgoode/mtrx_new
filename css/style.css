@@ -81,7 +81,7 @@ textarea:focus, input:focus{
 	text-decoration: none;
 	color: #666;
 	padding:5px;
-	text-align: center;
+	text-align: left;
 }
 .header .nav_menu img{
 	height: 25px;
