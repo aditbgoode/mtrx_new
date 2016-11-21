@@ -107,6 +107,98 @@ textarea:focus, input:focus{
 
 .content .bawah{
 	/* height: 500px; */
+	position:relative;
+}
+.content .bawah .satu{
+	position: absolute;
+	width: 150px;
+	margin-top: -37%;
+	margin-left: 28.5%;
+	cursor: pointer;
+}
+.content .bawah .dua{
+	position: absolute;
+	width: 31px;
+	margin-top: -15%;
+	margin-left: 36%;
+	cursor: pointer;
+}
+.content .bawah .tiga{
+	position: absolute;
+	width: 31px;
+	margin-top: -11%;
+	margin-left: 40%;
+	cursor: pointer;
+}
+.content .bawah .empat{
+	position: absolute;
+	width: 31px;
+	margin-top: -18%;
+	margin-left: 46%;
+	cursor: pointer;
+}
+.content .bawah .lima{
+	position: absolute;
+	width: 31px;
+	margin-top: -47%;
+	margin-left: 46%;
+	cursor: pointer;
+}
+.content .bawah .enam{
+	position: absolute;
+	width: 26px;
+	margin-top: -52%;
+	margin-left: 34%;
+	cursor: pointer;
+}
+.content .bawah .tujuh{
+	position: absolute;
+	width: 26px;
+	margin-top: -49%;
+	margin-left: 54%;
+	cursor: pointer;
+}
+.content .bawah .delapan{
+	position: absolute;
+	width: 110px;
+	margin-top: -33.5%;
+	margin-left: 54%;
+	cursor: pointer;
+}
+.content .bawah .sembilan{
+	position: absolute;
+	width: 25px;
+	margin-top: -47.5%;
+	margin-left: 29.5%;
+	cursor: pointer;
+}
+.content .bawah .sepuluh{
+	position: absolute;
+	width: 60px;
+	margin-top: -16%;
+	margin-left: 55.5%;
+	cursor: pointer;
+}
+.content .bawah .sebelas{
+	position: absolute;
+	width: 80px;
+	margin-top: -47%;
+	margin-left: 64.8%;
+	cursor: pointer;
+}
+.content .bawah .duabelas{
+	position: absolute;
+	width: 160px;
+	margin-top: -28.5%;
+	margin-left: 44.5%;
+	cursor: pointer;
+}
+.content .bawah .tigabelas{
+	position: absolute;
+	width: 31px;
+	margin-top: -24.5%;
+	margin-left: 31.5%;
+	cursor: pointer;
 }
 
 /* Akhir Konten*/
