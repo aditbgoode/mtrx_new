@@ -25,7 +25,7 @@ textarea:focus, input:focus{
 
 /* Header */
 .most_top{
-	padding: 0 5%;
+	padding: 0 10%;
 	height: 40px;
 	background-color: #a1e7e6;
 }
@@ -52,22 +52,21 @@ textarea:focus, input:focus{
 }
 
 .header{
-	padding: 25px 20px;
-	height: 100px;
+	padding: 25px 50px 20px;
+	height: 40px;
 }
 
 .header .logo{
 	float: left;
 	display: block;
-	margin: -25px 0 -15px 0px;
-	padding: 12px;
+	margin: -25px 20px -15px 0px;
+	padding: 20px;
 	text-decoration: none;
-	margin-right: 10%;
 }
 
 .header .logo span{
-	margin-left: -30px;
-	margin-top: 10px;
+	/*margin-left: -30px;*/
+	/*margin-top: 10px;*/
 	color: #AAE5EC;
 	font-size: 40px;
 }
@@ -75,13 +74,13 @@ textarea:focus, input:focus{
 .header .nav_menu{
 	float: left;
 	display: block;
-	height: 35%;
+	/*height: 35%;*/
 	width: 8%;
-	margin-top: 2%;
-	margin-left: 5px;
+	/*margin-top: 2%;*/
+	margin-left: 2%;
 	text-decoration: none;
 	color: #666;
-	padding:5px;
+	padding:2px;
 	text-align: left;
 }
 .header .nav_menu img{
@@ -108,145 +107,9 @@ textarea:focus, input:focus{
 
 .content .bawah{
 	/* height: 500px; */
-	position:relative;
 }
-.content .bawah .satu{
-	position: absolute;
-	width: 150px;
-	margin-top: -37%;
-	margin-left: 28.5%;
-	cursor: pointer;
-}
-.content .bawah .dua{
-	position: absolute;
-	width: 31px;
-	margin-top: -15%;
-	margin-left: 36%;
-	cursor: pointer;
-}
-.content .bawah .tiga{
-	position: absolute;
-	width: 31px;
-	margin-top: -11%;
-	margin-left: 40%;
-	cursor: pointer;
-}
-.content .bawah .empat{
-	position: absolute;
-	width: 31px;
-	margin-top: -18%;
-	margin-left: 46%;
-	cursor: pointer;
-}
-.content .bawah .lima{
-	position: absolute;
-	width: 31px;
-	margin-top: -47%;
-	margin-left: 46%;
-	cursor: pointer;
-}
-.content .bawah .enam{
-	position: absolute;
-	width: 26px;
-	margin-top: -52%;
-	margin-left: 34%;
-	cursor: pointer;
-}
-.content .bawah .tujuh{
-	position: absolute;
-	width: 26px;
-	margin-top: -49%;
-	margin-left: 54%;
-	cursor: pointer;
-}
-.content .bawah .delapan{
-	position: absolute;
-	width: 110px;
-	margin-top: -33.5%;
-	margin-left: 54%;
-	cursor: pointer;
-}
-.content .bawah .sembilan{
-	position: absolute;
-	width: 25px;
-	margin-top: -47.5%;
-	margin-left: 29.5%;
-	cursor: pointer;
-}
-.content .bawah .sepuluh{
-	position: absolute;
-	width: 60px;
-	margin-top: -16%;
-	margin-left: 55.5%;
-	cursor: pointer;
-}
-.content .bawah .sebelas{
-	position: absolute;
-	width: 80px;
-	margin-top: -47%;
-	margin-left: 64.8%;
-	cursor: pointer;
-}
-.content .bawah .duabelas{
-	position: absolute;
-	width: 160px;
-	margin-top: -28.5%;
-	margin-left: 44.5%;
-	cursor: pointer;
-}
-.content .bawah .tigabelas{
-	position: absolute;
-	width: 31px;
-	margin-top: -24.5%;
-	margin-left: 31.5%;
-	cursor: pointer;
-}
-/* .content .market{
-	background: url(aset/img/market_segments_new.png);
-	background-size: 130px 130px;
-	background-repeat: no-repeat;
-} */
-/* @-moz-document url-prefix() {
-.content .bawah .satu{
-	position: absolute;
-	width: 100px;
-	margin-top: 36%;
-	margin-left: -29%;
-	cursor: pointer;
-}
-} */
+
 /* Akhir Konten*/
-
-/* Click */
-.onclick-menu {
-    position: relative;
-    display: inline-block;
-}
-.onclick-menu:before {
-    content: "";
-}
-.onclick-menu:focus {
-    /* clicking on label should toggle the menu */
-    pointer-events: none;
-}
-.onclick-menu:focus .onclick-menu-content {
-    /*  opacity is 1 in opened state (see below) */
-    opacity: 1;
-    visibility: visible;
-
-    /* don't let pointer-events affect descendant elements */
-    pointer-events: auto;
-}
-.onclick-menu-content {
-    position: absolute;
-    z-index: 1;
-
-    /* use opacity to fake immediate toggle */
-    opacity: 0;
-    visibility: hidden;
-    transition: visibility 0.5s;
-}
-/* Akhir click */
 
 /* GEAR */
 /*GearMatreex*/
@@ -381,201 +244,22 @@ div#gearUniversity div.quoteBox{
 .footer{
 	background-color: #a1e7e6;
 	height: 25px;
-	padding: 30px 0px 30px 100px;
+	padding: 30px 100px;
 	color: #666666;
 	font-size: 15px;
 }
 .footer .kiri{
 	float: left;
-	padding: 5px 0 0 0;
-	width:70%;
-	/* background-color:red; */
+	padding: 0 2% 0 0;
 }
-	
 .footer .kiri .garis{
 	border-right: solid 1px #21b173;
 }
 .footer .kanan{
 	float: right;
 	padding: 0 1%;
-	width:20%;
-	/* background-color:blue; */
 }
-
 /* Akhir Footer*/
-
-/* Modal */
-.modalDialog {
-	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.8);
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
-.modalDialog:target {
-	opacity:1;
-	pointer-events: auto;
-}
-.modalDialog > div {
-	width: 400px;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-}
-.modalAgri {
-	position: fixed;
-	top: 10%;
-	/* right: 0; */
-	bottom: 0;
-	left: 3%;
-	/* background: rgba(0, 0, 0, 0.8); */
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
-.modalAgri:target {
-	opacity:1;
-	pointer-events: auto;
-}
-.modalAgri > div {
-	width: 200px;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-}
-.modalMining {
-	position: fixed;
-	top: 50%;
-	/* right: 0; */
-	bottom: 0;
-	left: 3%;
-	/* background: rgba(0, 0, 0, 0.8); */
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
-.modalMining:target {
-	opacity:1;
-	pointer-events: auto;
-}
-.modalMining > div {
-	width: 200px;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-}
-
-
-.modalMFG1 {
-	position: fixed;
-	top: 20%;
-	/* right: 0; */
-	bottom: 0;
-	left: 3%;
-	/* background: rgba(0, 0, 0, 0.8); */
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
-.modalMFG1:target {
-	opacity:1;
-	pointer-events: auto;
-}
-.modalMFG1 > div {
-	width: 200px;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-}
-.modalMFG2 {
-	position: fixed;
-	top: 70%;
-	/* right: 0; */
-	bottom: 0;
-	left: 3%;
-	/* background: rgba(0, 0, 0, 0.8); */
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
-.modalMFG2:target {
-	opacity:1;
-	pointer-events: auto;
-}
-.modalMFG2 > div {
-	width: 200px;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-}
-
-.close {
-	background: #606061;
-	color: #FFFFFF;
-	line-height: 25px;
-	position: absolute;
-	right: -12px;
-	text-align: center;
-	top: -10px;
-	width: 24px;
-	text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
-}
-.close:hover {
-	background: #00d9ff;
-}
-/* Akhir Modal */
 
 .img-responsive{
 	width: 100%;
