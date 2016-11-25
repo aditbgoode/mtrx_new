@@ -53,238 +53,373 @@
 				}
 				#shadow_conn{
 					position: absolute;
-					opacity: 0.2;
+					opacity: 0.4;
 				}
 			</style>
 			<canvas id="shadow_conn"></canvas>
 			<div class="close_out" id="popup_box">
-			</div>
-			<script type="text/javascript">
-				$(document).ready(function(){
-					var canvasElement = document.querySelector("#shadow_conn");
-					console.log(canvasElement);
-					var context = canvasElement.getContext("2d");
-					
-
-					$("#popup_box").hide();
-					$(canvasElement).hide();
-
-					function hideShadow(){
-						$("#popup_box").fadeOut("fast");
-						$(canvasElement).fadeOut("fast");
-					}
-
-					function setShadow(nodePosX, nodePosY, factor, data_html){
-						// Lupa x, y dapat darimana :(
-						var x = 100;
-						var y = 120;
-
-						$("#popup_box").html(data_html);
-
-						// memunculkan popup beserta shadow
-						$("#popup_box").fadeIn("fast");
-						$(canvasElement).fadeIn("fast");
-
-						// popup_box_height ditambahkan dengan padding top, bottom
-						var popup_box_height = $("#popup_box").height();
-						popup_box_height += 30;
-
-						// nilai faktor untuk ujung segitiga shadow range [0, 1]
-						// jika data 0 maka berada sejajar dengan bagian atas kotak popup
-						// jika data 1 maka berada sejajar dengan bagian bawah kotak popup
-						factor = (0 <= factor && factor <= 1) ? factor : 0.5;
-						var y_pos_factor = parseInt(popup_box_height * factor);
-
-						// setting posisi x dan y popup_box
-						// x berdasarkan nodePosX, lebar popup_box dan faktor 105
-						// y berdasarkan nodePosY, y_pos_factor dan faktor 170
-						var magic_x = 105;
-						var magic_y = 170;
-						$("#popup_box").css("margin-left", nodePosX - parseInt($("#popup_box").width()) - magic_x);
-						$("#popup_box").css("margin-top", nodePosY - y_pos_factor - magic_y);
-
-						// lebar dan tinggi shadow, bagian ini diatur sedemikian rupa
-						// lupa bagaimana caranya :(
-						// kebanyakan adjusting
-						canvasElement.width += y;
-						canvasElement.height = popup_box_height + 500;
-
-
-						// setting posisi x dan y shadow
-						$(canvasElement).css("margin-left", nodePosX - 75);
-						$(canvasElement).css("margin-top", nodePosY - 170 - y_pos_factor);
-
-						// sketch titik segitiga shadow, dengan lebar 100
-						context.beginPath();
-						context.moveTo(0, 0);
-						context.lineTo(0, popup_box_height);
-						context.lineTo(100, y_pos_factor);
-						context.closePath();
-						 
-						// outline shadow, sebenarnya ga berguna bagian ini :(
-						context.lineWidth = 0;
-						context.strokeStyle = '#666666';
-						context.stroke();
-						 
-						// fill shadow dengan warna
-						context.fillStyle = "#FFFFFF";
-						context.fill();	
-					}
-
-					$(".tring").mouseover(function(){
-						var posX = parseInt($(this).css("margin-left"));
-						var posY = parseInt($(this).css("margin-top")) + 1000;
-						setShadow(posX, posY, parseFloat($(this).data("factorh")), $($(this).next()).html());
-					});
-
-					$(".tring").mouseout(function(){
-						hideShadow();
-					});
-				});
-			</script>
-			
+			</div>			
 			<img src="aset/img/market_segments_new.png" class="img-responsive" alt="">
 			<img src="" alt="" class="">
 			<a href="#openModal1">
+
+				<!-- Node Point -->
 				<img src="aset/img/1.png" alt="" class="tring satu" data-factorh="0.5">
+
+				<!-- Node Data -->
 				<div class="x-data-modal-x" hidden>
+
+					<!-- Node Data Header -->
 					<div class="co_header">
 						Header Example
 					</div>
-					<div class="co_data">
+
+					<!-- Node Data Body -->
+					<div class="co_body">
 						data1
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
 					</div>
 				</div>
 			</a>
 			<a href="#openModal2">
+
+				<!-- Node Point -->
 				<img src="aset/img/2.png" alt="" class="tring dua" data-factorh="0.8">
+
+				<!-- Node Data -->
 				<div class="x-data-modal-x" hidden>
+
+					<!-- Node Data Header -->
 					<div class="co_header">
 						Header Example
 					</div>
-					<div class="co_data">
+
+					<!-- Node Data Body -->
+					<div class="co_body">
 						data2
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
 					</div>
 				</div>
 			</a>
 			<a href="#openModal3">
+
+				<!-- Node Point -->
 				<img src="aset/img/2.png" alt="" class="tring tiga" data-factorh="0.85">
+
+				<!-- Node Data -->
 				<div class="x-data-modal-x" hidden>
+
+					<!-- Node Data Header -->
 					<div class="co_header">
 						Header Example
 					</div>
-					<div class="co_data">
+
+					<!-- Node Data Body -->
+					<div class="co_body">
 						data3
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
 					</div>
 				</div>
 			</a>
 			<a href="#openModal4">
+
+				<!-- Node Point -->
 				<img src="aset/img/2.png" alt="" class="tring empat" data-factorh="0.7">
+
+				<!-- Node Data -->
 				<div class="x-data-modal-x" hidden>
+
+					<!-- Node Data Header -->
 					<div class="co_header">
 						Header Example
 					</div>
-					<div class="co_data">
-						data4
+
+					<!-- Node Data Body -->
+					<div class="co_body">
+						data4aaaaaaaaaaaaaaaaaaaaaaaaaa
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
 					</div>
 				</div>
 			</a>
 			<a href="#openModal5">
+
+				<!-- Node Point -->
 				<img src="aset/img/2.png" alt="" class="tring lima" data-factorh="0.25">
+
+				<!-- Node Data -->
 				<div class="x-data-modal-x" hidden>
+
+					<!-- Node Data Header -->
 					<div class="co_header">
 						Header Example
 					</div>
-					<div class="co_data">
+
+					<!-- Node Data Body -->
+					<div class="co_body">
 						data5
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
 					</div>
 				</div>
 			</a>
 			<a href="#openModal6">
+
+				<!-- Node Point -->
 				<img src="aset/img/3.png" alt="" class="tring enam" data-factorh="0.1">
+
+				<!-- Node Data -->
 				<div class="x-data-modal-x" hidden>
+
+					<!-- Node Data Header -->
 					<div class="co_header">
 						Header Example
 					</div>
-					<div class="co_data">
+
+					<!-- Node Data Body -->
+					<div class="co_body">
 						data6
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
 					</div>
 				</div>
 			</a>
 			<a href="#openModal7">
-				<img src="aset/img/3.png" alt="" class="tring tujuh" data-factorh="0.2">
+
+				<!-- Node Point -->
+				<img src="aset/img/3.png" alt="" class="tring tujuh" data-factorh="0.2" data-pos-right="true">
+
+				<!-- Node Data -->
 				<div class="x-data-modal-x" hidden>
+
+					<!-- Node Data Header -->
 					<div class="co_header">
 						Header Example
 					</div>
-					<div class="co_data">
+
+					<!-- Node Data Body -->
+					<div class="co_body">
 						data7
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
 					</div>
 				</div>
 			</a>
 			<a href="#openModal8">
-				<img src="aset/img/4.png" alt="" class="tring delapan" data-factorh="0.55">
+
+				<!-- Node Point -->
+				<img src="aset/img/4.png" alt="" class="tring delapan" data-factorh="0.55" data-pos-right="true">
+
+				<!-- Node Data -->
 				<div class="x-data-modal-x" hidden>
+
+					<!-- Node Data Header -->
 					<div class="co_header">
 						Header Example
 					</div>
-					<div class="co_data">
+
+					<!-- Node Data Body -->
+					<div class="co_body">
 						data8
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
 					</div>
 				</div>
 			</a>
 			<a href="#openModal9">
+
+				<!-- Node Point -->
 				<img src="aset/img/5.png" alt="" class="tring sembilan" data-factorh="0.3">
+
+				<!-- Node Data -->
 				<div class="x-data-modal-x" hidden>
+
+					<!-- Node Data Header -->
 					<div class="co_header">
 						Header Example
 					</div>
-					<div class="co_data">
+
+					<!-- Node Data Body -->
+					<div class="co_body">
 						data9
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
 					</div>
 				</div>
 			</a>
 			<a href="#openModal10">
-				<img src="aset/img/6.png" alt="" class="tring sepuluh" data-factorh="0.8">
+
+				<!-- Node Point -->
+				<img src="aset/img/6.png" alt="" class="tring sepuluh" data-factorh="0.8" data-pos-right="true">
+
+				<!-- Node Data -->
 				<div class="x-data-modal-x" hidden>
+
+					<!-- Node Data Header -->
 					<div class="co_header">
 						Header Example
 					</div>
-					<div class="co_data">
+
+					<!-- Node Data Body -->
+					<div class="co_body">
 						data10
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
 					</div>
 				</div>
 			</a>
 			<a href="#openModal11">
-				<img src="aset/img/7.png" alt="" class="tring sebelas" data-factorh="0.3">
+
+				<!-- Node Point -->
+				<img src="aset/img/7.png" alt="" class="tring sebelas" data-factorh="0.3" data-pos-right="true">
+
+				<!-- Node Data -->
 				<div class="x-data-modal-x" hidden>
+
+					<!-- Node Data Header -->
 					<div class="co_header">
 						Header Example
 					</div>
-					<div class="co_data">
+
+					<!-- Node Data Body -->
+					<div class="co_body">
 						data11
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
 					</div>
 				</div>
 			</a>
 			<a href="#openModal12">
-				<img src="aset/img/8.png" alt="" class="tring duabelas" data-factorh="0.6">
+
+				<!-- Node Point -->
+				<img src="aset/img/8.png" alt="" class="tring duabelas" data-factorh="0.6" data-pos-right="true">
+
+				<!-- Node Data -->
 				<div class="x-data-modal-x" hidden>
+
+					<!-- Node Data Header -->
 					<div class="co_header">
 						Header Example
 					</div>
-					<div class="co_data">
+
+					<!-- Node Data Body -->
+					<div class="co_body">
 						data12
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
 					</div>
 				</div>
 			</a>
 			<a href="#openModal13">
+
+				<!-- Node Point -->
 				<img src="aset/img/2.png" alt="" class="tring tigabelas" data-factorh="0.65">
+
+				<!-- Node Data -->
 				<div class="x-data-modal-x" hidden>
+
+					<!-- Node Data Header -->
 					<div class="co_header">
 						Header Example
 					</div>
-					<div class="co_data">
+
+					<!-- Node Data Body -->
+					<div class="co_body">
 						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
+						data13
+						<div>Contoh Data</div>
+						<div>Aneh</div>
 					</div>
 				</div>
 			</a>
@@ -304,6 +439,104 @@
 			<a href="#"><img src="aset/sosmed/logo_facebook.png"></a>
 		</div>
 	</div>
-	<script type="text/javascript" src="js/modal.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var canvasElement = document.querySelector("#shadow_conn");
+			console.log(canvasElement);
+			var context = canvasElement.getContext("2d");
+			
+
+			$("#popup_box").hide();
+			$(canvasElement).hide();
+
+			function hideShadow(){
+				$("#popup_box").fadeOut("fast");
+				$(canvasElement).fadeOut("fast");
+			}
+
+			function setShadow(nodePosX, nodePosY, factor, data_html, right){
+				// Lupa x, y dapat darimana :(
+				var x = 100;
+				var y = 120;
+				var shadow_width = 100;
+
+				console.log(nodePosY);
+
+				$("#popup_box").html(data_html);
+
+				// memunculkan popup beserta shadow
+				$("#popup_box").fadeIn("fast");
+				$(canvasElement).fadeIn("fast");
+
+				// popup_box_height ditambahkan dengan padding top, bottom
+				var popup_box_height = $("#popup_box").height();
+				popup_box_height += 30;
+
+				// nilai faktor untuk ujung segitiga shadow range [0, 1]
+				// jika data 0 maka berada sejajar dengan bagian atas kotak popup
+				// jika data 1 maka berada sejajar dengan bagian bawah kotak popup
+				factor = (0 <= factor && factor <= 1) ? factor : 0.5;
+				var y_pos_factor = parseInt(popup_box_height * factor);
+
+				// setting posisi x dan y popup_box
+				// x berdasarkan nodePosX, lebar popup_box dan faktor 105
+				// y berdasarkan nodePosY, y_pos_factor dan faktor 12
+				var magic_x = 105;
+				var magic_y = 12;
+				$("#popup_box").css("margin-left", nodePosX - parseInt($("#popup_box").width()) - magic_x);
+				$("#popup_box").css("margin-top", nodePosY - y_pos_factor + magic_y);
+
+				// lebar dan tinggi shadow, bagian ini diatur sedemikian rupa
+				// lupa bagaimana caranya :(
+				// kebanyakan adjusting
+				canvasElement.width += y;
+				canvasElement.height = popup_box_height + 500;
+
+
+				// setting posisi x dan y shadow
+				$(canvasElement).css("margin-left", nodePosX - 75 + (right ? shadow_width : 0));
+				$(canvasElement).css("margin-top", nodePosY - y_pos_factor + magic_y);
+
+				if(right){
+					var magic_x_right = 30;
+					$("#popup_box").css("margin-left", nodePosX - magic_x + (2 * shadow_width) + magic_x_right);
+				}
+
+				// sketch titik segitiga shadow, dengan lebar 100
+				context.beginPath();
+				if(right){
+					context.moveTo(shadow_width, 0);
+					context.lineTo(shadow_width, popup_box_height);
+					context.lineTo(0, y_pos_factor);
+				}else{
+					context.moveTo(0, 0);
+					context.lineTo(0, popup_box_height);
+					context.lineTo(shadow_width, y_pos_factor);
+				}
+				context.closePath();
+				 
+				// outline shadow, sebenarnya ga berguna bagian ini :(
+				context.lineWidth = 0;
+				context.strokeStyle = '#666666';
+				context.stroke();
+				 
+				// fill shadow dengan warna
+				context.fillStyle = "#FFFFFF";
+				context.fill();	
+			}
+
+			$(".tring").mouseover(function(){
+				var posX = parseInt($(this).css("margin-left"));
+				var posY = parseInt($(this).css("top")) + parseInt($(this).css("margin-top"));
+				console.log(posX, posY);
+				setShadow(posX, posY, parseFloat($(this).data("factorh")), $($(this).next()).html(), $(this).data("pos-right"));
+			});
+
+			$(".tring").mouseout(function(){
+				hideShadow();
+			});
+		});
+	</script>
 </body>
 </html>
