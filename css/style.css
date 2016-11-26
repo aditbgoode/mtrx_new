@@ -353,10 +353,115 @@ div#gearUniversity div.quoteBox{
 }
 /* Akhir Footer*/
 
-.img-responsive{
+.img-responsive{	
 	width: 100%;
 	height: auto;
 }
 .center{
 	text-align: center;
+}
+
+#product-1{
+	position: absolute;
+	width: 250px;
+	height: 300px;
+	top: 25px;
+	left: 50px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+#product-2{
+	position: absolute;
+	width: 250px;
+	height: 300px;
+	top: 25px;
+	left: 340px;
+	z-index: 2;
+	cursor: pointer;
+	
+}
+
+#product-3{
+	position: absolute;
+	width: 250px;
+	height: 300px;
+	top: 25px;
+	left: 630px;
+	z-index: 2;
+	cursor: pointer;
+	
+}
+
+#product-4{
+	position: absolute;
+	width: 250px;
+	height: 300px;
+	top: 25px;
+	left: 920px;
+	z-index: 2;
+	cursor: pointer;
+	
+}
+
+#product-5{
+	position: absolute;
+	width: 250px;
+	height: 300px;
+	top: 380px;
+	left: 150px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+#product-6{
+	position: absolute;
+	width: 250px;
+	height: 300px;
+	top: 380px;
+	left: 440px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+#product-7{
+	position: absolute;
+	width: 250px;
+	height: 300px;
+	top: 380px;
+	left: 750px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+#product-8{
+	position: absolute;
+	width: 250px;
+	height: 300px;
+	top: 380px;
+	left: 1020px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+#bg-modal{
+	
+	position: fixed;
+	top:0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 3;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.visibility-hidden{
+	visibility: hidden;
+}
+
+#img-modal-product{
+	position: absolute;
+	top:3%;
+	right: 10%;
+	width: 80%;
 }

@@ -5,6 +5,7 @@
 	<link rel="shortcut icon" href="aset/logo.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/product.js"></script>
 </head>
 <body>
 	<style type="text/css">
@@ -35,12 +36,21 @@
 		<a class="nav_menu klik" href="milestone.html">Milestone</a>
 	</div>
 	<div class="content">
+
 		<div class="atas">
 			<div class="judul">Product Features</div>
 			Our integrated platform improves the flow of information for our customer and can be used alternately by using market research (economic outlook module, industry outlook module) to strategy (business roadmap module) and operation (organization roadmap module) and for the rest of the modules (consultant module, collaboration module, regulation module and university module) will be use to provide knowledge and information for the customer.  It's a user- friendly!
 		</div>
 		<div class="bawah center">
 			<img src="aset/img/product.png" class="img-responsive" alt="">
+			<div id="product-1" onclick="showModal(1)"></div>
+			<div id="product-2" onclick="showModal(3)"></div>
+			<div id="product-3" onclick="showModal(5)"></div>
+			<div id="product-4" onclick="showModal(7)"></div>
+			<div id="product-5" onclick="showModal(2)"></div>
+			<div id="product-6" onclick="showModal(4)"></div>
+			<div id="product-7" onclick="showModal(6)"></div>
+			<div id="product-8" onclick="showModal(8)"></div>
 		</div>
 	</div>
 	<div class="footer">
@@ -56,6 +66,9 @@
 			<a href="#"><img src="aset/sosmed/logo_twitter.png"></a>
 			<a href="#"><img src="aset/sosmed/logo_facebook.png"></a>
 		</div>
+	</div>
+	<div id="bg-modal" class="visibility-hidden" onclick="hideModal()">
+		<img src="aset/img/product.png" id="img-modal-product" alt="">
 	</div>
 </body>
 </html>
