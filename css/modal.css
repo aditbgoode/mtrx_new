@@ -140,3 +140,15 @@
 	background: #00d9ff;
 }
 /* Akhir Modal */
+
+.co_header{
+	background-color: #a1e7e6;
+	padding: 5%;
+}
+.co_body{
+	padding: 5%;
+}
+.co_body li{
+	/*list-style-type: none;*/
+	margin-left: -15%;
+}

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>matreex</title>
-	<link rel="shortcut icon" href="aset/logo.png">
+	<link rel="shortcut icon" href="aset/logo_new.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
@@ -25,19 +25,24 @@
 		}
 	</style>
 	<div class="header">
-		<a class="logo kluk" href="index.html"><span><b>[matreex]</b></span></a>
-		<a class="nav_menu klik" href="value.html">Our Value Innovation</a>
-		<a class="nav_menu klik" href="product.html">Product Features</a>
-		<a class="nav_menu klik" href="market_segments.html">Market Segments</a>
-		<a class="nav_menu klik" href="consultant.html">Consultant</a>
-		<a class="nav_menu klik" href="cbp.html" style="width:150px;">Consultant Business Process</a>
-		<a class="nav_menu klik" href="market_size.html">Market Size</a>
+		<a class="logo kluk" href="index.html"><img src="aset/logo_new.png" alt=""><span><b>[matreex]</b></span></a>
 		<a class="nav_menu klik" href="milestone.html">Milestone</a>
+		<a class="nav_menu klik" href="market_size.html">Market Size</a>
+		<a class="nav_menu klik" href="cbp.html" style="width:150px;">Consultant Business Process</a>
+		<a class="nav_menu klik" href="consultant.html">Consultant</a>
+		<a class="nav_menu klik" href="market_segments.html">Market Segments</a>
+		<a class="nav_menu klik" href="product.html">Product Features</a>
+		<a class="nav_menu klik" href="value.html">Our Value Innovation</a>
 	</div>
 	<div class="content">
 		<div class="atas">
 			<div class="judul">Consultant Business Process</div>
-			We are using the same consulting business process, however, what separate us from the traditional consulting services is in our systems & business model. It enabled the client to assess and perform 90 percents of consulting work themselves. Whereas the remaining 10 percents of work will be performed by our independent consultant.
+			<input class="read-more-state" id="read-more-controller" type="checkbox">
+			<div class="read-more-wrap">
+				We are using the same consulting business process, however, what separate us from the traditional consulting services is in our systems & business model. It enabled the client to assess and 
+				<span class="read-more-target">perform 90 percents of consulting work themselves. Whereas the remaining 10 percents of work will be performed by our independent consultant.</span>
+			</div>
+			<label class="read-more-trigger" for="read-more-controller"></label>
 		</div>
 		<div class="bawah center">
 			<img src="aset/img/cbp.png" class="img-responsive" alt="">
