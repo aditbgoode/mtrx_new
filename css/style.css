@@ -48,6 +48,14 @@ textarea:focus, input:focus{
 	padding: 10px;
 	/*border-right: 2px solid grey;*/
 }
+.most_top .garis{
+	float: right;
+	margin-top: 10px;
+	height: 17px;
+	width: 1px;
+	/*padding: 1px;*/
+	border-right: 2px solid grey;
+}
 
 .most_top > .call_us{
 }
@@ -488,7 +496,7 @@ input.read-more-state:checked ~ div.read-more-wrap span.read-more-target {
 }
 input.read-more-state ~ label.read-more-trigger:before {
   content: '(Read more)';
-  color: #fff;
+  color: #fcc200;
 }
 input.read-more-state:checked ~ label.read-more-trigger:before {
   content: '';
@@ -496,8 +504,4 @@ input.read-more-state:checked ~ label.read-more-trigger:before {
 label.read-more-trigger {
   cursor: pointer;
   display: inline-block;
-}
-
-.kanan{
-	border-right: 2px solid grey;
 }
