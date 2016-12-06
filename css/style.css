@@ -496,7 +496,7 @@ input.read-more-state:checked ~ div.read-more-wrap span.read-more-target {
 }
 input.read-more-state ~ label.read-more-trigger:before {
   content: '(Read more)';
-  color: #fcc200;
+  color: #d9a220;
 }
 input.read-more-state:checked ~ label.read-more-trigger:before {
   content: '';
