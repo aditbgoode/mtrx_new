@@ -102,6 +102,36 @@ textarea:focus, input:focus{
 }
 /* Akhir Header*/
 
+/* Burger */
+/* Saat lebar layar kurang dari 680 pixel, sembunyikan semua menu item kecuali item yang pertama yaitu("Home"). Tampilkan juga list item yang berisi link untuk membuka menu yaitu (li.icon) */
+@media screen and (max-width:680px) {
+  .nav_menu:not(:first-child) {display: none;}
+  .nav_menu.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+ 
+/* Class dengan nama "responsive" akan ditambahkan oleh JavaScript saat user mengklik icon. Munculnya Class ini akan mendisplay isi list menu 
+*/
+@media screen and (max-width:680px) {
+  .nav_menu.responsive {position: relative;}
+  .nav_menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav_menu.responsive {
+    float: none;
+    display: inline;
+  }
+  .nav_menu.responsive a {
+    display: block;
+    text-align: left;
+  }
+}
+/* Akhir Burger */
+
 /* Konten*/
 .content{
 	background-color: #628b8b;
