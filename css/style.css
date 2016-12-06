@@ -109,11 +109,11 @@ textarea:focus, input:focus{
 .content .atas{
 	padding: 20px 100px;
 	background-color: #a1e7e6;
-	font-size: 25px;
+	font-size: 1.5em;
 	color: #666;
 }
 .content .atas .judul{
-	font-size: 30px;
+	font-size: 1.2em;
 	padding: 10px 0;
 	font-weight: bold;
 }
@@ -362,6 +362,7 @@ div#gearUniversity div.quoteBox{
 }
 .footer .kanan{
 	float: right;
+    margin-top: -20px;
 	padding: 0 1%;
 }
 /* Akhir Footer*/
