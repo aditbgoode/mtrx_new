@@ -244,6 +244,41 @@ textarea:focus, input:focus{
 	cursor: pointer;
 }
 
+.content .bawah .empatbelas{
+	position: absolute;
+	width: 33px;
+	margin-top: -56.5%;
+	margin-left: 47.5%;
+	cursor: pointer;
+}
+.content .bawah .limabelas{
+	position: absolute;
+	width: 33px;
+	margin-top: -40%;
+	margin-left: 25.3%;
+	cursor: pointer;
+}
+.content .bawah .enambelas{
+	position: absolute;
+	width: 33px;
+	margin-top: -38%;
+	margin-left: 45.3%;
+	cursor: pointer;
+}
+.content .bawah .tujuhbelas{
+	position: absolute;
+	width: 33px;
+	margin-top: -29%;
+	margin-left: 62%;
+	cursor: pointer;
+}
+.content .bawah .delapanbelas{
+	position: absolute;
+	width: 30px;
+	margin-top: -26.5%;
+	margin-left: 66.7%;
+	cursor: pointer;
+}
 /* Akhir Konten*/
 
 /* GEAR */
