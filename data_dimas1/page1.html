@@ -1,0 +1,311 @@
+<html>
+<head>
+	<title>Page1</title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" href="assets/main.css">
+	<!-- <link rel="stylesheet" href="./dist/sidebar-menu.css"> -->
+	<script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- <script src="./dist/sidebar-menu.js"></script> -->
+	<script src="highchart/highcharts.js"></script>
+	<script src="highchart/exporting.js"></script>
+</head>
+<body>
+	<div class="col-md-12">
+
+		<div class="col-md-2 border">
+			<div class="title-section"><b>PESTLE Analysis</b></div>
+			<ul class="sidebar-menu">
+				<li><a href="#"><span>Political Factor</span></a></li>
+				<li><a href="#">Economic Factor</a>	</li>
+				<li class="active">
+					<a href="#">Social Factor</a>
+					<ul class="sidebar-submenu">
+						<li class="active"><a href="#" id="defaultOpenSideBar" onclick="openTab(event, 'demographics')">Demographics</a></li>
+						<li><a href="#" onclick="openTab(event, 'attidudes')">Attidudes & Beliefs</a></li>
+						<li><a href="#" onclick="openTab(event, 'social')">Social Mobility</a></li>
+						<li><a href="#" onclick="openTab(event, 'education')">Education</a></li>
+						<li><a href="#" onclick="openTab(event, 'lifestyle')">Lifestyle</a></li>
+						<li><a href="#" onclick="openTab(event, 'ethics')">Ethics & Religion</a></li>
+						<li><a href="#" onclick="openTab(event, 'historical')">Historical Issue</a></li>
+						<li><a href="#" onclick="openTab(event, 'cross')">Cross Cultural Communication</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Technological Factor</a></li>
+				<li><a href="#">Legal Factor</a></li>
+				<li><a href="#">Environmental Factor</a></li>
+			</ul>
+        </div>
+		<div class="col-md-8">
+			<div>
+				<div id="demographics" class="tabcontent">
+					
+					<div class="title-section" style="border-right: solid 1px #ddd"><b>Demographics</b></div>
+					<div class="area1">
+						<div class="col-md-12 navcontent" id="working1">
+							<div class="col-md-12">
+								<h3>Demographics</h3>
+							</div>
+						</div>
+						<div class="col-md-12 navcontent" id="working2">
+							<p align="left"><a href="#" class="link">http://worldpopulationreview.com/</a></p>
+						</div>
+						<div class="col-md-12 navcontent" id="working3">
+							<p align="left"><b>Indonesia Population 2016</b></p>
+						</div>
+						<div class="col-md-12 navcontent" id="working4">
+							<br>
+				            <p align="justify">
+				                Indonesia is a sovereign archipelago in Southeast Asia and the fourth most populous country on earth after China, India, and tghe United States. Indonesia is made up of more then 17,000 islands with over 1.9 million square kilometers of land, which makes it the 19th largest country. Indonesia has a population estimated at 257 million in 2015, up from the 2013 estimate of 250 million. About 58% of Indonesia's population lives on Java, the most populous island.
+				            </p>
+						</div>
+						<div class="col-md-12 navcontent" id="working5">
+							<p align="left">Read More...</p>
+						</div>
+						<div class="col-md-12 navcontent" id="working6">
+							<p align="left"><b>Population of Indonesia by Age and Sex, July 1, 2011</b></p>
+						</div>
+						<div class="col-md-12 navcontent" id="working7">
+							<div id="ct-chart"></div>
+				            <script type="text/javascript">
+								// Data gathered from http://populationpyramid.net/germany/2015/
+								$(function () {
+								    // Age categories
+								    var categories = ['0-4', '5-9', '10-14', '15-19',
+								            '20-24', '25-29', '30-34', '35-39', '40-44',
+								            '45-49', '50-54', '55-59', '60-64', '65-69',
+								            '70-74', '75-79', '80+'];
+								    $(document).ready(function () {
+								        Highcharts.chart('ct-chart', {
+								            chart: {
+								                type: 'bar',
+								                width: 500,
+								                height: 350
+								            },
+								            title: {
+								                text: 'Population of Indonesia by Age and Sex, July 1, 2011'
+								            },
+								            credits: {
+				            				enabled: true
+				        					},
+								            xAxis: [{
+								                categories: categories,
+								                reversed: false,
+								                tickInterval: 1,
+								                labels: {
+								                    step: 1
+								                }
+								            }, { // mirror axis on right side
+								                opposite: true,
+								                reversed: false,
+								                categories: categories,
+								                linkedTo: 0,
+								                tickInterval: 1,
+								                labels: {
+								                    step: 1
+								                }
+								            }],
+								            yAxis: {
+								                title: {
+								                    text: 'million'
+								                },
+								                labels: {
+								                    formatter: function () {
+								                        return Math.abs(this.value) + '';
+								                    }
+								                }
+								            },
+
+								            plotOptions: {
+								                series: {
+								                    stacking: 'normal'
+								                }
+								            },
+
+								            tooltip: {
+								                formatter: function () {
+								                    return '<b>' + this.series.name + ', age ' + this.point.category + '</b><br/>' +
+								                        'Population: ' + Highcharts.numberFormat(Math.abs(this.point.y), 0);
+								                }
+								            },
+
+								            series: [{
+								            	negativeColor: '#FF7725',
+				       						 	
+								                name: 'Male',
+								                data: [-1.2, -2.2, -2.3, -2.5, -2.7, -3.1, -3.2,
+								                    -3.0, -3.2, -4.3, -4.4, -3.6, -3.1, -2.4,
+								                    -2.5, -2.3, -1.2]
+								            }, {
+								                name: 'Female',
+								                color: '#07368B',
+								                data: [1.1, 2.0, 2.2, 2.4, 2.6, 3.0, 3.1, 2.9,
+								                    3.1, 4.1, 4.3, 3.6, 3.4, 2.6, 2.9, 2.9,
+								                    1.8]
+								            }]
+								        });
+								    });
+
+								});
+						</script>
+						<hr>
+						</div>
+						<div id="faq1" class="contentBody">
+							<div class="col-md-3">
+								<img src="assets/img/Logo-2C-128px-R.png" class="linkedinp1">
+            					<img src="assets/img/YouTube-logo-full_color.png" class="youtubep1">
+							</div>
+							<div class="col-md-2"> </div>
+							<div class="col-md-6" class="faqtitle">
+								<b>Forum Group Discussion Q-A</b>
+							</div>
+							<div class="faq-content col-md-12">
+								<div class="col-md-12">
+									<div class="col-md-1">
+										<img src="assets/img/user.png" height="40px" width="40px">
+									</div>
+									<div class="col-md-11">
+										<p>by : <a href="#" class="link">DR. Roy Adhie</a></p>
+										<p>Posted : Feb 13, 2014 | 10:40 PM</p>
+										<p class="alert alert-info" role="alert">Question : What is the difference between an estimate and a projection?</p>
+										<p>A population estimate represents a current or historical measure of the population. A population projection is a forecast of future populations.</p>
+										<p><a href="#" class="link">Read more...</a></p>
+									</div>
+								</div>
+								<div class="faq-comment col-md-12">
+									0 Comment
+								</div>
+							</div>
+						</div>
+						<div id="faq2" class="contentBody">
+							<div class="col-md-3">
+								<img src="assets/img/Logo-2C-128px-R.png" class="linkedinp1">
+            					<img src="assets/img/YouTube-logo-full_color.png" class="youtubep1">
+							</div>
+							<div class="col-md-2"> </div>
+							<div class="col-md-6" class="faqtitle">
+								<b>Forum Group Discussion Q-A</b>
+							</div>
+							<div class="faq-content col-md-12">
+								<div class="col-md-12">
+									<div class="col-md-1">
+										<img src="assets/img/user.png" height="40px" width="40px">
+									</div>
+									<div class="col-md-11">
+										<p>by : <a href="#" class="link">DR. Roy Adhie</a></p>
+										<p>Posted : Feb 13, 2014 | 10:40 PM</p>
+										<p class="alert alert-info" role="alert">Question : Why does Census population differ from estimates in Census years?</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+								</div>
+								<div class="faq-comment col-md-12">
+									0 Comment
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div id="attidudes" class="tabcontent">
+					attitudes
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="title-section"><b>Frequently Asked Questions</b></div>
+			<div class="faq-right-side-bar">
+					<ul class="list-inline list-2">
+						<li role="presentation" class="active">
+							<a href="#" data-toggle="collapse2" id="defaultOpenContent" onclick="openContent(event, 'faq1') ">What is the difference between an estimate and a projection?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq2')">Why does Census population differ from estimates in Census years?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq3')">Why are population figures revised from time to time?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq4')">Where can I find the population of a specific city, town, region, etc?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq5')">Where can I find age/sex detail for a specific region?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq6')">Can I get data for regions that are not specifically available on the website?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq7')">What is meant by the term components of population change and what is the definition of each of these components?</a>
+						</li>
+					</ul>
+			</div>
+		</div>
+	</div>
+
+	 <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+      
+    </script>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/main.js"></script>
+	<script type="text/javascript">
+		function openTab(evt, tabName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			tabclass = document.getElementsByClassName("tabName");
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+
+		function openNav(evt, tabName) {
+			var i, navcontent, tablinks;
+			navcontent = document.getElementsByClassName("navcontent");
+			for (i = 0; i < navcontent.length; i++) {
+				navcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			tabclass = document.getElementsByClassName("tabName");
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+		function openContent(evt, contentName) {
+			var i, contentBody, contentLinks;
+			contentBody = document.getElementsByClassName("contentBody");
+			for (i = 0; i < contentBody.length; i++) {
+				contentBody[i].style.display = "none";
+			}
+			contentLinks = document.getElementsByClassName("contentLinks");
+			for (i = 0; i < contentLinks.length; i++) {
+				contentLinks[i].className = contentLinks[i].className.replace(" active", "");
+			}
+			document.getElementById(contentName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+
+		document.getElementById("defaultOpenSideBar").click();
+		document.getElementById("defaultOpenContent").click();
+		document.getElementById("openSubSideBar").click();
+		
+	</script>
+</body>
+</html>

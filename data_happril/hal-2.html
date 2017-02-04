@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="chart/highcharts.js"></script>
+</head>
+<body>
+<div class="row" style="margin: 0 0;">
+    <div id="btnmenu" class="col-md-2" style="padding: 0 0">
+        <div class="row" style="margin: 0 0;">
+            <div class="col-md-12" style="padding: 0 0">
+                <div class="box" style="padding: 2% 0">
+                    <span id="menu"><b>Country</b></span>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin: 0 0 0 0;">
+            <div id="list" class="col-md-12" style="padding: 0 0; overflow: auto; height: 95vh">
+                <div class="box-left">
+                    <ul class="sidebar-menu">
+                        <li class="active"><a href="#"><span>Asia</span></a>
+                            <ul class="sidebar-submenu">
+                                <li class="active"><a href="#">Indonesia</a></li>
+                                <li><a href="#">Malaysia</a></li>
+                                <li><a href="#">Singapore</a></li>
+                                <li><a href="#">Japan</a></li>
+                                <li><a href="#">Myanmar</a></li>
+                                <li><a href="#">Thailand</a></li>
+                                <li><a href="#">Vietnam</a></li>
+                                <li><a href="#">China</a></li>
+                                <li><a href="#">India</a></li>
+                                <li><a href="#">Bangladesh</a></li>
+                                <li><a href="#">Pakistan</a></li>
+                                <li><a href="#">More...</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>Europe</span></a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#">England</a></li>
+                                <li><a href="#">Germany</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>North America</span></a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#">Mexco</a></li>
+                                <li><a href="#">Canada</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>South America</span></a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#">Chile</a></li>
+                                <li><a href="#">Peru</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>Africa</span></a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#">Sout Africa</a></li>
+                                <li><a href="#">Congo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>Oceania</span></a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#">Fiji</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-10" style="padding: 0 0">
+        <div class="row" style="margin: 0 0;">
+            <div class="tabbable boxed parentTabs">
+                <div class="col-md-12 box" style="padding: 0 0">
+                    <ul class="nav navbar-nav">
+                        <li class="box-none"><a href="#set1">Importing Countries</a></li>
+                        <li class="box-none"><a href="#set2">Exporting Countries</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12" style="padding: 0 0; overflow: auto; height: 90vh">
+                    <img src="../aset/prototype/2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $("ul.navbar-nav a").click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+</script>
+<script src="js/vendor.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

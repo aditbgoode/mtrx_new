@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title>Page9</title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" href="./dist/sidebar-menu.css">
+</head>
+<body>
+	<div class="col-md-12">
+		<div class="col-md-10">
+			<img src="assets/img/businessprocess.png" width="1135vh" height="680vh">
+		</div>
+		<div class="col-md-2">
+			<div>
+				<nav class="navbar navbar-default" role="navigation" id="topmenu">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#">Country</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" style="border-right: none;">India</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="faq-right-side-bar">
+				<img src="assets/img/Logo-2C-128px-R.png" class="linkedinp5">
+	            <img src="assets/img/YouTube-logo-full_color.png" class="youtubep5">
+				<img src="assets/img/flow.jpg" height="100px" width="50%">
+				<div>
+					<p class="bordered-bottom"><b>Brandie</b></p>
+					<p class="bordered-bottom"><b>Business Process Oil & Gas</b></p>
+					<p class="paragraf-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./dist/sidebar-menu.js"></script>
+	<script>
+    	$.sidebarMenu($('.sidebar-menu'))
+	</script>
+	<script type="text/javascript">
+		$('.collapse').on('shown.bs.collapse', function (e) {
+		  $('.collapse').not(this).removeClass('in');
+		});
+
+		$('[data-toggle=collapse]').click(function (e) {
+		  $('[data-toggle=collapse]').parent('li').removeClass('active');
+		  $(this).parent('li').toggleClass('active');
+		});
+	</script>
+	<script type="text/javascript">
+		function openTab(evt, tabName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			tabclass = document.getElementsByClassName("tabName");
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+
+		function openNav(evt, tabName) {
+			var i, navcontent, tablinks;
+			navcontent = document.getElementsByClassName("navcontent");
+			for (i = 0; i < navcontent.length; i++) {
+				navcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			tabclass = document.getElementsByClassName("tabName");
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+		document.getElementById("click4").click();
+		document.getElementById("click5").click();
+		document.getElementById("click1").click();
+		document.getElementById("click2").click();
+		document.getElementById("click3").click();
+	</script>
+</body>
+</html>

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="chart/highcharts.js"></script>
+</head>
+<body>
+<div class="row" style="margin: 0 0 0 0;">
+    <div id="menu2" class="col-md-10" style="padding: 0 0 0 0">
+        <div class="box" style="padding: 0 0 0 0">
+            <ul class="nav nav-tabs">
+                <li class="box-none"><a href="javascript:void(0)" id="defaultOpen2" class="tablinks" onclick="opeTab2(event, 'tab1')"><b>Financial Report</b></a></li>
+                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')"><b>Operational Report</b></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-2" style="padding: 0 0 0 0">
+        <div class="col-md-4" style="padding: 0 0 0 0">
+            <div class="box" style="padding: 1.7vh 0">
+                <span style="color: limegreen">web</span><span style="color: #2aabd2">ex</span>
+            </div>
+        </div>
+        <div class="col-md-8" style="padding: 0 0 0 0">
+            <div class="box" style="padding: 1.7vh 0">
+                Conference Call
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin: 0 0 0 0">
+    <div id="tab2" class="tabcontent2">
+        <div class="col-md-2" style="padding: 0 0 0">
+            <div class="box" style="padding: 11px 0 11px 15px; text-align: left; font-size: 12px;background-color: gray;color: #ffffff">
+                <b>Operation Report 2010-2014</b>
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+        </div>
+        <div class="col-md-8" style="padding: 0 0 0 0">
+            <div class="box" style="padding: 0 0;">
+                <table class="table" style="font-size: 12px;border-color: #dcdcdc;" border="1px">
+                    <thead>
+                    <tr style="background-color: #ffffff">
+                        <td style="text-align: center;">Operation Indicator</td>
+                        <td style="text-align: center;" colspan="2">2010</td>
+                        <td style="text-align: center;" colspan="2">2011</td>
+                        <td style="text-align: center;" colspan="2">2012</td>
+                        <td style="text-align: center;" colspan="2">2013</td>
+                        <td style="text-align: center;" colspan="2">2014</td>
+                    </tr>
+                    </thead>
+                    <tr style="background-color: #ffffff">
+                        <td></td>
+                        <td style="background-color:palegreen">Target</td>
+                        <td style="background-color:palegreen">Actual</td>
+                        <td style="background-color:powderblue">Target</td>
+                        <td style="background-color:powderblue">Actual</td>
+                        <td style="background-color:#dda458">Target</td>
+                        <td style="background-color:#dda458">Actual</td>
+                        <td style="background-color:#999999">Target</td>
+                        <td style="background-color:#999999">Actual</td>
+                        <td style="background-color:lightpink">Target</td>
+                        <td style="background-color:lightpink">Actual</td>
+                    </tr>
+                    <tr style="background-color: #ffffff">
+                        <td>Sales</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                    </tr>
+                    <tr style="background-color: #ffffff">
+                        <td>Total Cost</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                    </tr>
+                    <tr style="background-color: #ffffff">
+                        <td>EBITDATA</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                    </tr>
+                    <tr style="background-color: #ffffff">
+                        <td>Current Asset</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                    </tr>
+                    <tr style="background-color: #ffffff">
+                        <td>Fixed Aset</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                    </tr>
+                    <tr style="background-color: #ffffff">
+                        <td>Total Liability + Total Equity</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                    </tr>
+                    <tr style="background-color: #ffffff">
+                        <td>Net Cash Flow</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="tab1" class="tabcontent2 defaultOpen2">
+        <div id="list" class="col-md-2" style="padding: 0 0 0">
+            <div class="box" style="padding: 11px 0 11px 15px; text-align: left; font-size: 12px;background-color: gray;color: #ffffff">
+                <b>Financial Report 2010-2014</b>
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+            <div class="box" style="padding: 20px 0 20px 15px; text-align: left; font-size: 12px;">
+            </div>
+        </div>
+        <div id="konten" class="col-md-8" style="padding: 0 0 0 0">
+            <div class="box" style="padding: 0 0;">
+                <table class="table" style="font-size: 12px;border-color: #dcdcdc;" border="1px">
+                    <thead>
+                    <tr style="background-color: #ffffff">
+                        <td style="text-align: center;">Financial Indicator</td>
+                        <td style="text-align: center;" colspan="2">2010</td>
+                        <td style="text-align: center;" colspan="2">2011</td>
+                        <td style="text-align: center;" colspan="2">2012</td>
+                        <td style="text-align: center;" colspan="2">2013</td>
+                        <td style="text-align: center;" colspan="2">2014</td>
+                    </tr>
+                    </thead>
+                    <tr style="background-color: #ffffff">
+                        <td></td>
+                        <td style="background-color:palegreen">Target</td>
+                        <td style="background-color:palegreen">Actual</td>
+                        <td style="background-color:powderblue">Target</td>
+                        <td style="background-color:powderblue">Actual</td>
+                        <td style="background-color:#dda458">Target</td>
+                        <td style="background-color:#dda458">Actual</td>
+                        <td style="background-color:#999999">Target</td>
+                        <td style="background-color:#999999">Actual</td>
+                        <td style="background-color:lightpink">Target</td>
+                        <td style="background-color:lightpink">Actual</td>
+                    </tr>
+                    <tr style="background-color: #ffffff">
+                        <td>Sales</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                    </tr>
+                    <tr style="background-color: #ffffff">
+                        <td>Total Cost</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                    </tr>
+                    <tr style="background-color: #ffffff">
+                        <td>EBITDATA</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                    </tr>
+                    <tr style="background-color: #ffffff">
+                        <td>Current Asset</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                    </tr>
+                    <tr style="background-color: #ffffff">
+                        <td>Fixed Aset</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                    </tr>
+                    <tr style="background-color: #ffffff">
+                        <td>Total Liability + Total Equity</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                    </tr>
+                    <tr style="background-color: #ffffff">
+                        <td>Net Cash Flow</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:palegreen">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:powderblue">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#dda458">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:#999999">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                        <td style="background-color:lightpink">0.0</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2" style="padding: 0 0; overflow: auto; height: 93vh">
+        <div class="row" style="margin: 0 0 0 0">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default" style="margin: 0 0;">
+                    <div class="panel-heading" role="tab" id="headingZero" style="background-color: #ffffff">
+                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+                                Client
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapseZero" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body" style="padding: 0 0;">
+                            <a href="#" onclick="openContent(event, 'problem1')">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="a1.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Mike
+                                        <br>Dept. 1
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" onclick="openContent(event, 'problem2')">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="a2.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Tom
+                                        <br>Dept.2
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" onclick="openContent(event, 'problem3')" id="defaultOpen">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="a3.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Mary
+                                        <br>Dept. 3
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" onclick="openContent(event, 'problem4')">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="a4.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Jane
+                                        <br>Dept. 4
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div><div class="panel panel-default" style="margin: 0 0;">
+                    <div class="panel-heading" role="tab" id="headingOne" style="background-color: #ffffff">
+                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Strategy Consultant
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body" style="padding: 0 0;">
+                            <a href="#" onclick="openContent(event, 'problem1')">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Debora
+                                        <br>Public Sector Strategy
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" onclick="openContent(event, 'problem2')">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Sanjay
+                                        <br>Merger & Acquisitions
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" onclick="openContent(event, 'problem3')" id="defaultOpen">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        DR.Roy Adhie
+                                        <br>Org. Strategy
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" onclick="openContent(event, 'problem4')">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Tyna Singh
+                                        <br>Functional Strategy
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" style="margin: 0 0">
+                    <div class="panel-heading" role="tab" id="headingTwo" style="background-color: #ffffff">
+                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Operation Consultant
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body" style="padding: 0 0">
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Debora
+                                    <br>Public Sector Strategy
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Sanjay
+                                    <br>Merger & Acquisitions
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    DR.Roy Adhie
+                                    <br>Org. Strategy
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Tyna Singh
+                                    <br>Functional Strategy
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" style="margin: 0 0">
+                    <div class="panel-heading" role="tab" id="headingThree" style="background-color: #ffffff">
+                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Operations Consultant
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body" style="padding: 0 0">
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Debora
+                                    <br>Public Sector Strategy
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Sanjay
+                                    <br>Merger & Acquisitions
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    DR.Roy Adhie
+                                    <br>Org. Strategy
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Tyna Singh
+                                    <br>Functional Strategy
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" style="margin: 0 0">
+                    <div class="panel-heading" role="tab" id="headingFour" style="background-color: #ffffff">
+                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Financial Advisory
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="panel panel-default" style="margin: 0 0">
+                    <div class="panel-heading" role="tab" id="headingFive" style="background-color: #ffffff">
+                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                IT Advisory
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function opeTab2(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent2");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen2").click();
+</script>
+<script type="text/javascript">
+    $("ul.navbar-nav a").click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+</script>
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+
+</script>
+<script src="js/vendor.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

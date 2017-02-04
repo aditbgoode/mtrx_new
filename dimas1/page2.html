@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title>Page2</title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" href="./dist/sidebar-menu.css">
+	<script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./dist/sidebar-menu.js"></script>
+	<script src="highchart/highcharts.js"></script>
+	<script src="highchart/exporting.js"></script>
+</head>
+<body>
+	<div class="col-md-12">
+		<div class="title-section"><b>BUSINESS ROADMAP</b></div>
+	</div>
+	<div class="col-md-12">
+		<div style="width: 9%; float: left; border-right: solid 1px #ddd; background-color: rgba(244,107,74,1); color: white;">
+			<div class="title-section" style="padding: 0 0 0 0;"><b>ORG. ROADMAP</b></div>
+		</div>
+		<div style="width: 82.85%;float: left; border-right:  solid 1px #ddd;">
+			<div class="title-section" style="padding: 0 0 0 0;"><b>INTERNAL</b></div>
+		</div>
+		<div style="width: 8.15%; float: left;">
+			<div class="title-section" style="padding: 0 0 0 0;"><b>EXTERNAL</b></div>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<img src="assets/img/roadmap.png" width="1355">
+	</div>
+
+	<script>
+    	$.sidebarMenu($('.sidebar-menu'))
+	</script>
+	<script type="text/javascript">
+		$('.collapse').on('shown.bs.collapse', function (e) {
+		  $('.collapse').not(this).removeClass('in');
+		});
+
+		$('[data-toggle=collapse]').click(function (e) {
+		  $('[data-toggle=collapse]').parent('li').removeClass('active');
+		  $(this).parent('li').toggleClass('active');
+		});
+	</script>
+	<script type="text/javascript">
+		function openTab(evt, tabName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			tabclass = document.getElementsByClassName("tabName");
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+
+		function openNav(evt, tabName) {
+			var i, navcontent, tablinks;
+			navcontent = document.getElementsByClassName("navcontent");
+			for (i = 0; i < navcontent.length; i++) {
+				navcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			tabclass = document.getElementsByClassName("tabName");
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+		function openContent(evt, contentName) {
+			var i, contentBody, contentLinks;
+			contentBody = document.getElementsByClassName("contentBody");
+			for (i = 0; i < contentBody.length; i++) {
+				contentBody[i].style.display = "none";
+			}
+			contentLinks = document.getElementsByClassName("contentLinks");
+			for (i = 0; i < contentLinks.length; i++) {
+				contentLinks[i].className = contentLinks[i].className.replace(" active", "");
+			}
+			document.getElementById(contentName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+
+		document.getElementById("defaultOpenSideBar").click();
+		document.getElementById("defaultOpenContent").click();
+		document.getElementById("openSubSideBar").click();
+		
+	</script>
+</body>
+</html>

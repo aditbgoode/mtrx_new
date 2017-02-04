@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="chart/highcharts.js"></script>
+</head>
+<body>
+<div class="row" style="margin: 0 0 0 0;">
+    <div id="btnmenu" class="col-md-2" style="padding: 0 0 0">
+        <div class="box" style="padding: 2.8vh 0">
+            <span id="menu"><b>Country</b></span>
+        </div>
+    </div>
+    <div id="menu2" class="col-md-8" style="padding: 0 0 0 0">
+        <div class="box" style="padding: 0 0 0 0">
+            <ul class="nav nav-tabs">
+                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab1')" style="width:20vh; color: #000000;"><b>Business Confidence</b></a></li>
+                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="width:20vh; color: #000000"><b>Competitiveness Index</b></a></li>
+                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="width:20vh; color: #000000"><b>Competitiveness Rank</b></a></li>
+                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="width:15vh; color: #ffffff;background-color: steelblue;"><b>Corruption Index</b></a></li>
+                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="width:15vh; color: #000000"><b>Corruption Rank</b></a></li>
+                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="width:20vh; color: #000000"><b>Ease of Doing Business</b></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-2" style="padding: 0 0 0 0">
+        <div class="col-md-4" style="padding: 0 0 0 0">
+            <div class="box" style="padding: 2.8vh 0">
+                <span style="color: limegreen">web</span><span style="color: #2aabd2">ex</span>
+            </div>
+        </div>
+        <div class="col-md-8" style="padding: 0 0 0 0">
+            <div class="box" style="padding: 2.8vh 0">
+                Conference Call
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin: 0 0 0 0">
+    <div id="list" class="col-md-2" style="padding: 0 0; overflow: auto; height: 90vh">
+        <div class="box-;eft" style="padding: 0 0 27% 0">
+            <ul class="sidebar-menu">
+                <li class="active"><a href="#"><span>Asia</span></a>
+                    <ul class="sidebar-submenu">
+                        <li class="active"><a href="#">Indonesia</a></li>
+                        <li><a href="#">Malaysia</a></li>
+                        <li><a href="#">Singapore</a></li>
+                        <li><a href="#">Japan</a></li>
+                        <li><a href="#">Myanmar</a></li>
+                        <li><a href="#">Thailand</a></li>
+                        <li><a href="#">Vietnam</a></li>
+                        <li><a href="#">China</a></li>
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">Bangladesh</a></li>
+                        <li><a href="#">Pakistan</a></li>
+                        <li><a href="#">More...</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>Europe</span></a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#">England</a></li>
+                        <li><a href="#">Germany</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>North America</span></a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#">Mexco</a></li>
+                        <li><a href="#">Canada</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>South America</span></a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#">Chile</a></li>
+                        <li><a href="#">Peru</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>Africa</span></a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#">Sout Africa</a></li>
+                        <li><a href="#">Congo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>Oceania</span></a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#">Fiji</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="konten" class="col-md-8" style="padding: 0 0; overflow: auto;height: 90vh">
+        <div class="box" style="padding: 0 10px 0 10px">
+            <br>
+            <div id="container" style="width: 100%;height: auto;"></div>
+            <script>
+                $(function () {
+                    Highcharts.chart('container', {
+                        chart: {
+                            type: 'column'
+                        },
+                        title: {
+                            text: 'INDONESIA CORRUPTION INDEX'
+                        },
+                        xAxis: {
+                            categories: [
+                                '2006',
+                                ' ',
+                                '2008',
+                                ' ',
+                                '2010',
+                                ' ',
+                                '2012',
+                                ' ',
+                                '2014',
+                                ' ',
+                                '2016'
+                            ]
+                        },
+                        yAxis: [{
+                            min: 0,
+                            title: {
+                                text: ' '
+                            }
+                        }, {
+                            title: {
+                                text: 'Ppints'
+                            },
+                            opposite: true
+                        }],
+                        legend: {
+                            shadow: false
+                        },
+                        tooltip: {
+                            shared: true
+                        },
+                        plotOptions: {
+                            column: {
+                                grouping: false,
+                                shadow: false,
+                                borderWidth: 0
+                            },
+                            series: {
+                                borderWidth: 0,
+                                dataLabels: {
+                                    enabled: true,
+                                    format: '{point.y}'
+                                }
+                            }
+                        },
+                        series: [{
+                            name: 'Profit',
+                            color: 'blue',
+                            data: [24, 23, 26,28,28,30,32,32,34,36,' '],
+                            yAxis: 1
+                        }]
+                    });
+                });
+            </script>
+            <br>
+        </div>
+        <div id="question" class="box" style="padding: 15px 15px 15px 15px">
+            <img src="Logo-2C-128px-R.png" style="float: left; width: 8%; margin: 15px 0 0 10px">
+            <img src="YouTube-logo-full_color.png" style="float: left; width: 8%">
+            <p style="margin-top: 15px"><b>Forum Group Discussion Q-A</b></p>
+            <br>
+            <img src="user.png" style="width: 3%; float: left;margin: 0 30px 0 10px">
+            <p align="left">by : <a href="#">DR. Roy Adhie</a></p>
+            <p align="left" style="margin-left: 65px">Posted : Sep 7, 2014 | 10:40 PM</p>
+            <p align="left" style="background-color: #afd9ee;margin-left: 65px">Corruption Index</p>
+            <p align="justify"  style="margin-left: 65px">
+                Indonesia scored 36 points out of 100 on the 2015 Corruption Perceptions Index reported by Transparency International.
+                Corruption Index in Indonesia averaged 24.72 Points from 1995 until 2015, reaching an all time high of 36 Points in 2015 and a
+                record low of 17 Points in 1999. Corruption Index in Indonesia is reported by the Transparency International.
+            </p>
+            <p align="left" style="color:#afd9ee;margin-left: 65px">Read More...</p>
+        </div>
+    </div>
+    <div class="col-md-2" style="padding: 0 0; overflow: auto;height: 90vh">
+        <div class="row" style="margin: 0 0 0 0">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default" style="margin: 0 0;">
+                    <div class="panel-heading" role="tab" id="headingOne" style="background-color: #ffffff">
+                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Strategy Consultant
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body" style="padding: 0 0;">
+                            <a href="#" onclick="openContent(event, 'problem1')">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Debora
+                                        <br>Public Sector Strategy
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" onclick="openContent(event, 'problem2')">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Sanjay
+                                        <br>Merger & Acquisitions
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" onclick="openContent(event, 'problem3')" id="defaultOpen">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        DR.Roy Adhie
+                                        <br>Org. Strategy
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" onclick="openContent(event, 'problem4')">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Tyna Singh
+                                        <br>Functional Strategy
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" style="margin: 0 0">
+                    <div class="panel-heading" role="tab" id="headingTwo" style="background-color: #ffffff">
+                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Operation Consultant
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body" style="padding: 0 0">
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Debora
+                                    <br>Public Sector Strategy
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Sanjay
+                                    <br>Merger & Acquisitions
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    DR.Roy Adhie
+                                    <br>Org. Strategy
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Tyna Singh
+                                    <br>Functional Strategy
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" style="margin: 0 0">
+                    <div class="panel-heading" role="tab" id="headingThree" style="background-color: #ffffff">
+                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Hr Consultant
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body" style="padding: 0 0">
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Debora
+                                    <br>Public Sector Strategy
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Sanjay
+                                    <br>Merger & Acquisitions
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    DR.Roy Adhie
+                                    <br>Org. Strategy
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Tyna Singh
+                                    <br>Functional Strategy
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" style="margin: 0 0">
+                    <div class="panel-heading" role="tab" id="headingFour" style="background-color: #ffffff">
+                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Financial Advisory
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="panel panel-default" style="margin: 0 0">
+                    <div class="panel-heading" role="tab" id="headingFive" style="background-color: #ffffff">
+                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                IT Advisory
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+
+</script>
+<script src="js/vendor.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

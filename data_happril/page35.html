@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="chart/highcharts.js"></script>
+</head>
+<body>
+<div class="row" style="margin: 0 0 0 0;">
+    <div id="btnmenu" class="col-md-2" style="padding: 0 0 0">
+        <div class="box" style="padding: 2.5vh 0">
+            <span id="menu"><b>Process Mapping</b></span>
+        </div>
+        <div id="list" class="col-md-12" style="padding: 0 0; overflow: auto; height: 92vh">
+            <div class="box-left" style="padding: 0 0 27% 0">
+                <ul class="sidebar-menu">
+                    <li class="active"><a href="#"><span>Process Mapping Level 0</span></a>
+                        <ul class="sidebar-submenu">
+                            <li class="active"><a href="#">Process Mapping Level 1</a>
+                                <ul class="sidebar-submenu">
+                                    <li class="active"><a href="#">Process Mapping Level 2</a>
+                                        <ul class="sidebar-submenu">
+                                            <li class="active"><a href="#">Process Mapping Level 3</a></li>
+                                            <li><a href="#">Org. Structure</a></li>
+                                            <li><a href="#">Head Quarter</a></li>
+                                            <li><a href="#">Region</a></li>
+                                            <li><a href="#">Work Area</a></li>
+                                            <li><a href="#">Business Model</a></li>
+                                            <li><a href="#">Subsidiary</a></li>
+                                            <li><a href="#">External</a></li>
+                                            <li><a href="#">Org. System & Attributes</a></li>
+                                            <li><a href="#">Org. System & Attributes</a></li>
+                                            <li><a href="#">PDCA</a></li>
+                                            <li><a href="#">Statistic</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Provincial Government</a></li>
+                            <li><a href="#">Regional Government</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2" style="padding: 0 0">
+        <div class="box-none">
+            <ul class="nav nav-tabs">
+                <li><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab1')" style="border-right:2px solid #dcdcdc;height: 7.4vh;width: 14vh;text-align: left">Business Process L 3</a></li>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="border-right:2px solid #dcdcdc;height: 7.4vh; width: 11vh;text-align: left">KPI L 3</a></li>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="height: 7.4vh; width: 6.2vh;text-align: left;padding-left: 8px">Unit</a></li>
+            </ul>
+        </div>
+        <div class="col-md-12" style="padding: 0 0 0 0">
+            <div class="box" style="padding: 2.6vh 0;font-size: 12px;">
+                <b>GATHERING PROCESS </b>
+            </div>
+            <div class="list-group-item" style="padding: 4vh 0"></div>
+            <div class="box2" style="margin: 0 0 0 0;text-align: left;padding: 0 0;height: 300px">
+                <div class="list-group-item">107. Membuat perencanaan modifikasi/perbaikan kapasitas …</div>
+                <div class="list-group-item">108 Melakukan modifikasi (jika diperlukan) dan perbaikan …</div>
+                <div class="list-group-item">109. Mengumpulkan minyak dari wellhead ke stasiun pengumpul …</div>
+                <div class="list-group-item" style="color: grey">110. Melakukan pemeliharaan gathering station (tanki bocor, flowline …</div>
+                <div class="list-group-item">111. Mengatasi dampak negatif yang mungkin terjadi terhadap …</div>
+            </div>
+        </div>
+    </div>
+    <div id="menu2" class="col-md-8" style="padding: 0 0">
+        <div class="col-md-12" style="padding: 0 0">
+            <div class="tabbable boxed parentTabs">
+                <div class="col-md-12 box" style="padding: 0 0">
+                    <ul class="nav navbar-nav">
+                        <li class="box-none"><a href="#set1">Subsidiary</a></li>
+                        <li class="box-none"><a href="#set2">Org. Structure Subsidiary</a></li>
+                        <li class="box-none"><a href="#set3">Business Model</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 box-none" style="padding: 0">
+            <img class="img-responsive" src="35.JPG">
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $("ul.navbar-nav a").click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+</script>
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+
+</script>
+<script src="js/vendor.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

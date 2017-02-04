@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Page21</title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/style-dimas.css">
+	<link rel="stylesheet" href="./dist/sidebar-menu.css">
+	<link href="assets/menu.css" rel="stylesheet">
+	<script src="highchart/highcharts.js"></script>
+	<script src="highchart/exporting.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
+	<!-- <link rel="stylesheet" href="styles/main.css"> -->
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+</head>
+</head>
+<body>
+
+<div class="row" style="margin: 0 0;">
+    <div id="btnmenu" class="col-md-2" style="padding: 0 0">
+        <div class="row" style="margin: 0 0;">
+            <div class="col-md-12" style="padding: 0 0">
+                <div class="box" style="padding: 8% 0">
+                    <span id="menu"><b>Country</b></span>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin: 0 0 0 0;">
+            <div id="list" class="col-md-12" style="padding: 0 0; overflow: auto; height: 90vh">
+                <div class="box-left" style="padding: 0 0 27% 0">
+                    <ul class="sidebar-menu">
+                        <li class="active"><a href="#"><span>Asia</span></a>
+                            <ul class="sidebar-submenu">
+                                <li class="active"><a href="#">Indonesia</a></li>
+                                <li><a href="#">Malaysia</a></li>
+                                <li><a href="#">Singapore</a></li>
+                                <li><a href="#">Japan</a></li>
+                                <li><a href="#">Myanmar</a></li>
+                                <li><a href="#">Thailand</a></li>
+                                <li><a href="#">Vietnam</a></li>
+                                <li><a href="#">China</a></li>
+                                <li><a href="#">India</a></li>
+                                <li><a href="#">Bangladesh</a></li>
+                                <li><a href="#">Pakistan</a></li>
+                                <li><a href="#">More...</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>Europe</span></a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#">England</a></li>
+                                <li><a href="#">Germany</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>North America</span></a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#">Mexco</a></li>
+                                <li><a href="#">Canada</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>South America</span></a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#">Chile</a></li>
+                                <li><a href="#">Peru</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>Africa</span></a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#">Sout Africa</a></li>
+                                <li><a href="#">Congo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>Oceania</span></a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#">Fiji</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-10" style="padding: 0 0">
+        <div class="row" style="margin: 0 0;">
+            <div class="tabbable boxed parentTabs">
+                <div class="col-md-12 box" style="padding: 0 0">
+                    <ul class="nav navbar-nav">
+                        <li class="box-none"><a href="#set1">Importing Countries</a></li>
+                        <li class="box-none"><a href="#set2">Exporting Countries</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="set1">
+                            <div class="tabbable">
+                                <div class="row">
+                                    <div class="col-md-12 box" style="padding: 0 0">
+                                        <ul class="nav navbar-nav">
+                                            <li class="box-none"><a href="#sub11">Asia</a></li>
+                                            <li class="box-none"><a href="#sub12">Europe</a></li>
+                                            <li class="box-none"><a href="#sub12">North America</a></li>
+                                            <li class="box-none"><a href="#sub12">South America</a></li>
+                                            <li class="box-none"><a href="#sub12">Africa</a></li>
+                                            <li class="box-none"><a href="#sub12">Oceania</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row" style="clear: both">
+                                    <div class="col-md-12 box" style="padding: 0 0">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade active in" id="sub11">
+                                                <ul class="nav navbar-nav">
+                                                    <li class="box-none"><a href="#">Malaysia</a></li>
+                                                    <li class="box-none"><a href="#">Singapore</a></li>
+                                                    <li class="box-none"><a href="#">Japan</a></li>
+                                                    <li class="box-none"><a href="#">Myanmar</a></li>
+                                                    <li class="box-none"><a href="#">Thailand</a></li>
+                                                    <li class="box-none"><a href="#">Vietnam</a></li>
+                                                    <li class="box-none"><a href="#">China</a></li>
+                                                    <li class="box-none"><a href="#">India</a></li>
+                                                    <li class="box-none"><a href="#">Bangladesh</a></li>
+                                                    <li class="box-none"><a href="#">More...</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="sub12">
+                                                <ul class="nav navbar-nav">
+                                                    <li class="box-none"><a href="#">Tab 1.2.1</a></li>
+                                                    <li class="box-none"><a href="#">Tab 1.2.2</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="set2">
+                            <div class="tabbable">
+                                <div class="row">
+                                    <ul class="nav navbar-nav">
+                                        <li class="box-none"><a href="#sub21">Tab 2.1</a></li>
+                                        <li class="box-none"><a href="#sub22">Tab 2.2</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade active in" id="sub21">
+                                            <ul class="nav navbar-nav">
+                                                <li class="box-none"><a href="#">Tab 2.1.1</a></li>
+                                                <li class="box-none"><a href="#">Tab 2.1.2</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade" id="sub22">
+                                            <ul class="nav navbar-nav">
+                                                <li class="box-none"><a href="#">Tab 2.2.1</a></li>
+                                                <li class="box-none"><a href="#">Tab 2.2.2</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin: 0 0 0 0;">
+            <div class="col-md-9" style="padding: 0 0; overflow: auto; height: 74vh">
+                <table border="1">
+                    <tr>
+                        <td>
+                            <hr style="border-width: 3px;border-color: orange;margin: 0 0 0 0">
+                            <br>
+                            <p align="center"><b>Products / Services</b></p>
+                        </td>
+                        <td>
+                            <hr style="border-width: 3px;border-color: orange;margin: 0 0 0 0">
+                            <br>
+                            <p align="center"><b>Import Value</b></p>
+                        </td>
+                        <td>
+                            <hr style="border-width: 3px;border-color: orange;margin: 0 0 0 0">
+                            <br>
+                            <p align="center"><b>Percent</b></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">
+                                <p style="float: left;color: #000000">Mineral Products</p>
+                                <i class="glyphicon glyphicon-chevron-right" style="float: right"></i>
+                            </a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul><li>Petroleum Gas</li></ul>
+                        </td>
+                        <td>
+                            <img src="assets/img/circle-512.png" style="position: absolute; width: 10%; opacity: 0.3; margin: -30px 0 0 50px"/>
+                            <p style="text-align: center">US$ 5.89B</p>
+                        </td>
+                        <td style="text-align: center">18.32 %</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul><li>Crude Petroleum</li></ul>
+                        </td>
+                        <td>
+                            <img src="assets/img/circle-512.png" style="position: absolute; width: 9%; opacity: 0.3; margin: -30px 0 0 55px"/>
+                            <p style="text-align: center">5.88B</p>
+                        </td>
+                        <td style="text-align: center">18.28 %</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul><li>Coal Briquettes</li></ul>
+                        </td>
+                        <td>
+                            <img src="assets/img/circle-512.png" style="position: absolute; width: 8%; opacity: 0.3; margin: -30px 0 0 60px"/>
+                            <p style="text-align: center">3.75B</p>
+                        </td>
+                        <td style="text-align: center">11.64 %</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul><li>Refined Petroleum</li></ul>
+                        </td>
+                        <td>
+                            <img src="assets/img/circle-512.png" style="position: absolute; width: 7%; opacity: 0.3; margin: -25px 0 0 65px"/>
+                            <p style="text-align: center">987M</p>
+                        </td>
+                        <td style="text-align: center">3.07 %</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul><li>Copper Ore</li></ul>
+                        </td>
+                        <td>
+                            <img src="assets/img/circle-512.png" style="position: absolute; width: 6%; opacity: 0.3; margin: -20px 0 0 70px"/>
+                            <p style="text-align: center">919M</p>
+                        </td>
+                        <td style="text-align: center">2.77 %</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul><li>Non-Iron and Stell Slag, Ash & Residues</li></ul>
+                        </td>
+                        <td>
+                            <img src="assets/img/circle-512.png" style="position: absolute; width: 5%; opacity: 0.3; margin: -15px 0 0 75px"/>
+                            <p style="text-align: center">892M</p>
+                        </td>
+                        <td style="text-align: center">2.25 %</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul><li>Petroleum Coke</li></ul>
+                        </td>
+                        <td>
+                            <img src="assets/img/circle-512.png" style="position: absolute; width: 4%; opacity: 0.3; margin: -10px 0 0 80px"/>
+                            <p style="text-align: center">724M</p>
+                        </td>
+                        <td style="text-align: center">2.25 %</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul><li>More...</li></ul>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">
+                                <p style="float: left;color: #000000">Wood Products</p>
+                                <i class="glyphicon glyphicon-chevron-right" style="float: right"></i>
+                            </a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">
+                                <p style="float: left;color: #000000">Metals</p>
+                                <i class="glyphicon glyphicon-chevron-right" style="float: right"></i>
+                            </a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">
+                                <p style="float: left;color: #000000">Stone & Glass</p>
+                                <i class="glyphicon glyphicon-chevron-right" style="float: right"></i>
+                            </a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">
+                                <p style="float: left;color: #000000">Paper Goods</p>
+                                <i class="glyphicon glyphicon-chevron-right" style="float: right"></i>
+                            </a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">
+                                <p style="float: left;color: #000000">Animal & Vegetable Bi-Products</p>
+                                <i class="glyphicon glyphicon-chevron-right" style="float: right"></i>
+                            </a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">
+                                <p style="float: left;color: #000000">Vegetable Products</p>
+                                <i class="glyphicon glyphicon-chevron-right" style="float: right"></i>
+                            </a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">
+                                <p style="float: left;color: #000000">Animal Products</p>
+                                <i class="glyphicon glyphicon-chevron-right" style="float: right"></i>
+                            </a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">
+                                <p style="float: left;color: #000000">Foodstuffs</p>
+                                <i class="glyphicon glyphicon-chevron-right" style="float: right"></i>
+                            </a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">
+                                <p style="float: left;color: #000000">More...</p>
+                                <i class="glyphicon glyphicon-chevron-right" style="float: right"></i>
+                            </a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr style="background-color: transparent">
+                        <td>
+                            <p>Total Products</p>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-3" style="padding: 0 0;overflow: auto;height: 74vh">
+                <br>
+                <table border="1">
+                    <tr>
+                        <td height="47px"><b>No</b></td>
+                        <td><b>Japan Company</b></td>
+                        <td><b>Sector</b></td>
+                    </tr>
+                    <tr>
+                        <td height="83px">01</td>
+                        <td>Company a</td>
+                        <td>Sector</td>
+                    </tr>
+                    <tr>
+                        <td height="83px">02</td>
+                        <td>Company b</td>
+                        <td>Sector</td>
+                    </tr>
+                    <tr>
+                        <td height="83px">03</td>
+                        <td>Company c</td>
+                        <td>Sector</td>
+                    </tr>
+                    <tr>
+                        <td height="83px">04</td>
+                        <td>Company d</td>
+                        <td>Sector</td>
+                    </tr>
+                    <tr>
+                        <td height="83px">05</td>
+                        <td>Company e</td>
+                        <td>Sector</td>
+                    </tr>
+                    <tr>
+                        <td height="83px">06</td>
+                        <td>Company f</td>
+                        <td>Sector</td>
+                    </tr>
+                    <tr>
+                        <td height="83px">07</td>
+                        <td>Company g</td>
+                        <td>Sector</td>
+                    </tr>
+                    <tr>
+                        <td height="83px">08</td>
+                        <td>Company h</td>
+                        <td>Sector</td>
+                    </tr>
+                    <tr>
+                        <td height="83px">09</td>
+                        <td>Company i</td>
+                        <td>Sector</td>
+                    </tr>
+                    <tr>
+                        <td height="83px">10</td>
+                        <td>Company j</td>
+                        <td>Sector</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $("ul.navbar-nav a").click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+</script>
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+
+</script>
+<script src="js/vendor.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<html>
+<head>
+    <title>Page23</title>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/style-dimas.css">
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="./dist/sidebar-menu.css">
+</head>
+<body>  
+    <div>
+        <div class="col-md-2">
+            <div class="title-section" style="border-right: solid 1px #ddd;">Natural Resources</div>
+            <div class="left-sidebar-menu">
+                <section>
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="#" id="open"><span>Mining - Hidrocarbons</span></a>
+                            <ul class="sidebar-submenu">
+                                <li class="active"><a href="#" id="click1" onclick="openContent(event, 'myTabContent')">Crude Oil</a></li>
+                                <li><a href="#">Natural Gas</a></li>
+                                <li><a href="#">Coal</a></li>      
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-share"></i> <span>Mining - Mineral & Non Mineral</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#">Gold and Silver</a></li>
+                                <li><a href="#">Diamond</a></li>
+                                <li><a href="#">Iron Ore</a></li>
+                                <li><a href="#">Copper</a></li>
+                                <li><a href="#">Bronze</a></li>
+                                <li><a href="#">Nickel</a></li>
+                                <li><a href="#">Limestone</a></li>
+                                <li><a href="#">Manganese</a></li>
+                                <li><a href="#">Phosphate</a></li>
+                                <li><a href="#">Sulphur</a></li>
+                                <li><a href="#">Marble Stone</a></li>
+                                <li><a href="#">Granite</a></li>
+                                <li><a href="#">Gypsum</a></li>
+                                <li><a href="#">Silica</a></li>         
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-share"></i> <span>Fishery</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                        </li>
+                        <li><a href="#"><span>Farming & Plantation</span></a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+         <div class="col-md-7">
+            <div class="tabs" data-example-id="togglable-tabs">
+              <ul class="nav nav-tabs dk-nav dk-nav-3" id="myTabs" role="tablist">
+                <li class="" role="presentation" style="border-right: solid 1px #ddd;"><a id="home-tab" href="#1" role="tab" data-toggle="tab" aria-controls="1" aria-expanded="false">Commodity Market</a></li>
+                <li class="active" role="presentation" style="border-right: solid 1px #ddd;"><a id="profile-tab" href="#2" role="tab" data-toggle="tab" aria-controls="2" aria-expanded="true">Commodity Market Faq’s</a></li>
+              </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade active in" id="2" role="tabpanel" aria-labelledby="1">
+              <div class="article">
+                <div class="row">
+                    <div id="faq1" class="contentBody">
+                        <div class="faq-content col-md-12">
+                            <div class="col-md-12">
+                                <div class="col-md-1">
+                                    <img src="assets/img/user.png" height="40px" width="40px">
+                                </div>
+                                <div class="col-md-10">
+                                    <p>by : commodityfact.org</p>
+                                    <p>Posted : Feb 13, 2014 | 10:40 PM</p>
+                                    <p class="alert alert-info" role="alert">Question : Why and how are commodity producers using derivatives markets?</p>
+                                    <p align="justify">
+                                       The production of commodities (energy as well as food or metals) involves costs and risks at multiple stages of the process. Commodity producers use commodity derivatives to hedge, or insure their production, consumption, or working inventories against the uncertain effects of fluctuating prices.
+                                       <br><br>
+                                       Oil companies use energy derivatives to adjust their exposure to price fluctuations of crude oil, refined products, natural gas, power and coal. They use freight rate derivative contracts in their shipping business to adjust their exposure to freight-rate fluctuations. As part of their financing and cash management activities, oil companies also use derivative instruments to manage their exposure to risks of changes in interest rates, foreign exchange rates and commodity prices.
+                                    </p>
+
+                                    <a align="left" class="link">Read More...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meta-comment">0 Comments</div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="1" role="tabpanel" aria-labelledby="profile-tab">
+              <p class="content-padding">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+            <div id="commodityMarket" class="tabcontent">
+                <div class="title-section" style="border-left: solid #ddd 1px;">FAQ's</div>
+                <div class="faq-right-side-bar">
+                    <ul class="list-inline list-2">
+                        <a data-toggle="collapse2" onclick="openContent(event, 'faqDefault')"></a>
+                        <li role="presentation" class="active">
+                            <a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq1')" id="click2">Why and how are commodity producers using derivatives markets?</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq2')">Why are population figures revised from time to time?</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq3')">What is the role of commodity investment funds and how do they behave?</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq4')">Are middle and long-term fundamentals affected by shortterm shocks?</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq5')">Is commodity price volatility higher since 2000 than in the past?</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq6')">Why are commodity futures markets many multiples larger than the size of the underlying physical market?</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq7')">Correlation and causation: does one thing cause another, simply because it came first?</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq8')">Are we running out of oil and gas?</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq9')">How will oil and gas supply and demand change over the next twenty years?</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq10')">Where can I locate historic oil and gas data?</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq11')">How high will gasoline prices go in 2012?</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq12')">What are the current developments in this market?</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq13')">Why do oil prices increase as soon as there is war in a country?</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq14')">What is fracking and how does the process produce more oil and gas?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./dist/highcharts.js"></script>
+    <script src="./dist/sidebar-menu.js"></script>
+    <script>
+        $.sidebarMenu($('.sidebar-menu'))
+    </script>
+    <script type="text/javascript">
+        $('.collapse').on('shown.bs.collapse', function (e) {
+          $('.collapse').not(this).removeClass('in');
+        });
+
+        $('[data-toggle=collapse]').click(function (e) {
+          $('[data-toggle=collapse]').parent('li').removeClass('active');
+          $(this).parent('li').toggleClass('active');
+        });
+
+        $('.collapse2').on('shown.bs.collapse2', function (e) {
+          $('.collapse2').not(this).removeClass('in');
+        });
+
+        $('[data-toggle=collapse2]').click(function (e) {
+          $('[data-toggle=collapse2]').parent('li').removeClass('active');
+          $(this).parent('li').toggleClass('active');
+        });
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        };
+
+        function openContent(evt, contentName) {
+            var i, contentBody, contentLinks;
+            contentBody = document.getElementsByClassName("contentBody");
+            for (i = 0; i < contentBody.length; i++) {
+                contentBody[i].style.display = "none";
+            }
+            contentLinks = document.getElementsByClassName("contentLinks");
+            for (i = 0; i < contentLinks.length; i++) {
+                contentLinks[i].className = contentLinks[i].className.replace(" active", "");
+            }
+            document.getElementById(contentName).style.display = "block";
+            evt.currentTarget.className += " active";
+        };
+
+        document.getElementById("open").click();
+        document.getElementById("click1").click();
+        document.getElementById("click2").click();
+    </script>
+</body>
+</html>

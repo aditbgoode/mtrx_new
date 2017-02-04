@@ -1,0 +1,513 @@
+<html>
+<head>
+	<title>Page21</title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" href="./dist/sidebar-menu.css">
+	<script src="highchart/highcharts.js"></script>
+	<script src="highchart/exporting.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
+	<!-- <link rel="stylesheet" href="styles/main.css"> -->
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="col-md-12">
+		<div class="col-md-2">
+			<div class="title-section">Country</div>
+			<div class="left-sidebar-menu areanav16">
+				<section>
+					<ul class="sidebar-menu">
+						<li>
+							<a href="#" id="click1">Asia</a>
+							<ul class="sidebar-submenu">
+								<li class="active"><a href="#" onclick="openTab(event, 'indonesia')" id="click2">Indonesia</i></a></li>
+								<li><a href="#">Malaysia</a></li>
+								<li><a href="#">Singapore</a></li>
+								<li><a href="#">Japan</a></li>
+								<li><a href="#">Myanmar</a></li>
+								<li><a href="#">Thailand</a></li>
+								<li><a href="#">Vietnam</a></li>
+								<li><a href="#">China</a></li>
+								<li><a href="#">India</a></li>
+								<li><a href="#">Bangladesh</a></li>
+								<li><a href="#">Pakistan</a></li>
+								<li><a href="#">More...</a></li>
+							</ul>
+						</li>	
+						<li><a href="#">Europe</a></li>
+						<li><a href="#">North America</a></li>
+						<li><a href="#">South America</a></li>
+						<li><a href="#">Africa</a></li>
+						<li><a href="#">Oceania</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+		<div id="indonesia" class="tabcontent">
+			<div class="col-md-10">
+				<div>
+					<div>
+						<div class="tabbable boxed parentTabs">
+	                        <div class="col-md-12 bordered-bottom-title">
+	                            <ul class="nav navbar-nav">
+	                                <li class=""><a href="#set1" class="darkgrey">Importing Countries</a></li>
+	                                <li><a href="#set2" onclick="openNav(event, 'other2')" id="click3" class="darkgrey">Exporting Countries</a></li>
+	                            </ul>
+	                        </div>
+
+                        <div class="col-md-12">
+                            <div class="tab-content">
+                                <div class="tab-pane fade" id="set1">
+                                    <div class="tabbable">
+                                        <div class="col-md-12 bordered-bottom-title">
+                                            <ul class="nav navbar-nav">
+                                                <li class=""><a href="#sub11">Overview 1</a></li>
+                                                <li><a href="#sub12">Overview 2</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-12 bordered-bottom-title">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade in" id="sub11">
+                                                    <ul class="nav navbar-nav">
+                                                        <li><a href="#">Tab 1.1.1</a></li>
+                                                        <li><a href="#">Tab 1.1.2</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="sub12">
+                                                    <ul class="nav navbar-nav">
+                                                        <li><a href="#">Tab 1.2.1</a></li>
+                                                        <li><a href="#">Tab 1.2.2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="set2">
+                                    <div class="tabbable">
+                                        <div class="col-md-12 bordered-bottom-title">
+                                            <ul class="nav navbar-nav">
+                                                <li class=""><a href="#sub21" id="click4" class="purple">Asia</a></li>
+                                                <li><a href="#sub22" class="purple">Europe</a></li>
+                                                <li><a href="#sub23" class="purple">North America</a></li>
+                                                <li><a href="#sub24" class="purple" id="">South America</a></li>
+                                                <li><a href="#sub25" class="purple">Africa</a></li>
+                                                <li><a href="#sub25" class="purple">Oceania</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-12 bordered-bottom-title">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade in" id="sub21">
+                                                    <ul class="nav navbar-nav">
+                                                        <li><a href="#" class="violet">Malaysia</a></li>
+                                                        <li><a href="#" class="violet">Singapore</a></li>
+                                                        <li><a href="#" class="violet" id="click5" onclick="openNav(event, 'other1')">Japan</a></li>
+                                                        <li><a href="#" class="violet">Myanmar</a></li>
+                                                        <li><a href="#" class="violet">Thailand</a></li>
+                                                        <li><a href="#" class="violet">Vietnam</a></li>
+                                                        <li><a href="#" class="violet">China</a></li>
+                                                        <li><a href="#" class="violet">India</a></li>
+                                                        <li><a href="#" class="violet">Bangladesh</a></li>
+                                                        <li><a href="#" class="violet">More ...</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="sub24">
+                                                    <ul class="nav navbar-nav">
+                                                        <li><a class="black" href="#subsub21">Effect</a></li>
+                                                        <li><a href="#subsub22" class="black" id="click5">Causal</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 bordered-bottom-title">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade in" id="subsub21">
+                                                    <ul class="nav navbar-nav">
+                                                        <li><a href="#" class="orange">Gathering Process Real. Rate</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="subsub22">
+                                                    <ul class="nav navbar-nav">
+                                                        <li><a href="#subsub21">Measurement</a></li>
+                                                        <li><a href="#subsub22">Process</a></li>
+                                                        <li><a href="#subsub23">Human</a></li>
+                                                        <li><a href="#subsub24"  onclick="openNav(event, 'tabmach')" class="grey">Machine</a></li>
+                                                        <li><a href="#subsub25">Materials</a></li>
+                                                        <li><a href="#subsub26">Environment</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="set3">
+                                    <div class="tabbable">
+                                        <div class="col-md-12 bordered-bottom-title">
+                                            <ul class="nav navbar-nav">
+                                                <li class=""><a href="#sub31">Negotiations 1</a></li>
+                                                <li><a href="#sub32">Negotiations 2</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-12 bordered-bottom-title">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade in" id="sub31">
+                                                    <ul class="nav navbar-nav">
+                                                        <li><a href="#">Sub Negotiations 1.1</a></li>
+                                                        <li><a href="#">Sub Negotiations 1.2</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="sub32">
+                                                    <ul class="nav navbar-nav">
+                                                        <li><a href="#">Sub Negotiations 2.1</a></li>
+                                                        <li><a href="#">Sub Negotiations 2.2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade in" id="set4">
+                                    <div class="tabbable">
+                                        <div class="col-md-12 bordered-bottom-title">
+                                            <ul class="nav navbar-nav">
+                                                <li class=""><a href="#sub41">Strategy Consultant</a></li>
+                                                <li><a href="#sub42">Operations Consultant</a></li>
+                                                <li><a href="#sub43">OC & HC Consultant</a></li>
+                                                <li><a href="#sub43">Financial Advisory</a></li>
+                                                <li><a href="#sub44">IT Consultant</a></li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-12 bordered-bottom-title">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade in" id="sub41">
+                                                    <ul class="nav navbar-nav">
+                                                        <li><a href="#">Corporate Strategy</a></li>
+                                                        <li><a href="#">Public Sector Strategy</a></li>
+                                                        <li><a href="#">Mergers & Acquisitions</a></li>
+                                                        <li><a href="#">Org. Strategy</a></li>
+                                                        <li><a href="#">Functional Strategy</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="sub42">
+                                                    <ul class="nav navbar-nav">
+                                                        <li><a href="#">Sub Negotiations 2.1</a></li>
+                                                        <li><a href="#">Sub Negotiations 2.2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+               			</div>
+						<div>
+							<div class="col-md-12 navcontent" id="other1">
+								<div class="area1p21">
+									<div class="col-md-12">
+										<div class="col-md-9">
+											<img src="assets/img/circle.png" style="width: 100px; opacity: 0.3; position: absolute; margin-top: 90px; margin-left: 585px;">
+											<img src="assets/img/circle.png" style="width: 90px; opacity: 0.3; position: absolute; margin-top: 140px; margin-left: 590px;">
+											<img src="assets/img/circle.png" style="width: 80px; opacity: 0.3; position: absolute; margin-top: 190px; margin-left: 595px;">
+											<img src="assets/img/circle.png" style="width: 70px; opacity: 0.3; position: absolute; margin-top: 250px; margin-left: 600px;">
+											<img src="assets/img/circle.png" style="width: 50px; opacity: 0.3; position: absolute; margin-top: 315px; margin-left: 610px;">
+											<img src="assets/img/circle.png" style="width: 30px; opacity: 0.3; position: absolute; margin-top: 370px; margin-left: 620px;">
+
+											<img src="assets/img/circle.png" style="width: 100px; opacity: 0.3; position: absolute; margin-top: 90px; margin-left: 720px;">
+											<img src="assets/img/circle.png" style="width: 90px; opacity: 0.3; position: absolute; margin-top: 140px; margin-left: 725px;">
+											<img src="assets/img/circle.png" style="width: 80px; opacity: 0.3; position: absolute; margin-top: 190px; margin-left: 730px;">
+											<img src="assets/img/circle.png" style="width: 70px; opacity: 0.3; position: absolute; margin-top: 250px; margin-left: 735px;">
+											<img src="assets/img/circle.png" style="width: 50px; opacity: 0.3; position: absolute; margin-top: 315px; margin-left: 745px;">
+											<img src="assets/img/circle.png" style="width: 30px; opacity: 0.3; position: absolute; margin-top: 370px; margin-left: 755px;">
+
+											<table class="table table-bordered">
+												<tr class="tr-title">
+													<td><hr class="brown">Product / Services</td>
+													<td><hr class="brown">Import Value</td>
+													<td><hr class="brown">Percent</td>
+												</tr>
+												<tr class="tr-grey">
+													<td>Mineral Products</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td><ul><li><span class="font-color-grey">Petroleum Gas</span></li></ul></td>
+													<td class="center"><span class="font-color-grey">US$ 5.89B</span></td>
+													<td class="center"><span class="font-color-grey">18.32%</span></td>
+												</tr>
+												<tr class="tr-grey">
+													<td><ul><li><span class="font-color-grey">Crude Petroleum</span></li></ul></td>
+													<td class="center"><span class="font-color-grey">US$ 5.88B</span></td>
+													<td class="center"><span class="font-color-grey">18.28%</span></td>
+												</tr>
+												<tr>
+													<td><ul><li><span class="font-color-grey">Coal Briquettes</span></li></ul></td>
+													<td class="center"><span class="font-color-grey">US$ 3.75B</span></td>
+													<td class="center"><span class="font-color-grey">11.64%</span></td>
+												</tr>
+												<tr class="tr-grey">
+													<td><ul><li><span class="font-color-grey">Refined Petroleum</span></li></ul></td>
+													<td class="center"><span class="font-color-grey">US$ 987M</span></td>
+													<td class="center"><span class="font-color-grey">3.07%</span></td>
+												</tr>
+												<tr>
+													<td><ul><li><span class="font-color-grey">Copper Ore</span></li></ul></td>
+													<td class="center"><span class="font-color-grey">US$ 919M</span></td>
+													<td class="center"><span class="font-color-grey">2.77%</span></td>
+												</tr>
+												<tr class="tr-grey">
+													<td><ul><li><span class="font-color-grey">Non-Iron and Stell Slag, Ash, & Residues</span></li></ul></td>
+													<td class="center"><span class="font-color-grey">US$ 892M</span></td>
+													<td class="center"><span class="font-color-grey">2.25%</span></td>
+												</tr>
+												<tr>
+													<td><ul><li><span class="font-color-grey">Petroleum Coke</span></li></ul></td>
+													<td class="center"><span class="font-color-grey">US$ 724M</span></td>
+													<td class="center"><span class="font-color-grey">2.25%</span></td>
+												</tr>
+												<tr class="tr-grey">
+													<td><ul><li><span class="font-color-grey">Nickel Ore</span></li></ul></td>
+													<td class="center"><span class="font-color-grey">US$ 136M</span></td>
+													<td class="center"><span class="font-color-grey">0.42%</span></td>
+												</tr>
+												<tr>
+													<td>Wood Products</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr class="tr-grey">
+													<td>Metals</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>Stone & Glass</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr class="tr-grey">
+													<td>Paper Goods</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>Animal & Vegetable Bi-Products</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr class="tr-grey">
+													<td>Vegetable Products</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>Animal Products</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr class="tr-grey">
+													<td>Foodstuffs</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>More...</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td><span class="font-color-grey">Total Products</span></td>
+													<td></td>
+													<td></td>
+												</tr>
+											</table>
+										</div>
+										<div class="col-md-3">
+											<table class="table table-bordered" style="height: 667px;">
+												<tr class="tr-title tr-height">
+													<td style="text-align: center; padding-top: 30px;">No</td>
+													<td style="text-align: center; padding-top: 30px;">Indonesia Company</td>
+													<td style="text-align: center; padding-top: 30px;">Sector</td>
+												</tr>
+												<tr>
+													<td><span class="font-color-blue">01</span></td>
+													<td><span class="font-color-blue">Company a</span></td>
+													<td><span class="font-color-blue">Sector</span></td>
+												</tr>
+												<tr class="tr-grey">
+													<td><span class="font-color-red">02</span></td>
+													<td><span class="font-color-red">Company b</span></td>
+													<td><span class="font-color-red">Sector</span></td>
+												</tr>
+												<tr>
+													<td><span class="font-color-green">03</span></td>
+													<td><span class="font-color-green">Company c</span></td>
+													<td><span class="font-color-green">Sector</span></td>
+												</tr>
+												<tr class="tr-grey">
+													<td><span class="font-color-violet">04</span></td>
+													<td><span class="font-color-violet">Company d</span></td>
+													<td><span class="font-color-violet">Sector</span></td>
+												</tr>
+												<tr>
+													<td><span class="font-color-cyan">05</span></td>
+													<td><span class="font-color-cyan">Company e</span></td>
+													<td><span class="font-color-cyan">Sector</span></td>
+												</tr>
+												<tr class="tr-grey">
+													<td><span class="font-color-blue">06</span></td>
+													<td><span class="font-color-blue">Company f</span></td>
+													<td><span class="font-color-blue">Sector</span></td>
+												</tr>
+												<tr>
+													<td><span class="font-color-red">07</span></td>
+													<td><span class="font-color-red">Company g</span></td>
+													<td><span class="font-color-red">Sector</span></td>
+												</tr>
+												<tr class="tr-grey">
+													<td><span class="font-color-green">08</span></td>
+													<td><span class="font-color-green">Company h</span></td>
+													<td><span class="font-color-green">Sector</span></td>
+												</tr>
+												<tr>
+													<td><span class="font-color-violet">09</span></td>
+													<td><span class="font-color-violet">Company i</span></td>
+													<td><span class="font-color-violet">Sector</span></td>
+												</tr>
+												<tr class="tr-grey">
+													<td><span class="font-color-cyan">10</span></td>
+													<td><span class="font-color-cyan">Company j</span></td>
+													<td><span class="font-color-cyan">Sector</span></td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-md-12 navcontent" id="other2">
+								Other 2
+							</div>
+							<div class="col-md-12 navcontent" id="other3">
+								Other 3
+							</div>
+
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./dist/sidebar-menu.js"></script>
+	<script>
+    	$.sidebarMenu($('.sidebar-menu'))
+	</script>
+	<script type="text/javascript">
+		$('.collapse').on('shown.bs.collapse', function (e) {
+		  $('.collapse').not(this).removeClass('in');
+		});
+
+		$('[data-toggle=collapse]').click(function (e) {
+		  $('[data-toggle=collapse]').parent('li').removeClass('active');
+		  $(this).parent('li').toggleClass('active');
+		});
+	</script>
+	<script type="text/javascript">
+		 $("ul.navbar-nav a").click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+		function openTab(evt, tabName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			tabclass = document.getElementsByClassName("tabName");
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+
+		function openNav(evt, tabName) {
+			var i, navcontent, tablinks;
+			navcontent = document.getElementsByClassName("navcontent");
+			for (i = 0; i < navcontent.length; i++) {
+				navcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			tabclass = document.getElementsByClassName("tabName");
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+
+		$(function () {
+		    Highcharts.chart('container', {
+		        chart: {
+		            type: 'column',
+		            width: 500,
+					height: 350
+		        },
+		        title: {
+		            text: 'Indonesia Business Confidence'
+		        },
+		        subtitle: {
+		            text: 'Source: WWW.TRADINGECONOMICS.COM | STATISTICS INDONESIA'
+		        },
+		        xAxis: {
+		            categories: [
+		                'Jul 2013',
+		                'Jan 2014',
+		                'Jul 2014',
+		                'Jan 2015',
+		                'Jul 2015',
+		                'Jan 2016',
+		                'Jul 2016'
+		            ],
+		            crosshair: true
+		        },
+		        yAxis: {
+		            min: 0,
+		            title: {
+		                text: ''
+		            }
+		        },
+		        tooltip: {
+		            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+		            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+		                '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+		            footerFormat: '</table>',
+		            shared: true,
+		            useHTML: true
+		        },
+		        plotOptions: {
+		            column: {
+		                pointPadding: 0.2,
+		                borderWidth: 0
+		            }
+		        },
+		        series: [{
+		            name: 'Business Confidence',
+		            data: [106.12, 101.95, 107.24, 96.3, 106.04, 99.46, 110.24]
+
+		        }]
+		    });
+		});
+		document.getElementById("click1").click();
+		document.getElementById("click2").click();
+		document.getElementById("click3").click();
+		document.getElementById("click4").click();
+		document.getElementById("click5").click();
+	</script>
+</body>
+</html>

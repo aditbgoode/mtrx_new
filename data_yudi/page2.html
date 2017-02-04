@@ -1,0 +1,275 @@
+<html>
+<head>
+	<title>Dakken</title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/style-yudi.css">
+	<link rel="stylesheet" href="./dist/sidebar-menu.css">
+</head>
+<body>
+	<div class="col-md-12 vh-16">
+		<div class="tabbable boxed parentTabs">
+            <div class="col-md-12 bordered-bottom-title">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#set1">Natural Resource</a>
+                    </li>
+                    <li><a href="#set2">Industry</a>
+                    <li><a href="#set3">State-Owned Enterprise</a>
+                    <li><a href="#set4">Consumer Demand</a>
+                    <li><a href="#set5">Statistic</a>
+                    <li><a href="#set6">Porter Five Forces</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	<div class="col-md-12">
+		<div class="col-md-2">
+			<div class="tab-title">
+				Natural Resource
+			</div>
+			<div class="left-sidebar-menu tab-content" style="height:76vh;">
+				<section>
+					<ul class="sidebar-menu">
+						<li><a href="#"><span>Mining - Hidrocarbons</span></a></li>
+						<li>
+							<a href="#">
+								<i class="fa fa-share"></i> <span>Mining - Mineral & Non Mineral</span>
+								<i class="fa fa-angle-left pull-right"></i>
+							</a>
+							<ul class="sidebar-submenu">
+								<li><a href="#">Gold and Silver</a></li>
+								<li><a href="#">Diamond</a></li>
+								<li><a href="#">Iron Ore</a></li>
+								<li><a href="#">Copper</a></li>
+								<li><a href="#">Bronze</a></li>
+								<li><a href="#">Nickel</a></li>
+								<li><a href="#">Limestone</a></li>
+								<li><a href="#">Manganese</a></li>
+								<li><a href="#">Phosphate</a></li>
+								<li><a href="#">Sulphur</a></li>
+								<li><a href="#">Marble Stone</a></li>
+								<li><a href="#">Granite</a></li>
+								<li><a href="#">Gypsum</a></li>
+								<li><a href="#">Silica</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-share"></i> <span>Fisheri</span>
+								<i class="fa fa-angle-left pull-right"></i>
+							</a>
+							<ul class="sidebar-submenu">
+								<li><a href="#" onclick="openContent(event, 'bigEye')" id="defaultOpenContent">Big-Eye Tuna</a></li>
+								<li><a href="#" onclick="openContent(event, 'yellowFin')">Yellow-Fin Tuna</a></li>
+								<li><a href="#" onclick="openContent(event, 'Albacore')">Albacore</a></li>
+								<li><a href="#" onclick="openContent(event, 'skipJack')">Skip Jack Tuna</a></li>
+								<li><a href="#" onclick="openContent(event, 'atlantic')">Atlantic Blue Fin Tuna</a></li>
+							</ul>
+						</li>
+						<li><a href="#"><span>Farming & Plantation</span></a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+		<div class="col-md-7">
+			<div class="col-md-12">
+				<nav class="navbar navbar-default" role="navigation">
+					<ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Commodity market</a>
+                        </li>
+                        <li><a href="#">Commodity Market Faq's</a>
+					</ul>
+				</nav>
+			</div>
+			<div id="faq1" class="tabcontent">
+				<div class="faq-content col-md-12">
+					<div class="col-md-12">
+						<div class="col-md-1">
+							<img src="assets/img/image.png" height="40px" width="40px">
+						</div>
+						<div class="col-md-11">
+							<p>by : commodityfact.org</p>
+							<p>Posted : Feb 13, 2014 | 10:40 PM</p>
+							<p class="alert alert-info" role="alert">Question : Whats is Commodity ?</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+					<div class="faq-comment col-md-12">
+						0 Comment
+					</div>
+				</div>
+			</div>
+<!--
+			<div id="faq2" class="tabcontent">
+				<div class="faq-content col-md-12">
+					<div class="col-md-12">
+						<div class="col-md-1">
+							<img src="assets/img/image.png" height="40px" width="40px">
+						</div>
+						<div class="col-md-11">
+							<p>by : commodityfact.org</p>
+							<p>Posted : Feb 13, 2014 | 10:40 PM</p>
+							<p class="alert alert-info" role="alert">Question : What is a Derivative contract & what is Commodity future?</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+					<div class="faq-comment col-md-12">
+						0 Comment
+					</div>
+				</div>
+			</div>
+			<div id="faq3" class="tabcontent">
+				<div class="faq-content col-md-12">
+					<div class="col-md-12">
+						<div class="col-md-1">
+							<img src="assets/img/image.png" height="40px" width="40px">
+						</div>
+						<div class="col-md-11">
+							<p>by : commodityfact.org</p>
+							<p>Posted : Feb 13, 2014 | 10:40 PM</p>
+							<p><div class="alert alert-info" role="alert">Question : What is a forward contract?</div></p>
+							<p>A forward contract is a legally enforceable agreement for delivery of goods or the underlying asset on a specific date in future at a price agreed on the date of contract. Under Forward Contracts (Regulation) Act, 1952, all the contracts for delivery of goods, which are settled by payment of money difference or where delivery and payment ismade after a period of 11 days, are forward contracts.</p>
+							<p><a href="#">Read More..</a></p>
+						</div>
+					</div>
+					<div class="faq-comment col-md-12">
+						0 Comment
+					</div>
+				</div>
+			</div>
+-->
+		</div>
+		<div class="col-md-3">
+			<div>
+				<div class="col-md-12 text-center" style="padding:2%;">
+				    <a href="#" >FAQ's</a>
+				</div>
+				<div class="faq-right-side-bar tab-content" style="height:85vh;">
+					<ul class="nav nav-pills nav-stacked">
+						<a data-toggle="collapse2" onclick="openContent(event, 'faqDefault')"></a>
+						<li role="presentation" class="active">
+							<a href="#" data-toggle="collapse" onclick="openTab(event, 'faq1')">What is a commodity ?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse" onclick="openTab(event, 'faq2')">What is a Derivative contract & What is Commodity future?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse" onclick="openTab(event, 'faq3')">What is a forward contract?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse" onclick="openTab(event, 'faq4')">What is a forward contract?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse" onclick="openTab(event, 'faq5')">What is a futures contract?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse" onclick="openTab(event, 'faq6')">How are futures prices determined?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse" onclick="openTab(event, 'faq7')">What is long position?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse" onclick="openTab(event, 'faq8')">What is short position?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse" onclick="openTab(event, 'faq9')">What is the difference between spot market and futures market?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse" onclick="openTab(event, 'faq10')">What is a Commodity Exchange?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse" onclick="openTab(event, 'faq11')">Who regulates the commodity exchanges in India?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse" onclick="openTab(event, 'faq12')">What are the henging?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse" onclick="openTab(event, 'faq13')">What is arbitrage in commodity markets?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse" onclick="openTab(event, 'faq14')">What are warehouse receipts?</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./dist/highcharts.js"></script>
+	<script src="./dist/sidebar-menu.js"></script>
+<!--
+	<script>
+		$.sidebarMenu($('.sidebar-menu'))
+	</script>
+	<script type="text/javascript">
+		$('.collapse').on('shown.bs.collapse', function (e) {
+		  $('.collapse').not(this).removeClass('in');
+		});
+
+		$('[data-toggle=collapse]').click(function (e) {
+		  $('[data-toggle=collapse]').parent('li').removeClass('active');
+		  $(this).parent('li').toggleClass('active');
+		});
+
+		$('.collapse2').on('shown.bs.collapse2', function (e) {
+		  $('.collapse2').not(this).removeClass('in');
+		});
+
+		$('[data-toggle=collapse2]').click(function (e) {
+		  $('[data-toggle=collapse2]').parent('li').removeClass('active');
+		  $(this).parent('li').toggleClass('active');
+		});
+
+		function openTab(evt, tabName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+
+		function openContent(evt, contentName) {
+			var i, contentBody, contentLinks;
+			contentBody = document.getElementsByClassName("contentBody");
+			for (i = 0; i < contentBody.length; i++) {
+				contentBody[i].style.display = "none";
+			}
+			contentLinks = document.getElementsByClassName("contentLinks");
+			for (i = 0; i < contentLinks.length; i++) {
+				contentLinks[i].className = contentLinks[i].className.replace(" active", "");
+			}
+			document.getElementById(contentName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+
+		document.getElementById("defaultOpen").click();
+		document.getElementById("defaultOpenFaq").click();
+		document.getElementById("defaultOpenContent").click();
+	</script>
+	<script type="text/javascript">
+	$("ul.navbar-nav a").click(function (e) {
+		e.preventDefault();
+		$(this).tab('show');
+	});
+
+	</script>
+-->
+</body>
+</html>

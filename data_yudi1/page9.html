@@ -1,0 +1,217 @@
+<html>
+<head>
+	<title>dakken</title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" href="./dist/sidebar-menu.css">
+</head>
+<body>
+	<div class="col-md-12">
+		<div class="col-md-2">
+			<div class="tab-title">
+				&nbsp
+			</div>
+			<div class="tab-content">
+				<div class="left-sidebar-menu">
+					<section>
+						<ul class="sidebar-menu">
+							<li><a href="#"><span>Bussiness Roadmap</span></a></li>
+							<li><a href="#"><span>Eksternal</span></a></li>
+							<li><a href="#"><span>Internal</span></a></li>
+							<li><a href="#"><span>Data Source</span></a></li>
+							<li><a href="#"><span>Primary Source</span></a></li>
+							<li><a href="#"><span>Secondary Source</span></a></li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="bordered-bottom-title vh-8">
+				<div>
+					<nav class="navbar navbar-default" role="navigation" id="topmenu">
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+								<a href="#" data-toggle="collapse" data-target="#com" id="defaultOpenNav1"><b>Customer of MyCustomer</b></a>
+							</li>
+							<li class="dropdown">
+								<a href="#" data-toggle="collapse" data-target="#swot" ><b>SWOT</b></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="tab-content vh-92">
+				<div class="left-sidebar-menu tab-content">
+					<div class="col-md-12 bordered-bottom">
+						<br>
+						<div id="chart" style="min-width: 95%; height: 200px; margin: 0 auto"></div>
+					</div>
+					<div class="col-md-12">
+						<br>
+						<div class="col-md-6 tab-info">
+							Customer
+						</div>
+						<div class="col-md-6 tab-info">
+							Domestic
+						</div>
+					</div>
+					<div class="col-md-12">
+						<table class="table table-striped" border="0px">
+							<thead>
+								<th colspan="2">• Petroleum Refinery</th>
+							</thead>
+							<tr>
+								<td>Pertamina Refinery Unit II Dumai</td>
+								<td align="right">></td>
+							</tr>
+							<tr>
+								<td>Pertamina Refinery Unit III Plaju</td>
+								<td align="right">></td>
+							</tr>
+							<tr>
+								<td>Pertamina Refinery Unit IV Cilacap</td>
+								<td align="right">></td>
+							</tr>
+							<tr>
+								<td>Pertamina Refinery Unit V Balikpapan</td>
+								<td align="right">></td>
+							</tr>
+							<tr>
+								<td>Pertamina Refinery Unit VI Balongan</td>
+								<td align="right">></td>
+							</tr>
+							<tr>
+								<td>Pertamina Refinery Unit VII Kasim</td>
+								<td align="right">></td>
+							</tr>
+							<tr>
+								<td>&nbsp</td>
+								<td align="right"></td>
+							</tr>
+							<thead>
+								<th colspan="2">• Coal & Natural Gas Power</th>
+							</thead>
+							<tr>
+								<td>PT. Perusahaan Listrik Negara - PLN</td>
+								<td align="right">></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-md-12">
+						<br>
+						<div class="col-md-12">
+							<div class="col-md-6 tab-info">
+								Customer
+							</div>
+							<div class="col-md-6 tab-info">
+								Export
+							</div>
+						</div>
+						<div class="col-md-12">
+							<table class="table" border="0">
+								<tr>
+									<td>Japan</td>
+									<td align="right">></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-7">
+			<div class="tab-title vh-8">
+				Customer of My Customer
+			</div>
+			<div class="tab-content vh-92">
+				<div class="">
+					<img src="./assets/img/content/page-9-content.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./dist/sidebar-menu.js"></script>
+	<script src="./dist/highcharts.js"></script>
+	<script src="./dist/sidebar-menu.js"></script>
+	<script>
+		$.sidebarMenu($('.sidebar-menu'))
+	</script>
+	<script type="text/javascript">
+		$('.collapse').on('shown.bs.collapse', function (e) {
+		  $('.collapse').not(this).removeClass('in');
+		});
+
+		$('[data-toggle=collapse]').click(function (e) {
+		  $('[data-toggle=collapse]').parent('li').removeClass('active');
+		  $(this).parent('li').toggleClass('active');
+		});
+	</script>
+	<script type="text/javascript">
+
+		function openContent(evt, contentName) {
+			var i, contentBody, contentLinks;
+			contentBody = document.getElementsByClassName("contentBody");
+			for (i = 0; i < contentBody.length; i++) {
+				contentBody[i].style.display = "none";
+			}
+			contentLinks = document.getElementsByClassName("contentLinks");
+			for (i = 0; i < contentLinks.length; i++) {
+				contentLinks[i].className = contentLinks[i].className.replace(" active", "");
+			}
+			document.getElementById(contentName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+	</script>
+	<script type="text/javascript">
+	$(function () {
+	Highcharts.chart('chart', {
+		chart:{
+			backgroundColor: "#ffffff"
+		},
+		title: {
+            text: '',
+            style: { "color": "#000", "fontSize": "30px" },
+            x: 0 //center
+        },
+		xAxis: {
+			categories: ['2010','2011','2012','2013','2014']
+		},
+		yAxis: {
+			title: {
+				text: ''
+			},
+			plotLines: [{
+				value: 0,
+				width: 1,
+				color: '#808080'
+			}]
+		},
+		tooltip: {
+			valueSuffix: '°Celcius'
+		},
+		legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlign: 'middle',
+			borderWidth: 0
+		},
+		series: [{
+			name: 'Target',
+			color: '#773d3d',
+			data: [120, 125, 120, 130, 140]
+		}, {
+			name: 'Actual',
+			color: '#c57e80',
+			data: [100, 113, 110, 120, 120]
+		}]
+	});
+	});
+	</script>
+	<script type="text/javascript">
+		document.getElementById("defaultOpenNav1").click();
+	</script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<html>
+<head>
+	<title>Page22</title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/style-dimas.css">
+	<link rel="stylesheet" href="./dist/sidebar-menu.css">
+	<script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./dist/sidebar-menu.js"></script>
+	<script src="highchart/highcharts.js"></script>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="highchart/exporting.js"></script>
+</head>
+<body>
+	<div class="col-md-12">
+		<div class="col-md-2">
+			<div class="title-section"><b>PESTLE Analysis</b></div>
+			<div class="left-sidebar-menu">
+				<section>
+					<ul class="sidebar-menu">
+						<li><a href="#"><span>Political Factor</span></a></li>
+						<li>
+							<a href="#" id="defaultOpenSideBar">Economic Factor</a>	
+							<ul class="sidebar-submenu">
+								<li class="active"><a href="#" onclick="openTab(event, 'inflation')" id="openSubSideBar">Inflation</a></li>
+								<li><a href="#" onclick="openTab(event, 'taxes')">Taxes & Duties</a></li>
+								<li><a href="#" onclick="openTab(event, 'finance')">Finance & Credit</a></li>
+								<li><a href="#" onclick="openTab(event, 'workingpractices')">Working Practices</a></li>
+								<li><a href="#" onclick="openTab(event, 'exchange')">Exchange Rate</a></li>
+								<li><a href="#" onclick="openTab(event, 'cost')">Cost Of Living</a></li>
+								<li><a href="#" onclick="openTab(event, 'gdp')">GDP & GNP</a></li>
+								<li><a href="#" onclick="openTab(event, 'globalization')">Globalization</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Social Factor</a>
+							<ul class="sidebar-submenu">
+								<li><a href="#" onclick="openTab(event, 'demographics')">Demographics</a></li>
+								<li><a href="#" onclick="openTab(event, 'attidudes')">Attidudes & Beliefs</a></li>
+								<li><a href="#" onclick="openTab(event, 'social')">Social Mobility</a></li>
+								<li><a href="#" onclick="openTab(event, 'education')">Education</a></li>
+								<li><a href="#" onclick="openTab(event, 'lifestyle')">Lifestyle</a></li>
+								<li><a href="#" onclick="openTab(event, 'ethics')">Ethics & Religion</a></li>
+								<li><a href="#" onclick="openTab(event, 'historical')">Historical Issue</a></li>
+								<li><a href="#" onclick="openTab(event, 'cross')">Cross Cultural Communication</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Technological Factor</a></li>
+						<li><a href="#">Legal Factor</a></li>
+						<li><a href="#">Environmental Factor</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div>
+				<div id="inflation" class="tabcontent">
+					<div>
+						<nav class="navbar navbar-default" role="navigation" id="topmenu">
+							<div class="demographics">	
+							<center><span class="fontsize"><b>Inflation</b></span></center>
+							</div>
+						</nav>
+					</div>
+					
+					<div class="area1" style="padding-left: 10px; padding-right: 10px;">
+						<div class="col-md-12 navcontent" id="working1">
+							<div class="col-md-12">
+								<h3>Inflation</h3>
+							</div>
+						</div>
+						<div class="col-md-12 navcontent" id="working2">
+							<p align="left"><a href="#" class="linkblue">http://www.bi.go.id/</a></p>
+						</div>
+						<div class="col-md-12 navcontent" id="working3">
+							<p align="left"><b>The Inflation Target</b></p>
+						</div>
+						<div class="col-md-12 navcontent" id="working4">
+							<br>
+				            <p align="justify">
+				                The inflation target is the level of inflation that must be achieved by Bank Indonesia in coordination with the Government. Under the Bank Indonesia Law, the inflation target is established by the Government. In a Memorandum of Understanding between the Government and Bank Indonesia, the inflation target is established for three year period in a Decree of the Minister of Finance (KMK). In PMK No.66/PMK.011/2012, the inflation targets established by the Government for 2013, 2014 and 2015 are 4.5%, 4.5% and 4% with ±1% deviation.
+				            </p>
+						</div>
+						<div class="col-md-12 navcontent" id="working5">
+							<p align="left">Read More...</p>
+						</div>
+						<div class="col-md-12 navcontent" id="working6">
+							<p align="left"><b>Indonesia Inflation Rate</b></p>
+						</div>
+						<div class="col-md-12 navcontent" id="working7">
+							<div id="container"></div>
+						<hr>
+						</div>
+						<div id="faq1" class="contentBody">
+							<div class="col-md-3">
+								<img src="assets/img/Logo-2C-128px-R.png" class="linkedinp1">
+            					<img src="assets/img/YouTube-logo-full_color.png" class="youtubep1">
+							</div>
+							<div class="col-md-2"> </div>
+							<div class="col-md-6" class="faqtitle">
+								<b>Forum Group Discussion Q-A</b>
+							</div>
+							<div class="faq-content col-md-12">
+								<div class="col-md-12">
+									<div class="col-md-1">
+										<img src="assets/img/user.png" height="40px" width="40px">
+									</div>
+									<div class="col-md-11">
+										<p>by : <a href="#" class="link">DR. Roy Adhie</a></p>
+										<p>Posted : Feb 13, 2014 | 10:40 PM</p>
+										<p class="alert alert-info" role="alert">Question : What is inflation?</p>
+										<p>To put it simply, inflation is the long term rise in the prices of goods and services caused by the devaluation of currency. While there are advantages to inflation which I will discuss later in this article, I want to first focus on some of the negative aspects of inflation.</p>
+										<p><a href="#" class="link">Read more...</a></p>
+									</div>
+								</div>
+								<div class="faq-comment col-md-12">
+									0 Comment
+								</div>
+							</div>
+						</div>
+						<div id="faq2" class="contentBody">
+							<div class="col-md-3">
+								<img src="assets/img/Logo-2C-128px-R.png" class="linkedinp1">
+            					<img src="assets/img/YouTube-logo-full_color.png" class="youtubep1">
+							</div>
+							<div class="col-md-2"> </div>
+							<div class="col-md-6" class="faqtitle">
+								<b>Forum Group Discussion Q-A</b>
+							</div>
+							<div class="faq-content col-md-12">
+								<div class="col-md-12">
+									<div class="col-md-1">
+										<img src="assets/img/user.png" height="40px" width="40px">
+									</div>
+									<div class="col-md-11">
+										<p>by : <a href="#" class="link">DR. Roy Adhie</a></p>
+										<p>Posted : Feb 13, 2014 | 10:40 PM</p>
+										<p class="alert alert-info" role="alert">Question : What is deflation?</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+								</div>
+								<div class="faq-comment col-md-12">
+									0 Comment
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div id="attidudes" class="tabcontent">
+					attitudes
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="title-section"><b>Frequently Asked Questions</b></div>
+			<div class="faq-right-side-bar">
+					<ul class="list-inline list-2">
+						<li role="presentation" class="active">
+							<a href="#" data-toggle="collapse2" id="defaultOpenContent" onclick="openContent(event, 'faq1') ">What is inflation?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq2')">What is deflation?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq3')">What is hyperinflation?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq4')">What is a recession?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq5')">What is a depression?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq6')">What is the Consumer Price Index (CPI)?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq7')">Is the CPI the best measure of inflation?</a>
+						</li>
+						<li role="presentation">
+							<a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq7')">How are CPI prices collected?</a>
+						</li>
+					</ul>
+			</div>
+		</div>
+	</div>
+
+	<script>
+    	$.sidebarMenu($('.sidebar-menu'))
+	</script>
+	<script type="text/javascript">
+		$('.collapse').on('shown.bs.collapse', function (e) {
+		  $('.collapse').not(this).removeClass('in');
+		});
+
+		$('[data-toggle=collapse]').click(function (e) {
+		  $('[data-toggle=collapse]').parent('li').removeClass('active');
+		  $(this).parent('li').toggleClass('active');
+		});
+	</script>
+	<script type="text/javascript">
+		function openTab(evt, tabName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			tabclass = document.getElementsByClassName("tabName");
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+
+		function openNav(evt, tabName) {
+			var i, navcontent, tablinks;
+			navcontent = document.getElementsByClassName("navcontent");
+			for (i = 0; i < navcontent.length; i++) {
+				navcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			tabclass = document.getElementsByClassName("tabName");
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+		function openContent(evt, contentName) {
+			var i, contentBody, contentLinks;
+			contentBody = document.getElementsByClassName("contentBody");
+			for (i = 0; i < contentBody.length; i++) {
+				contentBody[i].style.display = "none";
+			}
+			contentLinks = document.getElementsByClassName("contentLinks");
+			for (i = 0; i < contentLinks.length; i++) {
+				contentLinks[i].className = contentLinks[i].className.replace(" active", "");
+			}
+			document.getElementById(contentName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+
+		document.getElementById("defaultOpenSideBar").click();
+		document.getElementById("defaultOpenContent").click();
+		document.getElementById("openSubSideBar").click();
+		
+		$(function () {
+            Highcharts.chart('container', {
+                chart: {
+                    type: 'column',
+                    width: 500,
+                    height: 350
+                },
+                credits: {
+                    enabled: false
+                },
+                title: {
+                    text: 'Indonesia Inflation Rate'
+                },
+                xAxis: {
+                    categories: [
+                        'Apr/12',
+                        'Jul/12',
+                        'Oct/12',
+                        'Jan/13',
+                        'Apr/13',
+                        'Jul/13',
+                        'Oct/13'
+                    ],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Inflation'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                        '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Inflation',
+                    data: [3.97, 4.53, 4.31, 4.3, 5.9, 5.9, 8.4]
+
+                }]
+            });
+        });
+	</script>
+</body>
+</html>

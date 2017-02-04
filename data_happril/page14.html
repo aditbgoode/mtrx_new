@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="chart/highcharts.js"></script>
+    <script src="chart/highcharts-more.js"></script>
+</head>
+<body>
+<div class="row" style="margin: 0 0 0 0;">
+    <div class="col-md-2" style="padding: 0 0 0 0">
+        <div class="box" style="padding: 1.6vh 0">
+            <span id="menu"><b>Government Of Indonesia</b></span>
+        </div>
+    </div>
+    <div id="menu2" class="col-md-8" style="padding: 0 0 0 0">
+        <div class="box" style="padding: 0 0 0 0">
+            <ul class="nav nav-tabs">
+                <li><a href="javascript:void(0)" id="defaultOpen2" class="tablinks " onclick="opeTab2(event, 'tab1')" style="color: #ffffff; background-color: purple"><b>Ease of Doing Business</b></a></li>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="color: #000000"><b>Regulatory Impact On Business</b></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-2" style="padding: 0 0 0 0">
+        <div class="col-md-4" style="padding: 0 0 0 0">
+            <div class="box" style="padding: 1.6vh 0">
+                <span style="color: limegreen">web</span><span style="color: #2aabd2">ex</span>
+            </div>
+        </div>
+        <div class="col-md-8" style="padding: 0 0">
+            <div class="box" style="padding: 1.6vh 0">
+                Conference Call
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin: 0 0 0 0">
+    <div class="col-md-2" style="padding: 0 0; overflow: auto; height: 90vh">
+        <div class="box" style="padding: 0 0 0 0;text-align: left">
+            <div id="list" class="box-left" style="padding: 0 0 32% 0">
+                <ul class="sidebar-menu">
+                    <li><a href="#"><span>Constitution – UUD 1945</span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="#">Corruption Level</a></li>
+                            <li><a href="#">Trade Restriction Or Reform</a></li>
+                            <li><a href="#">Government Leadership</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>Legislative Branch</span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="#">England</a></li>
+                            <li><a href="#">Germany</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>Judicative Branch</span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="#">Mexco</a></li>
+                            <li><a href="#">Canada</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="#"><span>Executive Branch</span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="#">Office of President</a></li>
+                            <li><a href="#">Office of Vice President</a></li>
+                            <li><a href="#">Ministry</a>
+                                <ul class="sidebar-submenu">
+                                    <li><a href="#">Ministry of Finance</a></li>
+                                    <li><a href="#">Ministry of Energy and Mineral Resources</a></li>
+                                    <li><a href="#">Ministry of State-Owned Enterprises</a></li>
+                                    <li><a href="#">Ministry of Trade</a></li>
+                                    <li><a href="#">Ministry of Industry</a></li>
+                                    <li><a href="#">Ministry of Fishery</a></li>
+                                    <li><a href="#">Ministry of Public Works and Housing</a></li>
+                                    <li><a href="#">Ministry of Comm. and IT Indonesia</a></li>
+                                    <li><a href="#">More...</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Provincial Government</a></li>
+                            <li><a href="#">Regional Government</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="tab2" class="col-md-8 tabcontent2" style="padding: 0 0 0 0">
+        <div class="row" style="margin: 0 0 0 0">
+            <div class="col-md-12" style="padding: 0 0">
+                <div class="box">
+                    <p style="margin: 0 0 0 0"><b>Regulatory Impact On Business</b></p>
+                    <p style="margin: 0 0 0 0"><b>Association Petroleum Indonesia</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tab1" class="col-md-8 tabcontent2" style="padding: 0 0 0 0">
+        <div class="row" style="margin: 0 0 0 0">
+            <div class="col-md-12" style="padding: 0 0">
+                <div class="box">
+                    <p style="margin: 0 0 0 0"><b>Ease of Doing Business</b></p>
+                    <p style="margin: 0 0 0 0"><b>Association Petroleum Indonesia</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin: 0 0 0 0">
+            <div class="col-md-12" style="padding: 0 0">
+                <div class="row" style="margin: 0 0; overflow: auto; height: 87vh">
+                    <div class="col-md-10" style="padding: 0 0 0 0">
+                        <div class="box" style="padding: 0 0 0 0">
+                            <table border="1">
+                                <tr style="background-color: #ffffff;">
+                                    <td style="width: 300px">Ministry of Energy & Mineral Resources</td>
+                                    <td>
+                                        <img src="blok.png" style="height: 23px; position: absolute;margin-top: -10px;width: 300px">
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="background-color: #ffffff;">
+                                    <td>Ministry of Finance</td>
+                                    <td>
+                                        <img src="blok.png" style="height: 23px; position: absolute;margin-top: -10px;width: 430px">
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="background-color: #ffffff;">
+                                    <td>Ministry of Environment & Forests</td>
+                                    <td>
+                                        <img src="blok.png" style="height: 23px; position: absolute;margin-top: -10px;width: 345px">
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="background-color: #ffffff;">
+                                    <td>Ministry of Transportation</td>
+                                    <td>
+                                        <img src="blok.png" style="height: 23px; position: absolute;margin-top: -10px;width: 300px">
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="background-color: #ffffff;">
+                                    <td>Ministry of Trade</td>
+                                    <td>
+                                        <img src="blok.png" style="height: 23px; position: absolute;margin-top: -10px;width: 300px">
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="background-color: #ffffff;">
+                                    <td>Ministry of Labor</td>
+                                    <td>
+                                        <img src="blok.png" style="height: 23px; position: absolute;margin-top: -10px;width: 300px">
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="background-color: #ffffff;">
+                                    <td>Ministry of Communications & IT</td>
+                                    <td>
+                                        <img src="blok.png" style="height: 23px; position: absolute;margin-top: -10px;width: 170px">
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="background-color: #ffffff;">
+                                    <td>Ministry of Defense</td>
+                                    <td>
+                                        <img src="blok.png" style="height: 23px; position: absolute;margin-top: -10px;width: 170px">
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="background-color: #ffffff;">
+                                    <td>Ministry of Justice & Human Rights</td>
+                                    <td>
+                                        <img src="blok.png" style="height: 23px; position: absolute;margin-top: -10px;width: 80px">
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="background-color: #ffffff;">
+                                    <td>Indonesian National NAVY</td>
+                                    <td>
+                                        <img src="blok.png" style="height: 23px; position: absolute;margin-top: -10px;width: 80px">
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="background-color: #ffffff;">
+                                    <td>Indonesian National Police</td>
+                                    <td>
+                                        <img src="blok.png" style="height: 23px; position: absolute;margin-top: -10px;width: 80px">
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="background-color: #ffffff;">
+                                    <td style="height: 35px"></td>
+                                    <td><img src="emot1.JPG" style="width: 5%;position: absolute;margin: -15px 0 0 15px"></td>
+                                    <td><img src="emot2.JPG" style="width: 5%;position: absolute;margin: -15px 0 0 15px"></td>
+                                    <td><img src="emot3.JPG" style="width: 5%;position: absolute;margin: -15px 0 0 15px"></td>
+                                    <td><img src="emot4.JPG" style="width: 5%;position: absolute;margin: -15px 0 0 15px"></td>
+                                    <td><img src="emot5.JPG" style="width: 5%;position: absolute;margin: -15px 0 0 15px"></td>
+                                </tr>
+                            </table>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0 0 0 0">
+                        <div class="col-md-12" style="padding: 0 0;">
+                            <div id="question1" class="box" style="padding: 15px 15px 15px 15px">
+                                <img src="Logo-2C-128px-R.png" style="float: left; width: 8%; margin: 15px 0 0 10px">
+                                <img src="YouTube-logo-full_color.png" style="float: left; width: 8%">
+                                <p style="margin-top: 15px"><b>Forum Group Discussion Q-A</b></p>
+                                <br>
+                                <img src="user.png" style="width: 3%; float: left;margin: 0 30px 0 10px">
+                                <p align="left">by : <a href="#">DR. Roy Adhie</a></p>
+                                <p align="left" style="margin-left: 65px">Posted : Sep 7, 2014 | 10:40 PM</p>
+                                <p align="left" style="background-color: #afd9ee;margin-left: 65px">Ease of Doing Business</p>
+                                <p align="justify"  style="margin-left: 65px">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Nemo enim ipsam
+                                </p>
+                                <p align="left" style="color:#afd9ee;margin-left: 65px">Read More...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2" style="padding: 0 0; overflow: auto; height: 90vh">
+        <div class="row" style="margin: 0 0 0 0">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default" style="margin: 0 0;">
+                    <div class="panel-heading" role="tab" id="headingOne" style="background-color: #ffffff">
+                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Strategy Consultant
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body" style="padding: 0 0;">
+                            <a href="#" onclick="openContent(event, 'problem1')">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Debora
+                                        <br>Public Sector Strategy
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" onclick="openContent(event, 'problem2')">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Sanjay
+                                        <br>Merger & Acquisitions
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" onclick="openContent(event, 'problem3')" id="defaultOpen">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        DR.Roy Adhie
+                                        <br>Org. Strategy
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" onclick="openContent(event, 'problem4')">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Tyna Singh
+                                        <br>Functional Strategy
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" style="margin: 0 0">
+                    <div class="panel-heading" role="tab" id="headingTwo" style="background-color: #ffffff">
+                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Operation Consultant
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body" style="padding: 0 0">
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Debora
+                                    <br>Public Sector Strategy
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Sanjay
+                                    <br>Merger & Acquisitions
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    DR.Roy Adhie
+                                    <br>Org. Strategy
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Tyna Singh
+                                    <br>Functional Strategy
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" style="margin: 0 0">
+                    <div class="panel-heading" role="tab" id="headingThree" style="background-color: #ffffff">
+                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Hr Consultant
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body" style="padding: 0 0">
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Debora
+                                    <br>Public Sector Strategy
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Sanjay
+                                    <br>Merger & Acquisitions
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    DR.Roy Adhie
+                                    <br>Org. Strategy
+                                </div>
+                            </div>
+                            <div class="col-md-12 box-left">
+                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                <div class="col-md-6" style="color: #000000">
+                                    Tyna Singh
+                                    <br>Functional Strategy
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" style="margin: 0 0">
+                    <div class="panel-heading" role="tab" id="headingFour" style="background-color: #ffffff">
+                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Financial Advisory
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="panel panel-default" style="margin: 0 0">
+                    <div class="panel-heading" role="tab" id="headingFive" style="background-color: #ffffff">
+                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                IT Advisory
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function opeTab2(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent2");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen2").click();
+</script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<html>
+<head>
+	<title>dakken</title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" href="./dist/sidebar-menu.css">
+</head>
+<body>
+	<div class="col-md-12">
+		<div class="col-md-2">
+			<div class="tab-title vh-8">
+				&nbsp
+			</div>
+			<div class="tab-content vh-92">
+				<div class="left-sidebar-menu ">
+					<section>
+						<ul class="sidebar-menu">
+							<li><a href="#"><span>Bussiness Roadmap</span></a></li>
+							<li><a href="#"><span>Eksternal</span></a></li>
+							<li><a href="#"><span>Internal</span></a></li>
+							<li><a href="#"><span>Data Source</span></a></li>
+							<li><a href="#"><span>Primary Source</span></a></li>
+							<li><a href="#"><span>Secondary Source</span></a></li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="tab-title vh-8">
+				Methodology
+			</div>
+			<div class="tab-content vh-92">
+				<div class="left-sidebar-menu">
+					<section>
+						<ul class="sidebar-menu">
+							<li><a href="#"><span>PESTLE Analysis</span></a></li>
+							<li><a href="#"><span>Porter Five Forces</span></a></li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div class="tab-title tr-black vh-8">
+				PESTLE Analysis
+			</div>
+			<div class="left-sidebar-menu tab-content vh-92">
+				<div class="col-md-12">
+					<div class="col-md-1">
+						<img src="./assets/img/content/user.png" alt="" align="center">
+					</div>
+					<div class="col-md-9">
+						<p></p>
+						<p>by : DR. Roy Adhie</p>
+						<p style="color:grey;">Posted : Sep 7, 2014 | 10:40 PM</p>
+					</div>
+					<div class="col-md-2">
+						<img src="./assets/img/content/logo.png" alt="" align="center" width="80%" height="30px">
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="col-md-1">
+						&nbsp
+					</div>
+					<div class="col-md-11">
+						<table class="table table-bordered">
+							<tr>
+								<td><b>Political Factor</b></td>
+								<td width="10%"><b>Low</b></td>
+								<td width="10%"><b>Med</b></td>
+								<td width="10%"><b>High</b></td>
+							</tr>
+							<tr>
+								<td><b>1. Trade Restriction</b></td>
+							</tr>
+							<tr>
+								<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</td>
+							</tr>
+							<tr>
+								<td><b>Goverment Leadership</b></td>
+							</tr>
+							<tr>
+								<td> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </td>
+							</tr>
+							<tr>
+								<td><b>3. Corruption Level</b></td>
+							</tr>
+							<tr>
+								<td>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  </td>
+							</tr>
+							<tr>
+								<td><b>4. Goverment Stability</b></td>
+							</tr>
+							<tr>
+								<td>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </td>
+							</tr>
+							<tr>
+								<td><b>5. Bureaucracy Issues</b></td>
+							</tr>
+							<tr>
+								<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</td>
+							</tr>
+							<tr>
+								<td><b>Economical Factor</b></td>
+								<td width="10%"><b>Low</b></td>
+								<td width="10%"><b>Med</b></td>
+								<td width="10%"><b>High</b></td>
+							</tr>
+							<tr>
+								<td><b>Social Factor</b></td>
+								<td width="10%"><b>Low</b></td>
+								<td width="10%"><b>Med</b></td>
+								<td width="10%"><b>High</b></td>
+							</tr>
+							<tr>
+								<td><b>Technological Factor</b></td>
+								<td width="10%"><b>Low</b></td>
+								<td width="10%"><b>Med</b></td>
+								<td width="10%"><b>High</b></td>
+							</tr>
+							<tr>
+								<td><b>Legal Factor</b></td>
+								<td width="10%"><b>Low</b></td>
+								<td width="10%"><b>Med</b></td>
+								<td width="10%"><b>High</b></td>
+							</tr>
+							<tr>
+								<td><b>Environmental Factor</b></td>
+								<td width="10%"><b>Low</b></td>
+								<td width="10%"><b>Med</b></td>
+								<td width="10%"><b>High</b></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./dist/sidebar-menu.js"></script>
+	<script src="./dist/highcharts.js"></script>
+	<script src="./dist/sidebar-menu.js"></script>
+	<script>
+		$.sidebarMenu($('.sidebar-menu'))
+	</script>
+	<script type="text/javascript">
+		$('.collapse').on('shown.bs.collapse', function (e) {
+		  $('.collapse').not(this).removeClass('in');
+		});
+
+		$('[data-toggle=collapse]').click(function (e) {
+		  $('[data-toggle=collapse]').parent('li').removeClass('active');
+		  $(this).parent('li').toggleClass('active');
+		});
+	</script>
+	<script type="text/javascript">
+
+		function openContent(evt, contentName) {
+			var i, contentBody, contentLinks;
+			contentBody = document.getElementsByClassName("contentBody");
+			for (i = 0; i < contentBody.length; i++) {
+				contentBody[i].style.display = "none";
+			}
+			contentLinks = document.getElementsByClassName("contentLinks");
+			for (i = 0; i < contentLinks.length; i++) {
+				contentLinks[i].className = contentLinks[i].className.replace(" active", "");
+			}
+			document.getElementById(contentName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+	</script>
+</body>
+</html>

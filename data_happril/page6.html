@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="chart/highcharts.js"></script>
+</head>
+<body>
+<div class="row" style="margin: 0 0 0 0;">
+    <div id="btnmenu" class="col-md-2" style="padding: 0 0 0 0">
+        <div class="box" style="padding: 11px 0 11px 0">
+            <span id="menu"><b>Natural Resources</b></span>
+        </div>
+    </div>
+    <div id="menu2" class="col-md-7" style="padding: 0 0 0 0">
+        <div class="box" style="padding: 0 0 0 0">
+            <ul class="nav nav-tabs">
+                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab1')" id="defaultOpen2" style="color: #000000;"><b>Commodity Market</b></a></li>
+                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="color: #000000"><b>Commodity Market Faq’s</b></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-3" style="padding: 0 0 0 0">
+        <div class="box" style="padding: 11px 0 11px 0">
+            <b>CHART A</b>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin: 0 0 0 0">
+    <div id="list" class="col-md-2" style="padding: 0 0; overflow: auto; height: 90vh">
+        <div class="box-left" style="padding: 0 0 130% 0">
+            <ul class="sidebar-menu">
+                <li class="active"><a href="#"><span>Mining - Hydrocarbons</span></a>
+                    <ul class="sidebar-submenu">
+                        <li class="active"><a href="#">Crude Oil</a></li>
+                        <li><a href="#">Natural Gas</a></li>
+                        <li><a href="#">Coal</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>Mining - Mineral & NonMineral</span></a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#">England</a></li>
+                        <li><a href="#">Germany</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>Fishery</span></a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#">Mexco</a></li>
+                        <li><a href="#">Canada</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>Farming & Plantation</span></a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#">Chile</a></li>
+                        <li><a href="#">Peru</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="konten" class="col-md-7" style="padding: 0 0; overflow: auto; height: 90vh">
+        <div class="box" style="padding: 10px 10px 0 10px">
+            <div id="tab1" class="tabcontent2 defaultOpen2">
+                <p align="left" style="color:#28a4c9"><b>COMMODITY NEWS</b></p>
+                <p align="left" style="color:#28a4c9"><b>After Oil Will Indonesia Become a Net Importer of Gas Too?</b></p>
+                <p align="left" style="color:#28a4c9;">By <a href="#">Indonesiainvestment.com</a></p>
+                <hr width="100%">
+                <p align="justify">
+                    Earlier this month the Indonesian Ministry of Energy and Mineral Resources said that Indonesia will require an additional 3,100
+                    million standard cubic feet per day (mmscfd) of gas supplies in the next five years to meet domestic gas demand for the
+                    country’s power stations and fertilizer plants.
+                </p>
+                <p align="justify">
+                    About 1,100 mmscfd of gas is needed for Indonesia’s plan to establish 13,400 MW of gas-fired power stations by 2020. A
+                    further 2,000 mmscfd is needed to fuel fertilizer plants in Southeast Asia’s largest economy.
+                </p>
+                <p align="justify">
+                    Although Indonesia is blessed by abundant natural gas reserves (it contains the world’s eighth-largest gas reserves and the
+                    third-largest reserves of the Asia-Pacific region after Australia and China), the country may turn into a net gas importer by 2020
+                    as industrialization (as well as a shift to gas by major industrial users) and an increasing number of Indonesians being connected
+                    to the country’s electricity grid causes the continuously rising domestic gas demand. Domestic gas demand is expected to
+                    double over the next two decades.
+                </p>
+                <p align="justify">
+                    Several other factors are at play as well. Indonesian governments in the 2000s have signed long-term contracts for natural gas
+                    exports, hence limiting gas supplies to the domestic market (in 2013, 52 percent of Indonesia’s natural gas production was
+                    exported abroad).
+                </p>
+                <p align="justify">
+                    It is therefore ironic that Indonesia struggles to meet domestic gas demand considering that the country is the world’s fourthlargest
+                    liquefied natural gas/LNG exporter after Qatar, Malaysia and Australia). In fact, due to export commitments, Indonesia
+                    has had to purchase spot LNG cargoes to meet its own export obligations.
+                </p>
+                <p align="justify">
+                    Another matter that jeopardizes Indonesia’s future gas supplies is that there has been insufficient investment in exploration and
+                    development of new gas fields.
+                </p>
+                <p align="justify">
+                    Late last year the Indonesian Petroleum Association stated that it expects investment (for exploration) to decline by 20 percent
+                    in 2015 (particularly given the current low energy prices). Analysts say that the Indonesian government should provide a more
+                    conducive investment climate as well as offer incentivesto attract (foreign) investment in the country’s gas sector.
+                </p>
+                <br>
+                <p align="left" style="color:#28a4c9">Read More...</p>
+            </div>
+            <div id="tab2" class="tabcontent2">
+                <p align="left" style="color:#28a4c9"><b>COMMODITY NEWS FAQ'S</b></p>
+                <p align="left" style="color:#28a4c9;">By <a href="#">Indonesiainvestment.com</a></p>
+                <hr width="100%">
+                <p align="justify">
+                    Earlier this month the Indonesian Ministry of Energy and Mineral Resources said that Indonesia will require an additional 3,100
+                    million standard cubic feet per day (mmscfd) of gas supplies in the next five years to meet domestic gas demand for the
+                    country’s power stations and fertilizer plants.
+                </p>
+            </div>
+            <script>
+                $('.collapse').on('shown.bs.collapse', function (e) {
+                    $('.collapse').not(this).removeClass('in');
+                });
+
+                $('[data-toggle=collapse]').click(function (e) {
+                    $('[data-toggle=collapse]').parent('li').removeClass('active');
+                    $(this).parent('li').toggleClass('active');
+                });
+
+                function opeTab2(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent2");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen2").click();
+            </script>
+        </div>
+    </div>
+    <div class="col-md-3" style="padding: 0 0; overflow: auto; height: 90vh">
+        <div class="box" style="padding: 15px 0 51% 0">
+            <p>Natural Gas & Crude Oil Price</p>
+            <div id="container" style="width: 100%;height: auto;"></div>
+            <script>
+                // Data retrieved from http://vikjavev.no/ver/index.php?spenn=2d&sluttid=16.06.2015.
+                $(function () {
+                    Highcharts.chart('container', {
+                        chart: {
+                            type: 'spline'
+                        },
+                        title: {
+                            text: ''
+                        },
+                        xAxis: {
+                            categories: ['1947','1950','1953','1956','1959','1962','1965','1968','1971','1974','1977','1980','1983','1986','1989','1992','1995','1998','2001','2004','2007','2010','2013']
+                        },
+                        yAxis: {
+                            title: {
+                                text: 'Workers'
+                            },
+                            minorGridLineWidth: 0,
+                            gridLineWidth: 1,
+                            alternateGridColor: null,
+                        },
+                        plotOptions: {
+                            spline: {
+                                lineWidth: 4,
+                                states: {
+                                    hover: {
+                                        lineWidth: 5
+                                    }
+                                },
+                                marker: {
+                                    enabled: false
+                                }
+                            }
+                        },
+                        series: [{
+                            name: ' ',
+                            data: [250, 280, 500, 300, 250,400, 300, 200, 100, 100,150, 100, 50, 30, 40,20, 30, 55, 10, 30,40, 20, 10]
+
+                        }],
+                        navigation: {
+                            menuItemStyle: {
+                                fontSize: '10px'
+                            }
+                        }
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</div>
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+
+</script>
+<script src="js/vendor.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

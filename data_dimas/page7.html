@@ -1,0 +1,370 @@
+<html>
+<head>
+	<title>Page7</title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/style-dimas.css">
+	<link rel="stylesheet" href="./dist/sidebar-menu.css">
+</head>
+<body>
+	<div class="col-md-12">
+		<div class="col-md-2">
+			<div class="title-section">Government Of Indonesia</div>
+			<div class="left-sidebar-menu">
+				<section>
+					<ul class="sidebar-menu">
+						<li><a href="#"><span>Constitution – UUD 1945</span></a></li>
+						<li><a href="#">Legislative Branch</a></li>
+						<li><a href="#">Judicative Branch</a></li>
+						<li>
+						<a href="#" id="click5">Executive Branch</a>
+							<ul class="sidebar-submenu">
+								<li><a href="#" id="">Office of President</i></a></li>
+								<li><a href="#">Office of Vice President</a></li>
+								<li>
+								<a href="#" id="click6">Ministry</a>
+									<ul class="sidebar-submenu">
+										<li class="active"><a href="#" onclick="openTab(event, 'finance')" id="click7">Ministry of Finance</a></li>
+										<li><a href="#">Ministry of Energy and Mineral Resources</a></li>
+										<li><a href="#">Ministry of State-Owned Enterprises </a></li>
+										<li><a href="#">Ministry of Trade </a></li>
+										<li><a href="#">Ministry of Industry </a></li>
+										<li><a href="#">Ministry of Fishery </a></li>
+										<li><a href="#">Ministry of Public Works nd Housing </a></li>
+										<li><a href="#">Ministry of Comm. and IT Indonesia </a></li>
+										<li><a href="#">More... </a></li>
+
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">Provincial Government</a></li>
+						<li><a href="#">Regional Government</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+		<div id="finance" class="tabcontent">
+			<div class="col-md-8">
+				<div>
+					<div class="tabbable boxed parentTabs">
+			            <div class="col-md-12 bordered-bottom-title">
+			                <ul class="nav navbar-nav">
+			                    <li class=""><a href="#set1" class="grey">Business Ecosystem</a></li>
+			                    <li><a id="click1" href="#set2" class="grey">Rule & Regulation</a></li>
+			                </ul>
+			            </div>
+			            <div class="col-md-12">
+			                <div class="tab-content">
+			                    <div class="tab-pane fade" id="set1">
+			                        <div class="tabbable">
+			                            <div class="col-md-12 bordered-bottom-title">
+			                                <ul class="nav navbar-nav">
+			                                    <li class=""><a href="#sub11">Overview 1</a></li>
+			                                    <li><a href="#sub12">Overview 2</a></li>
+			                                </ul>
+			                            </div>
+			                            <div class="col-md-12 bordered-bottom-title">
+			                                <div class="tab-content">
+			                                    <div class="tab-pane fade in" id="sub11">
+			                                        <ul class="nav navbar-nav">
+			                                            <li><a href="#">Tab 1.1.1</a></li>
+			                                            <li><a href="#">Tab 1.1.2</a></li>
+			                                        </ul>
+			                                    </div>
+			                                    <div class="tab-pane fade" id="sub12">
+			                                        <ul class="nav navbar-nav">
+			                                            <li><a href="#">Tab 1.2.1</a></li>
+			                                            <li><a href="#">Tab 1.2.2</a></li>
+			                                        </ul>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div class="tab-pane fade" id="set2">
+			                        <div class="tabbable">
+			                            <div class="col-md-12 bordered-bottom-title">
+			                                <ul class="nav navbar-nav">
+			                                    <li class=""><a href="#sub21" class="blue">Overview</a></li>
+			                                    <li><a id="click2" href="#sub22" class="blue">Earning</a></li>
+			                                    <li><a href="#sub23" class="blue">Sales & Marketing</a></li>
+			                                    <li><a href="#sub24" class="blue">Operation</a></li>
+			                                    <li><a href="#sub25" class="blue">Investment</a></li>
+			                                    <li><a href="#sub26" class="blue">Funding</a></li>
+			                                </ul>
+			                            </div>
+			                            <div class="col-md-12 bordered-bottom-title">
+			                                <div class="tab-content">
+			                                    <div class="tab-pane fade in" id="sub21">
+			                                        <ul class="nav navbar-nav">
+			                                            <li><a href="#">Tab 2.1.1</a></li>
+			                                            <li><a href="#">Tab 2.1.2</a></li>
+			                                        </ul>
+			                                    </div>
+			                                    <div class="tab-pane fade" id="sub22">
+			                                        <ul class="nav navbar-nav">
+			                                            <li><a id="click3" class="cyan" href="#subsub21">Income Tax Regulation</a></li>
+			                                            <li><a href="#subsub22" class="cyan">Permit</a></li>
+			                                            <li><a href="#subsub23" class="cyan">Procedure</a></li>
+			                                        </ul>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-12 bordered-bottom-title">
+			                                <div class="tab-content">
+			                                    <div class="tab-pane fade in" id="subsub21">
+			                                        <ul class="nav navbar-nav">
+			                                            <li><a href="#" id="click4" class="orange" onclick="openNav(event, 'regulation1')">Minister Of Finance <br> No. 10/2004</a></li>
+			                                            <li><a href="#" class="orange" onclick="openNav(event, 'regulation2')">The Minister Of Finance <br> No. 07/2016</a></li>
+			                                            <li><a href="#" class="orange" onclick="openNav(event, 'regulation3')">Decree of the Minister <br> Finance No. 534 K /12/...</a></li>
+			                                            <li><a href="#" class="orange" onclick="openNav(event, 'regulation4')">Decree of the Minister <br> Finance No. 4306 K /12/...</a></li>
+			                                            <li><a href="#" class="orange" onclick="openNav(event, 'regulation5')"><br>More...</a></li>
+			                                        </ul>
+			                                    </div>
+			                                    <div class="tab-pane fade" id="subsub22">
+			                                        <ul class="nav navbar-nav">
+			                                            <li><a href="#subsub21">sub sub</a></li>
+			                                            <li><a href="#subsub22">sub sub</a></li>
+			                                            <li><a href="#subsub23">sub sub</a></li>
+			                                        </ul>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </div>
+								<div class="tab-pane fade" id="set3">
+			                        <div class="tabbable">
+			                            <div class="col-md-12 bordered-bottom-title">
+			                                <ul class="nav navbar-nav">
+			                                    <li class=""><a href="#sub31">Negotiations 1</a></li>
+			                                    <li><a href="#sub32">Negotiations 2</a></li>
+			                                </ul>
+			                            </div>
+			                            <div class="col-md-12 bordered-bottom-title">
+			                                <div class="tab-content">
+			                                    <div class="tab-pane fade in" id="sub31">
+			                                        <ul class="nav navbar-nav">
+			                                            <li><a href="#">Sub Negotiations 1.1</a></li>
+			                                            <li><a href="#">Sub Negotiations 1.2</a></li>
+			                                        </ul>
+			                                    </div>
+			                                    <div class="tab-pane fade" id="sub32">
+			                                        <ul class="nav navbar-nav">
+			                                            <li><a href="#">Sub Negotiations 2.1</a></li>
+			                                            <li><a href="#">Sub Negotiations 2.2</a></li>
+			                                        </ul>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </div>
+								<div class="tab-pane fade in" id="set4">
+			                        <div class="tabbable">
+			                            <div class="col-md-12 bordered-bottom-title">
+			                                <ul class="nav navbar-nav">
+			                                    <li class=""><a href="#sub41">Strategy Consultant</a></li>
+			                                    <li><a href="#sub42">Operations Consultant</a></li>
+												<li><a href="#sub43">OC & HC Consultant</a></li>
+												<li><a href="#sub43">Financial Advisory</a></li>
+												<li><a href="#sub44">IT Consultant</a></li>
+
+			                                </ul>
+			                            </div>
+			                            <div class="col-md-12 bordered-bottom-title">
+			                                <div class="tab-content">
+			                                    <div class="tab-pane fade in" id="sub41">
+			                                        <ul class="nav navbar-nav">
+			                                            <li><a href="#">Corporate Strategy</a></li>
+														<li><a href="#">Public Sector Strategy</a></li>
+			                                            <li><a href="#">Mergers & Acquisitions</a></li>
+														<li><a href="#">Org. Strategy</a></li>
+														<li><a href="#">Functional Strategy</a></li>
+			                                        </ul>
+			                                    </div>
+			                                    <div class="tab-pane fade" id="sub42">
+			                                        <ul class="nav navbar-nav">
+			                                            <li><a href="#">Sub Negotiations 2.1</a></li>
+			                                            <li><a href="#">Sub Negotiations 2.2</a></li>
+			                                        </ul>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			        <div>	
+			       		<div style="height: 50vh;">
+							<div id="regulation1" class="tabcontent">
+								<table class="regulation">
+					                <tr>
+					                    <td class="no">No</td>
+					                    <td class="type">Type</td>
+					                    <td>Regulation Nbr</td>
+					                    <td>Description</td>
+					                    <td>Download</td>
+					                </tr>
+					                <tr>
+					                    <td>1</td>
+					                    <td>Peraturan Menteri Keuangan</td>
+					                    <td>10 / 2015</td>
+					                    <td>CHANGES TO THE REGULATION OF THE MINISTER OF ENERGY AND MINERAL RESOURCES NO. 33 YEAR 2014 CONCERNING MUTUT LEVELS OF SERVICE AND COST ASSOCIATED WITH POWER BY DISTRIBUTION COMPANY (PERSERO) PT PERUSAHAAN LISTRIK NEGARA</td>
+					                    <td>File 001.PDF</td>
+					                </tr>
+					            </table>
+							</div>
+						</div>
+						<hr>
+						<div class="col-md-3">
+							<img src="assets/img/Logo-2C-128px-R.png" class="linkedinp1">
+        					<img src="assets/img/YouTube-logo-full_color.png" class="youtubep1">
+						</div>
+						<div class="col-md-2"> </div>
+						<div class="col-md-6" class="faqtitle">
+							<b>Forum Group Discussion Q-A</b>
+						</div>
+						<div class="faq-content col-md-12">
+							<div class="col-md-12">
+								<div class="col-md-1">
+									<img src="assets/img/user.png" height="40px" width="40px">
+								</div>
+								<div class="col-md-11">
+									<p>by : <a href="#" class="link">DR. Roy Adhie</a></p>
+									<p>Posted : Sep 7, 2014 | 10:40 PM</p>
+									<p class="alert alert-info" role="alert">Minister of Finance No. 10/2014</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Nemo enim ipsam.</p>
+									<p><a href="#" class="link">Read more...</a></p>
+								</div>
+							</div>
+							<div class="faq-comment col-md-12">
+								0 Comment
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div>
+					<nav class="navbar navbar-default" role="navigation" id="topmenu">
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+								<a href="#"><span style="color: limegreen">web</span><span style="color: #2aabd2">ex</span></a>
+							</li>
+							<li class="dropdown">
+								<a href="#" style="border-right: none;">Conference Call</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="faq-right-side-bar">
+						<section>
+							<ul class="sidebar-menu">
+								<li><a href="#" class="noncolor" id="click8"><span><b>Client</b></span></a>
+									<ul class="sidebar-submenu">
+										<li class="noncolor"><img src="assets/img/a1.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Mike</span><br><span>Dept. 1</span></a></li>
+										<li class="noncolor"><img src="assets/img/a2.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Tom</span><br><span>Dept. 2</span></a></li>
+										<li class="noncolor"><img src="assets/img/a3.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Mary</span><br><span>Dept. 3</span></a></li>
+										<li class="noncolor"><img src="assets/img/a4.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Jane</span><br><span>Dept. 4</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</section>
+						<section>
+							<ul class="sidebar-menu">
+								<li><a href="#" class="noncolor" id="click9"><span><b>Stategy Consultant</b></span></a>
+									<ul class="sidebar-submenu">
+										<li class="noncolor"><img src="assets/img/organizing.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Debra</span><br><span>Public Sector Strategy</span></a></li>
+										<li class="noncolor"><img src="assets/img/flow.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Sanjay</span><br><span>Mergers & Acquisitions</span></a></li>
+										<li class="noncolor"><img src="assets/img/organizing.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">DR. Roy Adhie</span><br><span>Org. Strategy</span></a></li>
+										<li class="noncolor"><img src="assets/img/flow.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Tina Singh</span><br><span>Functional Strategy</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</section>
+						<section>
+							<ul class="sidebar-menu">
+								<li><a href="#" class="noncolor"><span><b>Operations Consultant</b></span></a></li>
+							</ul>
+						</section>
+						<section>
+							<ul class="sidebar-menu">
+								<li><a href="#" class="noncolor"><span><b>OD&HC Consultant</b></span></a></li>
+							</ul>
+						</section>
+						<section>
+							<ul class="sidebar-menu">
+								<li><a href="#" class="noncolor"><span><b>Fincancial Advisory</b></span></a></li>
+							</ul>
+						</section>
+
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./dist/sidebar-menu.js"></script>
+		<script type="text/javascript">
+        $("ul.navbar-nav a").click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+
+        </script>
+	<script>
+    	$.sidebarMenu($('.sidebar-menu'))
+	</script>
+	<script type="text/javascript">
+		$('.collapse').on('shown.bs.collapse', function (e) {
+		  $('.collapse').not(this).removeClass('in');
+		});
+
+		$('[data-toggle=collapse]').click(function (e) {
+		  $('[data-toggle=collapse]').parent('li').removeClass('active');
+		  $(this).parent('li').toggleClass('active');
+		});
+	</script>
+	<script type="text/javascript">
+		function openTab(evt, tabName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			tabclass = document.getElementsByClassName("tabName");
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+
+		function openNav(evt, tabName) {
+			var i, navcontent, tablinks;
+			navcontent = document.getElementsByClassName("navcontent");
+			for (i = 0; i < navcontent.length; i++) {
+				navcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			tabclass = document.getElementsByClassName("tabName");
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		};
+		document.getElementById("click5").click();
+		document.getElementById("click6").click();
+		document.getElementById("click7").click();
+		document.getElementById("click1").click();
+		document.getElementById("click2").click();
+		document.getElementById("click3").click();
+		document.getElementById("click4").click();
+		document.getElementById("click8").click();
+		document.getElementById("click9").click();
+	</script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="chart/highcharts.js"></script>
+</head>
+<body>
+<div class="row" style="margin: 0 0 0 0;">
+    <div id="btnmenu" class="col-md-2" style="padding: 0 0 0">
+        <div class="box">
+            <span id="menu"><b>PESTLE Analysis</b></span>
+        </div>
+    </div>
+    <div id="menu2" class="col-md-8" style="padding: 0 0 0 0">
+        <div class="box">
+            <b>Ecological Consequences</b>
+        </div>
+    </div>
+    <div class="col-md-2" style="padding: 0 0 0 0">
+        <div class="box">
+            <b>Frequently Asked Questions</b>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin: 0 0 0 0">
+    <div id="list" class="col-md-2" style="padding: 0 0; overflow: auto; height: 630px">
+        <div class="box-left" style="padding: 0 0 27% 0">
+            <ul class="sidebar-menu">
+                <li><a href="#"><span>Political Factors</span></a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#">Corruption Level</a></li>
+                        <li><a href="#">Trade Restriction Or Reform</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>Economic Factors</span></a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#">England</a></li>
+                        <li><a href="#">Germany</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>Social Factors</span></a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#">Mexco</a></li>
+                        <li><a href="#">Canada</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>Technological Factors</span></a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#">Chile</a></li>
+                        <li><a href="#">Peru</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>Legal Factors</span></a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#">Sout Africa</a></li>
+                        <li><a href="#">Congo</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="#"><span>Environmental Factors</span></a>
+                    <ul class="sidebar-submenu">
+                        <li class="active"><a href="#">Ecological Consequences</a></li>
+                        <li><a href="#">Cyclical Weather</a></li>
+                        <li><a href="#">Energy Availability & Costs</a></li>
+                        <li><a href="#">Social Implications</a></li>
+                        <li><a href="#">Disposal Of Materials</a></li>
+                        <li><a href="#">Infrastructure</a></li>
+                        <li><a href="#">Legislation</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="konten" class="col-md-8" style="padding: 0 0 0 0">
+        <div class="box" style="padding: 0 10px 0 10px; overflow: auto; height: 670px">
+            <h3 align="left">Ecological Consequences</h3>
+            <p align="left"><a href="#">www.bi.go.id/</a></p>
+            <p align="left"><b>New Study Shows Indonesia Losing Primary Forest at Unprecedented Rates</b></p>
+            <br>
+            <p align="justify">
+                New analysis published in Nature Climate Change shows that Indonesia is losing primary forest at a staggering rate. The country now has
+                the highest rate of loss in tropical primary forests in the world, overtaking Brazil. Primary tropical forests are the most carbon- and
+                biodiversity-rich type of forest ecosystem.
+            </p>
+            <p align="left" style="color:gray">Read More...</p>
+            <br>
+            <p align="left" style="color:gray"><b>Fate of Deforested Forest Land In Indonesia</b></p>
+            <div id="container" style="width: 65%;height:50%;"></div>
+            <script>
+                $(function () {
+
+                    var colors = Highcharts.getOptions().colors,
+                            categories = ['Open Land', 'Commercial Agriculture', 'Local & Subsistence Agriculture', 'Urban & Infrastructure'],
+                            data = [{
+                                y: 56.33,
+                                color: colors[0],
+                                drilldown: {
+                                    name: 'Open Land',
+                                    categories: ['Open Land'],
+                                    data: [18],
+                                    color: colors[0]
+                                }
+                            }, {
+                                y: 10.38,
+                                color: colors[1],
+                                drilldown: {
+                                    name: 'Commercial Agriculture',
+                                    categories: ['Commercial Agriculture'],
+                                    data: [32],
+                                    color: colors[1]
+                                }
+                            }, {
+                                y: 24.03,
+                                color: colors[2],
+                                drilldown: {
+                                    name: 'Local & Subsistence Agriculture',
+                                    categories: ['Local & Subsistence Agriculture'],
+                                    data: [34],
+                                    color: colors[2]
+                                }
+                            }, {
+                                y: 4.77,
+                                color: colors[7],
+                                drilldown: {
+                                    name: 'Urban & Infrastructure',
+                                    categories: ['Urban & Infrastructure'],
+                                    data: [0.5],
+                                    color: colors[7]
+                                }
+                            }, {
+                                y: 4.77,
+                                color: colors[3],
+                                drilldown: {
+                                    name: 'Mining',
+                                    categories: ['Mining'],
+                                    data: [2],
+                                    color: colors[3]
+                                }
+                            }, {
+                                y: 4.77,
+                                color: colors[5],
+                                drilldown: {
+                                    name: 'Reforestation/Regeneration',
+                                    categories: ['Reforestation/Regeneration'],
+                                    data: [11],
+                                    color: colors[5]
+                                }
+                            }, {
+                                y: 4.77,
+                                color: colors[6],
+                                drilldown: {
+                                    name: 'Aquaculture',
+                                    categories: ['Aquaculture'],
+                                    data: [3],
+                                    color: colors[6]
+                                }
+                            }],
+                            browserData = [],
+                            versionsData = [],
+                            i,
+                            j,
+                            dataLen = data.length,
+                            drillDataLen,
+                            brightness;
+
+
+                    // Build the data arrays
+                    for (i = 0; i < dataLen; i += 1) {
+
+                        // add browser data
+                        browserData.push({
+                            name: categories[i],
+                            y: data[i].y,
+                            color: data[i].color
+                        });
+
+                        // add version data
+                        drillDataLen = data[i].drilldown.data.length;
+                        for (j = 0; j < drillDataLen; j += 1) {
+                            brightness = 0.2 - (j / drillDataLen) / 5;
+                            versionsData.push({
+                                name: data[i].drilldown.categories[j],
+                                y: data[i].drilldown.data[j],
+                                color: Highcharts.Color(data[i].color).brighten(brightness).get()
+                            });
+                        }
+                    }
+
+                    // Create the chart
+                    Highcharts.chart('container', {
+                        chart: {
+                            type: 'pie'
+                        },
+                        title: {
+                            text: ''
+                        },
+                        plotOptions: {
+                            pie: {
+                                shadow: false,
+                                center: ['50%', '50%']
+                            }
+                        },
+                        tooltip: {
+                            valueSuffix: '%'
+                        },
+                        series: [ {
+                            name: 'Driver – Fate of Land',
+                            data: versionsData,
+                            size: '50%',
+                            innerSize: '60%',
+                            dataLabels: {
+                                formatter: function () {
+                                    // display only if larger than 1
+                                    return this.y > 1 ? '<b>' + this.point.name + ':</b> ' + this.y + '%' : null;
+                                }
+                            }
+                        }]
+                    });
+                });
+            </script>
+            <br>
+            <hr style="border: 1px solid #dcdcdc">
+            <div id="question1" class="city" style="padding: 15px 15px 15px 15px">
+                <img src="Logo-2C-128px-R.png" style="float: left; width: 8%; margin: 15px 0 0 10px">
+                <img src="YouTube-logo-full_color.png" style="float: left; width: 8%">
+                <p style="margin-top: 15px"><b>Forum Group Discussion Q-A</b></p>
+                <br>
+                <img src="user.png" style="width: 3%; float: left;margin: 0 30px 0 10px">
+                <p align="left">by : <a href="#">DR. Roy Adhie</a></p>
+                <p align="left" style="margin-left: 65px">Posted : Sep 7, 2014 | 10:40 PM</p>
+                <p align="left" style="background-color: #afd9ee;margin-left: 65px">Questions : What is the purpose of the Environmental Impact Assessment (EIA) Regulations?</p>
+                <p align="justify"  style="margin-left: 65px">
+                    The regulations are designed to allow agricultural changes that do not seriously affect the environment or landscape, whilst
+                    providing protection for land with special environmental, historic or cultural importance.
+                </p>
+                <p align="left" style="color:#afd9ee;margin-left: 65px">Read More...</p>
+            </div>
+            <div id="question2" class="city" style="padding: 15px 15px 15px 15px">
+                <img src="Logo-2C-128px-R.png" style="float: left; width: 8%; margin: 15px 0 0 10px">
+                <img src="YouTube-logo-full_color.png" style="float: left; width: 8%">
+                <p style="margin-top: 15px"><b>Forum Group Discussion Q-A</b></p>
+                <br>
+                <img src="user.png" style="width: 3%; float: left;margin: 0 30px 0 10px">
+                <p align="left">by : <a href="#">DR. Roy Adhie</a></p>
+                <p align="left" style="margin-left: 65px">Posted : Sep 7, 2014 | 10:40 PM</p>
+                <p align="left" style="background-color: #afd9ee;margin-left: 65px">Questions : When did the EIA Regulations 2007 come into force?</p>
+                <p align="justify"  style="margin-left: 65px">
+                    Generally speaking as “the abuse of entrusted power for private gain”. Corruption can be classified as grand, petty and
+                    political, depending on the amounts of money lost and the sector where it occurs.
+                </p>
+                <p align="left" style="color:#afd9ee;margin-left: 65px">Read More...</p>
+            </div>
+            <div id="question3" class="city" style="padding: 15px 15px 15px 15px">
+                <img src="Logo-2C-128px-R.png" style="float: left; width: 8%; margin: 15px 0 0 10px">
+                <img src="YouTube-logo-full_color.png" style="float: left; width: 8%">
+                <p style="margin-top: 15px"><b>Forum Group Discussion Q-A</b></p>
+                <br>
+                <img src="user.png" style="width: 3%; float: left;margin: 0 30px 0 10px">
+                <p align="left">by : <a href="#">DR. Roy Adhie</a></p>
+                <p align="left" style="margin-left: 65px">Posted : Sep 7, 2014 | 10:40 PM</p>
+                <p align="left" style="background-color: #afd9ee;margin-left: 65px">Questions : What if my land is in an agri-environment scheme?</p>
+                <p align="justify"  style="margin-left: 65px">
+                    Generally speaking as “the abuse of entrusted power for private gain”. Corruption can be classified as grand, petty and
+                    political, depending on the amounts of money lost and the sector where it occurs.
+                </p>
+                <p align="left" style="color:#afd9ee;margin-left: 65px">Read More...</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2" style="padding: 0 0 0 0">
+        <div class="box" style="padding: 0 0 147% 0">
+            <div class="list-group" style="text-align: left">
+                <a onclick="openCity('question1')" class="list-group-item" href="#" style="padding: 20px 0 30px 15px; background-color: #afd9ee; color: #000000">
+                    What is the purpose of the Environmental Impact Assessment (EIA) Regulations?
+                </a>
+                <a onclick="openCity('question2')" class="list-group-item" href="#" style="padding: 20px 0 30px 15px;">
+                    When did the EIA Regulations 2007 come into force?
+                </a>
+                <a onclick="openCity('question3')" class="list-group-item" href="#" style="padding: 20px 0 30px 15px;">
+                    What if my land is in an agri-environment scheme?
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        openCity("question1")
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+        }
+    </script>
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+
+    </script>
+    <script src="js/vendor.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</div>
+</body>
+</html>
