@@ -44,8 +44,9 @@
                         document.write("<li><a href='"+i+".html' id='tes"+i+"'>Page " + i + "</a></li>")
                     }
 					var container = $('.left-side'),
-					scrollTo = $('#tes40');
-
+					scrollTo = $('#tes20');
+                    scrollTo.css("color","red");
+                    scrollTo.css("background-color","blue");
 					container.scrollTop(
 						scrollTo.offset().top - container.offset().top + container.scrollTop()
 					);
