@@ -41,8 +41,19 @@
             <ul class="pagination">
                 <script>
                     for (i=1; i<=350; i++) {
-                        document.write("<li><a href='"+i+".html'>Page " + i + "</a></li>")
+                        document.write("<li><a href='"+i+".html' id='tes"+i+"'>Page " + i + "</a></li>")
                     }
+					var container = $('.left-side'),
+					scrollTo = $('#tes40');
+
+					container.scrollTop(
+						scrollTo.offset().top - container.offset().top + container.scrollTop()
+					);
+
+					// // Or you can animate the scrolling:
+					// container.animate({
+					// 	scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+					// });​
                 </script>
             </ul>
         </div>
