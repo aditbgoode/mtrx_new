@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
 
@@ -13,12 +13,18 @@
     <script src="chart/highcharts.js"></script>
 </head>
 <body>
+<div class="col-md-12 box" style="padding: 0 0">
+    <ul class="nav navbar-nav">
+        <li class="box-none"><a href="#set1">Country</a></li>
+        <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2">PESTLE Analysis</a></li>
+    </ul>
+</div>
 <div class="row" style="margin: 0 0 0 0;">
     <div id="btnmenu" class="col-md-2" style="padding: 0 0 0">
-        <div class="box" style="padding: 2.5vh 0">
+        <div class="box" style="padding: 10px 0">
             <span id="menu"><b>Process Mapping</b></span>
         </div>
-        <div id="list" class="col-md-12" style="padding: 0 0; overflow: auto; height: 92vh">
+        <div id="list" class="col-md-12" style="padding: 0 0; overflow: auto; height: 87vh">
             <div class="box-left" style="padding: 0 0 27% 0">
                 <ul class="sidebar-menu">
                     <li class="active"><a href="#"><span>Process Mapping Level 0</span></a>
@@ -52,7 +58,7 @@
         </div>
     </div>
     <div class="col-md-2" style="padding: 0 0">
-        <div class="box-none">
+        <div class="box-none" style="font-size:.8em;">
             <ul class="nav nav-tabs">
                 <li style="width: 45%;"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab1')" style="border-right:2px solid #dcdcdc;height: 7.4vh;text-align: left">Business Process L 3</a></li>
                 <li style="width: 30%;"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="border-right:2px solid #dcdcdc;height: 7.4vh;text-align: left">KPI L 3</a></li>
@@ -63,8 +69,8 @@
             <div class="box" style="padding: 2.6vh 0;font-size: 12px;">
                 <b>GATHERING PROCESS </b>
             </div>
-            <div class="list-group-item" style="padding: 4vh 0"></div>
-            <div class="box2" style="margin: 0 0 0 0;text-align: left;padding: 0 0;height: 300px">
+<!--            <div class="list-group-item" style="padding: 4vh 0"></div>-->
+            <div class="box2" style="margin: 0 0 0 0;text-align: left;padding: 0 0;height: auto">
                 <div class="list-group-item">107. Membuat perencanaan modifikasi/perbaikan kapasitas …</div>
                 <div class="list-group-item" style="background-color: skyblue">108 Melakukan modifikasi (jika diperlukan) dan perbaikan …</div>
                 <div class="list-group-item">109. Mengumpulkan minyak dari wellhead ke stasiun pengumpul …</div>
@@ -86,30 +92,26 @@
                         <li class="box-none"><a href="#set6">SOP</a></li>
                     </ul>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" style="padding:0;">
                     <div class="tab-content">
                         <div class="tab-pane fade" id="set1">
                             <div class="tabbable">
-                                <div class="row">
                                     <div class="col-md-12 box" style="padding: 0 0">
                                         <ul class="nav navbar-nav">
                                             <li class="box-none"><a href="#sub11">Tab 1.1</a></li>
                                             <li class="box-none"><a href="#sub12">Tab 1.2</a></li>
                                         </ul>
                                     </div>
-                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="set2">
                             <div class="tabbable">
-                                <div class="row">
                                     <div class="col-md-12 box" style="padding: 0 0">
                                         <ul class="nav navbar-nav">
                                             <li class="box-none"><a href="#sub21">Create Team & Collect Information</a></li>
                                             <li class="box-none"><a href="#sub22">Definition of Problem</a></li>
                                         </ul>
                                     </div>
-                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="set3">
@@ -128,7 +130,6 @@
                         </div>
                         <div class="tab-pane fade" id="set4">
                             <div class="tabbable">
-                                <div class="row">
                                     <div class="col-md-12 box" style="padding: 0 0">
                                         <div class="col-md-12 box" style="padding: 0 0">
                                             <ul class="nav navbar-nav">
@@ -137,12 +138,10 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="set5">
                             <div class="tabbable">
-                                <div class="row">
                                     <div class="col-md-12 box" style="padding: 0 0">
                                         <div class="col-md-12 box" style="padding: 0 0">
                                             <ul class="nav navbar-nav">
@@ -151,11 +150,9 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </div><div class="tab-pane fade active in" id="set6">
                             <div class="tabbable">
-                                <div class="row">
                                     <div class="col-md-12 box" style="padding: 0 0">
                                         <div class="col-md-12 box" style="padding: 0 0">
                                             <ul class="nav navbar-nav">
@@ -166,7 +163,6 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
 
                             </div>
                         </div>

@@ -1,9 +1,10 @@
 <html>
 <head>
 	<title>Page22</title>
-	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+<!--	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">-->
+	<link rel="stylesheet" type="text/css" href="assets/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/style-dimas.css">
-	<link rel="stylesheet" href="./dist/sidebar-menu.css">
+<!--	<link rel="stylesheet" href="./dist/sidebar-menu.css">-->
 	<script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
 	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="./dist/sidebar-menu.js"></script>
@@ -13,9 +14,15 @@
 </head>
 <body>
 	<div class="col-md-12">
+	    <div class="col-md-12 border" style="padding: 0 0">
+            <ul class="nav navbar-nav">
+                <li class="box-none"><a href="#set1" style="padding:10px;">Country</a></li>
+                <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2" style="padding: 10px;">PESTLE Analysis</a></li>
+            </ul>
+        </div>
 		<div class="col-md-2">
 			<div class="title-section"><b>PESTLE Analysis</b></div>
-			<div class="left-sidebar-menu">
+<!--			<div class="left-sidebar-menu">-->
 				<section>
 					<ul class="sidebar-menu">
 						<li><a href="#"><span>Political Factor</span></a></li>
@@ -50,20 +57,20 @@
 						<li><a href="#">Environmental Factor</a></li>
 					</ul>
 				</section>
-			</div>
+<!--			</div>-->
 		</div>
 		<div class="col-md-8">
 			<div>
 				<div id="inflation" class="tabcontent">
 					<div>
 						<nav class="navbar navbar-default" role="navigation" id="topmenu">
-							<div class="demographics">	
-							<center><span class="fontsize"><b>Inflation</b></span></center>
+							<div style="padding:10px;">	
+							<center><b>Inflation</b></center>
 							</div>
 						</nav>
 					</div>
 					
-					<div class="area1" style="padding-left: 10px; padding-right: 10px;">
+					<div class="border" style="padding-left: 10px; padding-right: 10px; overflow:auto; height:87vh;">
 						<div class="col-md-12 navcontent" id="working1">
 							<div class="col-md-12">
 								<h3>Inflation</h3>
@@ -158,7 +165,7 @@
 		</div>
 		<div class="col-md-2">
 			<div class="title-section"><b>Frequently Asked Questions</b></div>
-			<div class="faq-right-side-bar">
+<!--			<div class="faq-right-side-bar">-->
 					<ul class="list-inline list-2">
 						<li role="presentation" class="active">
 							<a href="#" data-toggle="collapse2" id="defaultOpenContent" onclick="openContent(event, 'faq1') ">What is inflation?</a>
@@ -185,7 +192,7 @@
 							<a href="#" data-toggle="collapse2" onclick="openContent(event, 'faq7')">How are CPI prices collected?</a>
 						</li>
 					</ul>
-			</div>
+<!--			</div>-->
 		</div>
 	</div>
 

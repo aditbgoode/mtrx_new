@@ -1,9 +1,11 @@
 <html>
 <head>
 	<title>Page2</title>
-	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/main.css">
+<!--	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">-->
 	<link rel="stylesheet" type="text/css" href="assets/style-dimas.css">
-	<link rel="stylesheet" href="./dist/sidebar-menu.css">
+	<link rel="stylesheet" type="text/css" href="../data_happril/css/position_bar.css">
+<!--	<link rel="stylesheet" href="./dist/sidebar-menu.css">-->
 	<script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
 	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="./dist/sidebar-menu.js"></script>
@@ -11,24 +13,59 @@
 	<script src="highchart/exporting.js"></script>
 </head>
 <body>
-	<div class="col-md-12">
+    <div class="col-md-8" style="padding: 0 0; border-bottom:1px ridge;">
+        <ul class="nav navbar-nav">
+            <li class="box-none"><a href="#set1" style="padding:10px;">Country</a></li>
+            <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2" style="padding: 10px;">PESTLE Analysis</a></li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <div class="page_section" style="margin: 0 0 0 0">
+            <div class="ps_title" style="margin:0;background-color: #ffffff;font-size: 12px">
+                <span class="position position_active">
+                    <a href="#">Formulation Phase</a>
+                </span>
+                <span class="position position_odd">
+                    <a href="#">Design Phase</a>
+                </span>
+                <span class="position">
+                    <a href="#">Execution Phase</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+	<div class="col-md-10 border">
 		<div class="title-section"><b>BUSINESS ROADMAP</b></div>
 	</div>
-	<div class="col-md-12">
-		<div style="width: 9%; float: left; border-right: solid 1px #ddd; background-color: rgba(244,107,74,1); color: white;">
-			<div class="title-section" style="padding: 0 0 0 0;"><b>ORG. ROADMAP</b></div>
-		</div>
-		<div style="width: 82.85%;float: left; border-right:  solid 1px #ddd;">
-			<div class="title-section" style="padding: 0 0 0 0;"><b>INTERNAL</b></div>
-		</div>
-		<div style="width: 8.15%; float: left;">
-			<div class="title-section" style="padding: 0 0 0 0;"><b>EXTERNAL</b></div>
-		</div>
-	</div>
-	<div class="col-md-12">
-		<img src="assets/img/roadmap.png" width="1355">
-	</div>
-
+    <div class="col-md-2 border">
+        <section>
+            <ul class="sidebar-menu">
+                <li><a href="#"><span>Bussiness Roadmap</span></a></li>
+                <li><a href="#"><span>Eksternal</span></a></li>
+                <li><a href="#"><span>Internal</span></a></li>
+                <li><a href="#"><span>Data Source</span></a></li>
+                <li><a href="#"><span>Primary Source</span></a></li>
+                <li><a href="#"><span>Secondary Source</span></a></li>
+            </ul>
+        </section>
+    </div>
+    <div class="col-md-10" style="overflow:auto; height:85vh;">
+        <div class="col-md-12">
+            <div style="width: 9%; float: left; border-right: solid 1px #ddd; background-color: rgba(244,107,74,1); color: white;">
+                <div class="title-section" style="padding: 0 0 0 0;"><b>ORG. ROADMAP</b></div>
+            </div>
+            <div style="width: 82.5%;float: left; border-right:  solid 1px #ddd;">
+                <div class="title-section" style="padding: 0 0 0 0;"><b>INTERNAL</b></div>
+            </div>
+            <div style="width: 8%; float: left;">
+                <div class="title-section" style="padding: 0 0 0 0;"><b>EXTERNAL</b></div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <img src="assets/img/roadmap.png" style="width:100%;">
+        </div>
+    </div>
 	<script>
     	$.sidebarMenu($('.sidebar-menu'))
 	</script>

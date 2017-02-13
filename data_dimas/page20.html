@@ -1,21 +1,27 @@
 <html>
 <head>
 	<title>Page20</title>
-	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+<!--	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">-->
+	<link rel="stylesheet" type="text/css" href="assets/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/style-dimas.css">
-	<link rel="stylesheet" href="./dist/sidebar-menu.css">
+<!--	<link rel="stylesheet" href="./dist/sidebar-menu.css">-->
 </head>
 <body>
 	<div class="col-md-12">
-	
+	    <div class="col-md-12 border" style="padding: 0 0">
+            <ul class="nav navbar-nav">
+                <li class="box-none"><a href="#set1" style="padding:10px;">Country</a></li>
+                <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2" style="padding: 10px;">PESTLE Analysis</a></li>
+            </ul>
+        </div>
 		<div class="col-md-10">
 			<div>
 				<div class="tabbable boxed parentTabs">
 			            <div class="col-md-12 bordered-bottom-title">
 			                <ul class="nav navbar-nav">
-			                    <li class=""><a href="#set1" class="cyan">Consultant</a></li>
-			                    <li><a id="" href="#set2" class="cyan">University</a></li>
-			                    <li><a id="click1" href="#set3" class="cyan" onclick="openNav(event, 'collab')" >Collaboration</a></li>
+			                    <li class=""><a href="#set1" class="cyan" style="padding:10px;">Consultant</a></li>
+			                    <li><a id="" href="#set2" class="cyan" style="padding:10px;">University</a></li>
+			                    <li><a id="click1" href="#set3" class="cyan" onclick="openNav(event, 'collab')" style="padding:10px;">Collaboration</a></li>
 			                </ul>
 			            </div>
 			            <div class="col-md-12">
@@ -24,8 +30,8 @@
 			                        <div class="tabbable">
 			                            <div class="col-md-12 bordered-bottom-title">
 			                                <ul class="nav navbar-nav">
-			                                    <li><a href="#" class="cyan">Consultant 1</a></li>
-			                                    <li><a href="#" class="cyan">Consultant 2</a></li>
+			                                    <li><a href="#" class="cyan" style="padding:10px;">Consultant 1</a></li>
+			                                    <li><a href="#" class="cyan" style="padding:10px;">Consultant 2</a></li>
 			                                </ul>
 			                            </div>
 			                        </div>
@@ -34,8 +40,8 @@
 			                        <div class="tabbable">
 			                            <div class="col-md-12 bordered-bottom-title">
 			                                <ul class="nav navbar-nav">
-			                                    <li><a href="#" class="cyan">University 1</a></li>
-			                                    <li><a href="#" class="cyan">University 2</a></li>
+			                                    <li><a href="#" class="cyan" style="padding:10px;">University 1</a></li>
+			                                    <li><a href="#" class="cyan" style="padding:10px;">University 2</a></li>
 			                                </ul>
 			                            </div>
 			                        </div>
@@ -44,24 +50,24 @@
 			                        <div class="tabbable">
 			                            <div class="col-md-12 bordered-bottom-title">
 			                                <ul class="nav navbar-nav">
-			                                    <li><a href="#" class="cyan">Methodology</a></li>
-			                                    <li><a href="#" class="cyan">Project Charter</a></li>
-			                                    <li><a href="#" id="click2" class="cyan" onclick="openNav(event, 'other3')">Project Team</a></li>
-			                                    <li><a href="#" id="" class="cyan">Project Schedule</a></li>
+			                                    <li><a href="#" class="cyan" style="padding:10px;">Methodology</a></li>
+			                                    <li><a href="#" class="cyan" style="padding:10px;">Project Charter</a></li>
+			                                    <li><a href="#" id="click2" class="cyan" onclick="openNav(event, 'other3')" style="padding:10px;">Project Team</a></li>
+			                                    <li><a href="#" id="" class="cyan" style="padding:10px;">Project Schedule</a></li>
 			                                </ul>
 			                            </div>
 			                            <div class="col-md-12 bordered-bottom-title">
 			                                <div class="tab-content">
 			                                    <div class="tab-pane fade in" id="sub11">
 			                                        <ul class="nav navbar-nav">
-			                                            <li><a href="#">Tab 1.1.1</a></li>
-			                                            <li><a href="#">Tab 1.1.2</a></li>
+			                                            <li><a href="#" style="padding:10px;">Tab 1.1.1</a></li>
+			                                            <li><a href="#" style="padding:10px;">Tab 1.1.2</a></li>
 			                                        </ul>
 			                                    </div>
 			                                    <div class="tab-pane fade" id="sub12">
 			                                        <ul class="nav navbar-nav">
-			                                            <li><a href="#">Tab 1.2.1</a></li>
-			                                            <li><a href="#">Tab 1.2.2</a></li>
+			                                            <li><a href="#" style="padding:10px;">Tab 1.2.1</a></li>
+			                                            <li><a href="#" style="padding:10px;">Tab 1.2.2</a></li>
 			                                        </ul>
 			                                    </div>
 			                                </div>
@@ -79,7 +85,7 @@
 						<div class="col-md-12 navcontent" id="other2">
 							Other 2
 						</div>
-						<div class="col-md-12 navcontent" id="other3">
+						<div class="col-md-12 navcontent" id="other3" style="overflow:auto; height:80vh;">
 							<table class="table team">
 			                    <tr>
 			                        <td colspan="2"><center><b>Project Team</b></center></td>
@@ -155,15 +161,15 @@
 				<nav class="navbar navbar-default" role="navigation" id="topmenu">
 					<ul class="nav navbar-nav">
 						<li class="dropdown">
-							<a href="#"><span style="color: limegreen">web</span><span style="color: #2aabd2">ex</span></a>
+							<a href="#" style="padding:10px;"><span style="color: limegreen">web</span><span style="color: #2aabd2">ex</span></a>
 						</li>
 						<li class="dropdown">
-							<a href="#">Conference Call</a>
+							<a href="#" style="padding:10px;">Conference Call</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
-			<div class="faq-right-side-bar">
+			<div class="faq-right-side-bar" style="overflow:auto; height:87vh;">
 						<section>
 							<ul class="sidebar-menu">
 								<li><a href="#" class="noncolor" id="click3"><span><b>Consultant</b></span></a>

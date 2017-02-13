@@ -1,15 +1,22 @@
 <html>
 <head>
 	<title>Page29</title>
-	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+<!--	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">-->
+	<link rel="stylesheet" type="text/css" href="assets/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/style-dimas.css">
-	<link rel="stylesheet" href="./dist/sidebar-menu.css">
+<!--	<link rel="stylesheet" href="./dist/sidebar-menu.css">-->
 </head>
 <body>
 	<div class="col-md-12">
+	    <div class="col-md-12 border" style="padding: 0 0">
+            <ul class="nav navbar-nav">
+                <li class="box-none"><a href="#set1" style="padding:10px;">Country</a></li>
+                <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2" style="padding: 10px;">PESTLE Analysis</a></li>
+            </ul>
+        </div>
 		<div class="col-md-2">
 			<div class="title-section">Industry</div>
-			<div class="left-sidebar-menu">
+			<div class="left-sidebar-menu" style="overflow:auto; height:87vh;">
 				<section>
 					<ul class="sidebar-menu">
 						<li><a href="#"><span>Agri, Forestry, Fishing & Hunting</span></a></li>
@@ -49,13 +56,13 @@
 						<nav class="navbar navbar-default" role="navigation" id="topmenu">
 							<ul class="nav navbar-nav">
 								<li class="dropdown">
-									<a href="#" class="purple" data-toggle="collapse" data-target="#methodology">Methodology</a>
+									<a href="#" class="purple" data-toggle="collapse" data-target="#methodology" style="padding:10px;">Methodology</a>
 								</li>
 								<li class="dropdown">
-									<a href="#" class="purple" data-toggle="collapse" data-target="#working" id="click4">Talent Mgmt. Framework</a>
+									<a href="#" class="purple" data-toggle="collapse" data-target="#working" id="click4" style="padding:10px;">Talent Mgmt. Framework</a>
 								</li>
 								<li class="dropdown">
-									<a href="#" class="purple" data-toggle="collapse" data-target="#other">Other Methodology</a>
+									<a href="#" class="purple" data-toggle="collapse" data-target="#other" style="padding:10px;">Other Methodology</a>
 								</li>
 							</ul>
 						</nav>
@@ -63,19 +70,19 @@
 					<div>
 						<nav class="navbar navbar-default" role="navigation" id="submenu">
 							<ul class="nav navbar-nav collapse" id="methodology">
-								<li class="darkgrey"><a href="#" onclick="openNav(event, 'methodology1')" id="">Methodology 1</a></li>
-								<li class="darkgrey"><a href="#" onclick="openNav(event, 'methodology2')" id="">Methodology 2</a></li>
-								<li class="darkgrey"><a href="#" onclick="openNav(event, 'methodology3')" id="">Methodology 3</a></li>
-								<li class="darkgrey"><a href="#" onclick="openNav(event, 'methodology4')" id="">Methodology 4</a></li>
+								<li class="darkgrey"><a href="#" onclick="openNav(event, 'methodology1')" id="" style="padding:10px;">Methodology 1</a></li>
+								<li class="darkgrey"><a href="#" onclick="openNav(event, 'methodology2')" id="" style="padding:10px;">Methodology 2</a></li>
+								<li class="darkgrey"><a href="#" onclick="openNav(event, 'methodology3')" id="" style="padding:10px;">Methodology 3</a></li>
+								<li class="darkgrey"><a href="#" onclick="openNav(event, 'methodology4')" id="" style="padding:10px;">Methodology 4</a></li>
 							</ul>
 							<ul class="nav navbar-nav collapse" id="working">
-								<li class="darkgrey"><a href="#" onclick="openNav(event, 'working1')" id="click5">Working Deck 1</a></li>
-								<li class="darkgrey"><a href="#" onclick="openNav(event, 'working2')" id="">Working Deck 2</a></li>
-								<li class="darkgrey"><a href="#" onclick="openNav(event, 'workingmore')" id="">More..</a></li>
+								<li class="darkgrey"><a href="#" onclick="openNav(event, 'working1')" id="click5" style="padding:10px;">Working Deck 1</a></li>
+								<li class="darkgrey"><a href="#" onclick="openNav(event, 'working2')" id="" style="padding:10px;">Working Deck 2</a></li>
+								<li class="darkgrey"><a href="#" onclick="openNav(event, 'workingmore')" id="" style="padding:10px;">More..</a></li>
 							</ul>
 							<ul class="nav navbar-nav collapse" id="other">
-								<li class="darkgrey"><a href="#" onclick="openNav(event, 'other1')" id="">Other 1</a></li>
-								<li class="darkgrey"><a href="#" onclick="openNav(event, 'other2')" id="">Other 2</a></li>
+								<li class="darkgrey"><a href="#" onclick="openNav(event, 'other1')" id="" style="padding:10px;">Other 1</a></li>
+								<li class="darkgrey"><a href="#" onclick="openNav(event, 'other2')" id="" style="padding:10px;">Other 2</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -96,11 +103,9 @@
 							<div class="title-content col-md-12">
 								<b>Talent Management Framework</b>
 							</div>
-							<div class="col-md-offset-5">
+							<div class="col-md-12 text-center padding-10" style="overflow:auto; height:75vh;">
 								<p><b>Working Deck 1</b></p>
-							</div>
-							<div>
-								<img src="assets/img/talent.png" width="100%" height="70%">
+								<img src="assets/img/talent.png" width="100%">
 							</div>
 						</div>
 						<div class="col-md-12 navcontent" id="working2">
@@ -137,15 +142,15 @@
 				<nav class="navbar navbar-default" role="navigation" id="topmenu">
 					<ul class="nav navbar-nav">
 						<li class="dropdown">
-							<a href="#">Country</a>
+							<a href="#" style="padding:10px;">Country</a>
 						</li>
 						<li class="dropdown">
-							<a href="#" style="width: 140px;">Indonesia</a>
+							<a href="#"  style="padding:10px;">Indonesia</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
-			<div class="faq-right-side-bar">
+			
 				<img src="assets/img/Logo-2C-128px-R.png" class="linkedinp5">
 	            <img src="assets/img/YouTube-logo-full_color.png" class="youtubep5">
 				<img src="assets/img/oror.png" height="100px" width="70%">
@@ -159,7 +164,6 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
-			</div>
 		</div>
 	</div>
 

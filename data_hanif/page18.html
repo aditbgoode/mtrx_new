@@ -9,10 +9,35 @@
     <!-- Place favicon.ico in the root directory-->
     
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../data_happril/css/position_bar.css">
     <script src="scripts/vendor/modernizr.js"></script>
   </head>
   <body><!--[if lt IE 10]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+    <div class="row">
+       <div class="col-md-8" style="padding: 0 0">
+        <ul class="nav navbar-nav">
+            <li class="border"><a href="#set1" style="padding:10px;">Core Business</a></li>
+            <li class="border"><a href="#set1" style="padding:10px;">Extended Enterprise</a></li>
+            <li class="border"><a href="#set2" style="padding: 10px;">Business Ecosystem</a></li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <div class="page_section" style="margin: 0 0 0 0">
+            <div class="ps_title" style="margin:0;background-color: #ffffff;font-size: 12px">
+                <span class="position position_active">
+                    <a href="#">Formulation Phase</a>
+                </span>
+                <span class="position position_odd">
+                    <a href="#">Design Phase</a>
+                </span>
+                <span class="position">
+                    <a href="#">Execution Phase</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    </div>
     <div class="row">
       <div class="col-md-2 border">
         <ul class="sidebar-menu">
@@ -26,7 +51,8 @@
       </div>
       <div class="col-md-7 border">
         <div class="title-section">TRADE ASSOCIATIONS</div>
-        <div class="scroll-bar">
+<!--        <div class="scroll-bar">-->
+        <div style="overflow:auto; height:87vh;">
           <div class="content">
             <ul class="dk-nav-inline">
               <li class="bg-orange"><a class="text-white" href="#">Core Business</a></li>
@@ -46,7 +72,8 @@
             <div class="title-section title-section-gray">SWOT</div>
           </div>
         </div>
-        <div class="scroll-bar">
+<!--        <div class="scroll-bar">-->
+        <div style="overflow:auto; height:87vh;">
           <div id="chart1"></div>
           <div class="title-section">Indonesian Petroleum Association</div>
           <div class="table-wrapper">

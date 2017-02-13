@@ -2,21 +2,28 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+<!--        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">-->
+        <link rel="stylesheet" type="text/css" href="assets/main.css">
         <link rel="stylesheet" type="text/css" href="assets/style-dimas.css">
-        <link rel="stylesheet" href="./dist/sidebar-menu.css">
+<!--        <link rel="stylesheet" href="./dist/sidebar-menu.css">-->
         <script src="highchart/highcharts.js"></script>
         <script src="highchart/exporting.js"></script>
         <title>Page32</title>
     </head>
     <body>
         <div class="col-md-12">
+            <div class="col-md-12 border" style="padding: 0 0">
+                <ul class="nav navbar-nav">
+                    <li class="box-none"><a href="#set1" style="padding:10px;">Country</a></li>
+                    <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2" style="padding: 10px;">PESTLE Analysis</a></li>
+                </ul>
+            </div>
             <div class="col-md-2">
                 <div class="tab-title">
                     Process Mapping
                 </div>
                 <div class="tab-content">
-                    <div class="left-sidebar-menu nav32">
+                    <div class="left-sidebar-menu" style="overflow:auto; height:85vh;">
                         <section>
                             <ul class="sidebar-menu">
                                 <li><a href="#"><span>Process Mapping <br>Level 0</span></a></li>
@@ -47,18 +54,18 @@
                     <nav class="navbar navbar-default" role="navigation" id="topmenu">
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
-                                <a href="#" class="violet" data-toggle="collapse" data-target="#working1">Business Process L3</a>
+                                <a href="#" class="violet" data-toggle="collapse" data-target="#working1" style="padding:10px;">Business Process L3</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="violet" data-toggle="collapse" data-target="#working2">KPI L3</a>
+                                <a href="#" class="violet" data-toggle="collapse" data-target="#working2" style="padding:10px;">KPI L3</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#"  id="click2" class="violet" data-toggle="collapse" data-target="#working3">Unit</a>
+                                <a href="#"  id="click2" class="violet" data-toggle="collapse" data-target="#working3" style="padding:10px;">Unit</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-12 left-sidebar-menu gath32">
+                <div class="col-md-12">
                     <div class="col-md-12 bordered-bottom-title padding-10">
                         <h6 align="center"><b>GATHERING PROCESS</b></h6>
                     </div>
@@ -86,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 border">
                <div class="tabbable boxed parentTabs">
                         <div class="col-md-12 bordered-bottom-title">
                             <ul class="nav navbar-nav">
@@ -240,7 +247,7 @@
                             </div>
                         </div>
                 </div>
-                <div class="col-md-12 area1p32">
+                <div class="col-md-12" style="overflow:auto; height:83vh;">
                     <div class="col-md-12">
                         <div class="col-md-7">
                             <div id="container"></div>

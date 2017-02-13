@@ -40,9 +40,15 @@
         <div class="left-side">
             <ul class="pagination">
                 <script>
-                    for (i=1; i<=350; i++) {
-                        document.write("<li><a href='"+i+".html'>Page " + i + "</a></li>")
+                    for (i=1; i<=353; i++) {
+                        document.write("<li><a href='"+i+".html' id='pos"+i+"'>Page " + i + "</a></li>")
                     }
+					var container = $('.left-side'),
+					scrollTo = $('#pos80');
+                    scrollTo.css("background-color","#dfdfdf");
+					container.scrollTop(
+						scrollTo.offset().top - container.offset().top + container.scrollTop()
+					);
                 </script>
             </ul>
         </div>
@@ -55,9 +61,9 @@
     </style>
     <div class="col-md-11" style="margin-left:-15px;">
         <div class="konten">
-             <iframe src="../data_yudi/page31.html" frameborder="0" style="height:90vh; width:100%;"></iframe>
+             <iframe src="../data_hanif/hal-80.html" frameborder="0" style="height:90vh; width:100%;"></iframe>
+<!--             <iframe src="../data_yudi/page31.html" frameborder="0" style="height:90vh; width:100%;"></iframe>-->
         </div>
     </div>
-	
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <script src="js/jquery-3.1.1.js"></script>
@@ -13,18 +13,28 @@
     <script src="chart/highcharts-more.js"></script>
 </head>
 <body>
+<div class="col-md-12 box" style="padding: 0 0">
+    <ul class="nav navbar-nav">
+        <li class="box-none"><a href="#set1">Natural Resources</a></li>
+        <li class="box-none"><a href="#set1">Industry</a></li>
+        <li class="box-none"><a href="#set1">State-Owned Enterprise</a></li>
+        <li class="box-none"><a href="#set1">Consumer Demand</a></li>
+        <li class="box-none"><a href="#set1">Statistic</a></li>
+        <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2">Porter Five Forces</a></li>
+    </ul>
+</div>
 <div class="row" style="margin: 0 0 0 0;">
     <div class="col-md-2" style="padding: 0 0 0 0">
         <div class="box">
             <span id="menu"><b>Porter Five Forces</b></span>
         </div>
     </div>
-    <div id="menu2" class="col-md-7" style="padding: 0 0 0 0">
+    <div id="menu2" class="col-md-8" style="padding: 0 0 0 0">
         <div class="box">
             <span><b>OIL DRILLING & GAS EXTRACTION</b></span>
         </div>
     </div>
-    <div class="col-md-3" style="padding: 0 0 0 0">
+    <div class="col-md-2" style="padding: 0 0 0 0">
         <div class="col-md-4" style="padding: 0 0 0 0">
             <div class="box">
                 <span style="color: limegreen">web</span><span style="color: #2aabd2">ex</span>
@@ -38,35 +48,24 @@
     </div>
 </div>
 <div class="row" style="margin: 0 0 0 0">
-    <div class="col-md-2"  style="padding: 0 0; overflow: auto; height: 95vh">
+    <div class="col-md-2"  style="padding: 0 0; overflow: auto; height: 87vh">
         <div class="box" style="padding: 0 0 0 0;text-align: left">
             <a href="#" class="list-group-item">Degree Of Rivalry</a>
             <a href="#" class="list-group-item">Threat of New Entrance</a>
             <a href="#" class="list-group-item">Threat of Substitut</a>
             <a href="#" class="list-group-item">Bargaining Power of Suppliers</a>
             <a href="#" class="list-group-item"><b>Bargaining Power of Buyers</b></a>
-            <a href="#" class="list-group-item" style="height: 40px"><b></b></a>
-            <a href="#" class="list-group-item" style="height: 40px"><b></b></a>
-            <a href="#" class="list-group-item" style="height: 40px"><b></b></a>
-            <a href="#" class="list-group-item" style="height: 40px"><b></b></a>
-            <a href="#" class="list-group-item" style="height: 40px"><b></b></a>
-            <a href="#" class="list-group-item" style="height: 40px"><b></b></a>
-            <a href="#" class="list-group-item" style="height: 40px"><b></b></a>
-            <a href="#" class="list-group-item" style="height: 40px"><b></b></a>
-            <a href="#" class="list-group-item" style="height: 40px"><b></b></a>
-            <a href="#" class="list-group-item" style="height: 40px"><b></b></a>
-            <a href="#" class="list-group-item" style="height: 32px"><b></b></a>
         </div>
     </div>
-    <div id="konten" class="col-md-8" style="padding: 0 0; overflow: auto; height: 95vh">
+    <div id="konten" class="col-md-8" style="padding: 0 0; overflow: auto; height: 87vh">
         <div class="row" style="margin: 0 0 0 0">
-            <div class="col-md-2" style="padding: 0 0 0 0">
+            <div class="col-md-2" style="padding: 0">
                 <div class="box">Attributes</div>
             </div>
-            <div class="col-md-5" style="padding: 0 0 0 0">
+            <div class="col-md-5" style="padding: 0">
                 <div class="box">Degree Of Rivalry</div>
             </div>
-            <div class="col-md-5" style="padding: 0 0 0 0">
+            <div class="col-md-5" style="padding: 0">
                 <div class="box">Radar Chart</div>
             </div>
         </div>
@@ -169,7 +168,7 @@
                     </div>
                     <div class="col-md-5" style="padding: 0 0 0 0">
                         <div class="box" style="padding: 0 0 0 0">
-                            <div id="container" style="width:350px;height: 275px; margin: 0 auto"></div>
+                            <div id="container" style="height: 275px; margin: 0 auto"></div>
                         </div>
                         <script>
                             $(function () {
@@ -252,7 +251,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-2" style="padding: 0 0; overflow: auto; height: 95vh;">
+    <div class="col-md-2" style="padding: 0 0; overflow: auto; height: 87vh;">
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default" style="margin: 0 0;">
                 <div class="panel-heading" role="tab" id="headingOne" style="background-color: #ffffff">

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
 
@@ -12,10 +12,62 @@
     <script src="js/bootstrap.js"></script>
 </head>
 <body>
+<div class="col-md-12 box" style="padding: 0 0">
+    <ul class="nav navbar-nav">
+        <li class="box-none"><a href="#set1">Country</a></li>
+        <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2">PESTLE Analysis</a></li>
+    </ul>
+</div>
 <div class="row" style="margin: 0 0 0 0;">
     <div id="btnmenu" class="col-md-2" style="padding:0 0">
-        <div class="box" style="padding: 72px 0">
+        <div class="box" style="padding: 10px 0 10px 0">
             <span><b>Government Of Indonesia</b></span>
+        </div>
+        <div id="list" style="padding: 0 0; overflow: auto; height: 87vh">
+            <div class="box-left" style="padding: 0">
+                <ul class="sidebar-menu">
+                    <li><a href="#"><span>Constitution – UUD 1945</span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="#">Corruption Level</a></li>
+                            <li><a href="#">Trade Restriction Or Reform</a></li>
+                            <li><a href="#">Government Leadership</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>Legislative Branch</span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="#">England</a></li>
+                            <li><a href="#">Germany</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>Judicative Branch</span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="#">Mexco</a></li>
+                            <li><a href="#">Canada</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="#"><span>Executive Branch</span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="#">Office of President</a></li>
+                            <li><a href="#">Office of Vice President</a></li>
+                            <li class="active"><a href="#">Ministry</a>
+                                <ul class="sidebar-submenu">
+                                    <li><a href="#">Ministry of Finance</a></li>
+                                    <li class="active"><a href="#">Ministry of Energy and Mineral Resources</a></li>
+                                    <li><a href="#">Ministry of State-Owned Enterprises</a></li>
+                                    <li><a href="#">Ministry of Trade</a></li>
+                                    <li><a href="#">Ministry of Industry</a></li>
+                                    <li><a href="#">Ministry of Fishery</a></li>
+                                    <li><a href="#">Ministry of Public Works and Housing</a></li>
+                                    <li><a href="#">Ministry of Comm. and IT Indonesia</a></li>
+                                    <li><a href="#">More...</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Provincial Government</a></li>
+                            <li><a href="#">Regional Government</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div id="menu2" class="col-md-8" style="padding: 0 0 0 0">
@@ -30,7 +82,7 @@
                         <li class="box-none"><a href="#set5">Sales & Marketing</a></li>
                     </ul>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" style="padding:0;">
                     <div class="tab-content">
                         <div class="tab-pane fade" id="set1">
                             <div class="tabbable">
@@ -68,41 +120,37 @@
                         </div>
                         <div class="tab-pane fade active in" id="set2">
                             <div class="tabbable">
-                                <div class="row">
-                                    <div class="col-md-12 box" style="padding: 0 0">
-                                        <ul class="nav navbar-nav">
-                                            <li class="box-none"><a href="#sub21">Operation</a></li>
-                                            <li class="box-none"><a href="#sub22">Investment</a></li>
-                                            <li class="box-none"><a href="#sub23">Investment</a></li>
-                                        </ul>
-                                    </div>
+                                <div class="col-md-12 box" style="padding: 0 0">
+                                    <ul class="nav navbar-nav">
+                                        <li class="box-none"><a href="#sub21">Operation</a></li>
+                                        <li class="box-none"><a href="#sub22">Investment</a></li>
+                                        <li class="box-none"><a href="#sub23">Investment</a></li>
+                                    </ul>
                                 </div>
-                                <div class="row">
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade active in" id="sub21">
-                                            <div class="col-md-12 box" style="padding: 0 0">
-                                                <ul class="nav navbar-nav">
-                                                    <li class="box-none"><a href="#">Exploration & Production Regulation</a></li>
-                                                    <li class="box-none"><a href="#">Permit</a></li>
-                                                    <li class="box-none"><a href="#">Procedure</a></li>
-                                                </ul>
-                                            </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade active in" id="sub21">
+                                        <div class="col-md-12 box" style="padding: 0 0">
+                                            <ul class="nav navbar-nav">
+                                                <li class="box-none"><a href="#">Exploration & Production Regulation</a></li>
+                                                <li class="box-none"><a href="#">Permit</a></li>
+                                                <li class="box-none"><a href="#">Procedure</a></li>
+                                            </ul>
                                         </div>
-                                        <div class="tab-pane fade" id="sub22">
-                                            <div class="col-md-12 box" style="padding: 0 0">
-                                                <ul class="nav navbar-nav">
-                                                    <li class="box-none"><a href="#">Tab 2.2.1</a></li>
-                                                    <li class="box-none"><a href="#">Tab 2.2.2</a></li>
-                                                </ul>
-                                            </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="sub22">
+                                        <div class="col-md-12 box" style="padding: 0 0">
+                                            <ul class="nav navbar-nav">
+                                                <li class="box-none"><a href="#">Tab 2.2.1</a></li>
+                                                <li class="box-none"><a href="#">Tab 2.2.2</a></li>
+                                            </ul>
                                         </div>
-                                        <div class="tab-pane fade" id="sub23">
-                                            <div class="col-md-12 box" style="padding: 0 0">
-                                                <ul class="nav navbar-nav">
-                                                    <li class="box-none"><a href="#">Tab 2.3.1</a></li>
-                                                    <li class="box-none"><a href="#">Tab 2.3.2</a></li>
-                                                </ul>
-                                            </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="sub23">
+                                        <div class="col-md-12 box" style="padding: 0 0">
+                                            <ul class="nav navbar-nav">
+                                                <li class="box-none"><a href="#">Tab 2.3.1</a></li>
+                                                <li class="box-none"><a href="#">Tab 2.3.2</a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -220,151 +268,103 @@
                 </div>
             </div>
         </div>
+        <div id="konten" style="padding: 0 0; height: 87vh">
+            <div class="box" style="padding: 0 0; overflow: auto; height: 74vh">
+                <img src="page13.JPG">
+            </div>
+        </div>
     </div>
     <div class="col-md-2" style="padding: 0 0 0 0">
         <div class="col-md-4" style="padding: 0 0 0 0">
-            <div class="box" style="padding: 72px 0 72px 0">
+            <div class="box" style="padding: 10px 0 10px 0">
                 <span style="color: limegreen">web</span><span style="color: #2aabd2">ex</span>
             </div>
         </div>
         <div class="col-md-8" style="padding: 0 0 0 0">
-            <div class="box" style="padding: 72px 0 72px 0">
+            <div class="box" style="padding: 10px 0 10px 0">
                 Conference Call
             </div>
         </div>
-    </div>
-</div>
-<div class="row" style="margin: 0 0">
-    <div id="list" class="col-md-2" style="padding: 0 0; overflow: auto; height: 76vh">
-        <div class="box-left" style="padding: 0 0 27% 0">
-            <ul class="sidebar-menu">
-                <li><a href="#"><span>Constitution – UUD 1945</span></a>
-                    <ul class="sidebar-submenu">
-                        <li><a href="#">Corruption Level</a></li>
-                        <li><a href="#">Trade Restriction Or Reform</a></li>
-                        <li><a href="#">Government Leadership</a></li>
-                    </ul>
-                </li>
-                <li><a href="#"><span>Legislative Branch</span></a>
-                    <ul class="sidebar-submenu">
-                        <li><a href="#">England</a></li>
-                        <li><a href="#">Germany</a></li>
-                    </ul>
-                </li>
-                <li><a href="#"><span>Judicative Branch</span></a>
-                    <ul class="sidebar-submenu">
-                        <li><a href="#">Mexco</a></li>
-                        <li><a href="#">Canada</a></li>
-                    </ul>
-                </li>
-                <li class="active"><a href="#"><span>Executive Branch</span></a>
-                    <ul class="sidebar-submenu">
-                        <li><a href="#">Office of President</a></li>
-                        <li><a href="#">Office of Vice President</a></li>
-                        <li class="active"><a href="#">Ministry</a>
-                            <ul class="sidebar-submenu">
-                                <li><a href="#">Ministry of Finance</a></li>
-                                <li class="active"><a href="#">Ministry of Energy and Mineral Resources</a></li>
-                                <li><a href="#">Ministry of State-Owned Enterprises</a></li>
-                                <li><a href="#">Ministry of Trade</a></li>
-                                <li><a href="#">Ministry of Industry</a></li>
-                                <li><a href="#">Ministry of Fishery</a></li>
-                                <li><a href="#">Ministry of Public Works and Housing</a></li>
-                                <li><a href="#">Ministry of Comm. and IT Indonesia</a></li>
-                                <li><a href="#">More...</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Provincial Government</a></li>
-                        <li><a href="#">Regional Government</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div id="konten" class="col-md-8" style="padding: 0 0; height: 76vh">
-        <div class="box" style="padding: 0 0; overflow: auto; height: 535px">
-            <img src="page13.JPG">
-        </div>
-    </div>
-    <div class="col-md-2" style="padding: 0 0; overflow: auto; height: 76vh">
-        <div class="row" style="margin: 0 0 0 0">
-            <div class="box col-md-12"  style="padding: 11px 0 11px 15px; text-align: left; font-size: 12px">
-                <b>Strategy Consultant</b>
-            </div>
-            <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
-                <img src="organizing.JPG" style="width: 20%;float: left;">
-                <div style="float: left;margin-left: 10px">
-                    <p>Debra</p>
-                    <p>Public Sector Strategy</p>
+        <div class="col-md-12" style="padding: 0 0; overflow: auto; height: 87vh">
+            <div class="row" style="margin: 0 0 0 0">
+                <div class="box col-md-12"  style="padding: 11px 0 11px 15px; text-align: left; font-size: 12px">
+                    <b>Strategy Consultant</b>
                 </div>
-            </div>
-            <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
-                <img src="flow.JPG" style="width: 20%;float: left;">
-                <div style="float: left;margin-left: 10px">
-                    <p>Sanjay</p>
-                    <p>Mergers & Acquisitions</p>
+                <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
+                    <img src="organizing.JPG" style="width: 20%;float: left;">
+                    <div style="float: left;margin-left: 10px">
+                        <p>Debra</p>
+                        <p>Public Sector Strategy</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
-                <img src="organizing.JPG" style="width: 20%;float: left;">
-                <div style="float: left;margin-left: 10px">
-                    <p>DR.Roy Adhie</p>
-                    <p>Org. Strategy</p>
+                <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
+                    <img src="flow.JPG" style="width: 20%;float: left;">
+                    <div style="float: left;margin-left: 10px">
+                        <p>Sanjay</p>
+                        <p>Mergers & Acquisitions</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
-                <img src="flow.JPG" style="width: 20%;float: left;">
-                <div style="float: left;margin-left: 10px">
-                    <p>Tina Singh</p>
-                    <p>Functional Strategy</p>
+                <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
+                    <img src="organizing.JPG" style="width: 20%;float: left;">
+                    <div style="float: left;margin-left: 10px">
+                        <p>DR.Roy Adhie</p>
+                        <p>Org. Strategy</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box col-md-12"  style="padding: 11px 0 11px 15px; text-align: left; font-size: 12px">
-                <b>Operations Consultant</b>
-            </div>
-            <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
-                <img src="organizing.JPG" style="width: 20%;float: left;">
-                <div style="float: left;margin-left: 10px">
-                    <p>DR.Roy Adhie</p>
-                    <p>Sales & Marketing</p>
+                <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
+                    <img src="flow.JPG" style="width: 20%;float: left;">
+                    <div style="float: left;margin-left: 10px">
+                        <p>Tina Singh</p>
+                        <p>Functional Strategy</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
-                <img src="flow.JPG" style="width: 20%;float: left;">
-                <div style="float: left;margin-left: 10px">
-                    <p>Tina Singh</p>
-                    <p>Process Management</p>
+                <div class="box col-md-12"  style="padding: 11px 0 11px 15px; text-align: left; font-size: 12px">
+                    <b>Operations Consultant</b>
                 </div>
-            </div>
-            <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
-                <img src="organizing.JPG" style="width: 20%;float: left;">
-                <div style="float: left;margin-left: 10px">
-                    <p>Louis</p>
-                    <p>Supply Chain Mgt.</p>
+                <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
+                    <img src="organizing.JPG" style="width: 20%;float: left;">
+                    <div style="float: left;margin-left: 10px">
+                        <p>DR.Roy Adhie</p>
+                        <p>Sales & Marketing</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
-                <img src="flow.JPG" style="width: 20%;float: left;">
-                <div style="float: left;margin-left: 10px">
-                    <p>Tina Singh</p>
-                    <p>Procurement</p>
+                <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
+                    <img src="flow.JPG" style="width: 20%;float: left;">
+                    <div style="float: left;margin-left: 10px">
+                        <p>Tina Singh</p>
+                        <p>Process Management</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
-                <img src="organizing.JPG" style="width: 20%;float: left;">
-                <div style="float: left;margin-left: 10px">
-                    <p>Louis</p>
-                    <p>Finance & Outsourcing</p>
+                <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
+                    <img src="organizing.JPG" style="width: 20%;float: left;">
+                    <div style="float: left;margin-left: 10px">
+                        <p>Louis</p>
+                        <p>Supply Chain Mgt.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box col-md-12"  style="padding: 11px 0 11px 15px; text-align: left; font-size: 12px">
-                <b>Hr Consultant</b>
-            </div>
-            <div class="box col-md-12"  style="padding: 11px 0 11px 15px; text-align: left; font-size: 12px">
-                <b>Financial Advisory</b>
-            </div>
-            <div class="box col-md-12"  style="padding: 11px 0 11px 15px; text-align: left; font-size: 12px">
-                <b>IT Advisory</b>
+                <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
+                    <img src="flow.JPG" style="width: 20%;float: left;">
+                    <div style="float: left;margin-left: 10px">
+                        <p>Tina Singh</p>
+                        <p>Procurement</p>
+                    </div>
+                </div>
+                <div class="box col-md-12"  style="padding: 5px 5px 0 5px; text-align: left; font-size: 10px">
+                    <img src="organizing.JPG" style="width: 20%;float: left;">
+                    <div style="float: left;margin-left: 10px">
+                        <p>Louis</p>
+                        <p>Finance & Outsourcing</p>
+                    </div>
+                </div>
+                <div class="box col-md-12"  style="padding: 11px 0 11px 15px; text-align: left; font-size: 12px">
+                    <b>Hr Consultant</b>
+                </div>
+                <div class="box col-md-12"  style="padding: 11px 0 11px 15px; text-align: left; font-size: 12px">
+                    <b>Financial Advisory</b>
+                </div>
+                <div class="box col-md-12"  style="padding: 11px 0 11px 15px; text-align: left; font-size: 12px">
+                    <b>IT Advisory</b>
+                </div>
             </div>
         </div>
     </div>
@@ -374,15 +374,6 @@
         e.preventDefault();
         $(this).tab('show');
     });
-</script>
-<script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='https://www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-XXXXX-X');ga('send','pageview');
-
 </script>
 <script src="js/vendor.js"></script>
 <script src="js/plugins.js"></script>

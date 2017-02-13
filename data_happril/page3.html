@@ -5,7 +5,7 @@
     <title></title>
     <!-- Bootstrap Core CSS -->
 
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
 
@@ -13,6 +13,12 @@
     <script src="js/bootstrap.js"></script>
 </head>
 <body>
+<div class="col-md-12 box" style="padding: 0 0">
+    <ul class="nav navbar-nav">
+        <li class="box-none"><a href="#set1">Country</a></li>
+        <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2">PESTLE Analysis</a></li>
+    </ul>
+</div>
 <div class="row" style="margin: 0 0 0 0;">
     <div id="btnmenu" class="col-md-2" style="padding: 0 0 0">
         <div class="box">
@@ -31,8 +37,8 @@
     </div>
 </div>
 <div class="row" style="margin: 0 0 0 0">
-    <div id="list" class="col-md-2" style="padding: 0 0; overflow: auto; height: 90vh">
-        <div class="box-left" style="padding: 0 0 27% 0; ">
+    <div id="list" class="col-md-2" style="padding: 0 0; overflow: auto; height: 88vh">
+        <div class="box-left" style="padding: 0 0 0 0">
             <ul class="sidebar-menu">
                 <li class="active"><a href="#"><span>Political Factors</span></a>
                     <ul class="sidebar-submenu">
@@ -77,7 +83,7 @@
         </div>
     </div>
     <div id="konten" class="col-md-8" style="padding: 0 0">
-        <div class="box" style="padding: 0 10px 0 10px; overflow: auto; height: 95vh">
+        <div class="box" style="padding: 0 10px 0 10px; overflow: auto; height: 88vh">
             <h3 align="left">Corruption in Indonesia</h3>
             <p align="left"><a href="#">www.indonesia-investments.com/</a></p>
             <br>
@@ -228,7 +234,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-2" style="padding: 0 0">
+    <div class="col-md-2" style="padding: 0 0; overflow: auto; height: 87vh;">
         <div class="list-group" style="text-align: left">
             <a onclick="openCity('question1')" class="list-group-item" href="#" style="padding: 20px 0 30px 15px; background-color: #afd9ee; color: #000000">How do you define corruption?</a>
             <a onclick="openCity('question2')" class="list-group-item" href="#" style="padding: 20px 0 30px 15px;">What is transparency?</a>
@@ -249,15 +255,6 @@
             }
             document.getElementById(cityName).style.display = "block";
         }
-    </script>
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
-
     </script>
     <script src="js/vendor.js"></script>
     <script src="js/plugins.js"></script>

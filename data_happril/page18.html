@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <script src="js/jquery-3.1.1.js"></script>
@@ -12,6 +12,12 @@
     <script src="chart/highcharts.js"></script>
 </head>
 <body>
+<div class="col-md-12 box" style="padding: 0 0">
+    <ul class="nav navbar-nav">
+        <li class="box-none"><a href="#set1">Country</a></li>
+        <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2">PESTLE Analysis</a></li>
+    </ul>
+</div>
 <div class="row" style="margin: 0 0 0 0;">
     <div id="menu2" class="col-md-10" style="padding: 0 0 0 0">
         <div class="box" style="padding: 0 0 0 0">
@@ -24,19 +30,16 @@
                         <li class="box-none"><a href="#set4">Expert Opinion</a></li>
                     </ul>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" style="padding: 0;">
                     <div class="tab-content">
                         <div class="tab-pane fade" id="set1">
                             <div class="tabbable">
-                                <div class="row">
                                     <div class="col-md-12 box" style="padding: 0 0">
                                         <ul class="nav navbar-nav">
                                             <li class="box-none"><a href="#sub11">Tab 1.1</a></li>
                                             <li class="box-none"><a href="#sub12">Tab 1.2</a></li>
                                         </ul>
                                     </div>
-                                </div>
-                                <div class="row" style="clear: both">
                                     <div class="col-md-12 box" style="padding: 0 0">
                                         <div class="tab-content">
                                             <div class="tab-pane fade active in" id="sub11">
@@ -57,12 +60,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="set2">
                             <div class="tabbable">
-                                <div class="row">
                                     <div class="col-md-12 box" style="padding: 0 0">
                                         <ul class="nav navbar-nav">
                                             <li class="box-none"><a href="#sub21">Operation</a></li>
@@ -70,8 +71,6 @@
                                             <li class="box-none"><a href="#sub23">Investment</a></li>
                                         </ul>
                                     </div>
-                                </div>
-                                <div class="row">
                                     <div class="tab-content">
                                         <div class="tab-pane fade active in" id="sub21">
                                             <div class="col-md-12 box" style="padding: 0 0">
@@ -99,12 +98,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="set3">
                             <div class="tabbable">
-                                <div class="row">
                                     <div class="col-md-12 box" style="padding: 0 0">
                                         <div class="col-md-12 box" style="padding: 0 0">
                                             <ul class="nav navbar-nav">
@@ -113,8 +110,6 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row" style="clear: both">
                                     <div class="col-md-12 box" style="padding: 0 0">
                                         <div class="tab-content">
                                             <div class="tab-pane fade active in" id="sub31">
@@ -135,12 +130,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade active in" id="set4">
                             <div class="tabbable">
-                                <div class="row">
                                     <div class="col-md-12 box" style="padding: 0 0">
                                         <div class="col-md-12 box" style="padding: 0 0">
                                             <ul class="nav navbar-nav">
@@ -151,8 +144,6 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row" style="clear: both">
                                     <div class="col-md-12 box" style="padding: 0 0">
                                         <div class="tab-content">
                                             <div class="tab-pane fade active in" id="sub41">
@@ -177,12 +168,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="set5">
                             <div class="tabbable">
-                                <div class="row">
                                     <div class="col-md-12 box" style="padding: 0 0">
                                         <div class="col-md-12 box" style="padding: 0 0">
                                             <ul class="nav navbar-nav">
@@ -191,8 +180,6 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row" style="clear: both">
                                     <div class="col-md-12 box" style="padding: 0 0">
                                         <div class="tab-content">
                                             <div class="tab-pane fade active in" id="sub51">
@@ -213,6 +200,49 @@
                                             </div>
                                         </div>
                                     </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="konten" class="col-md-12" style="padding: 0 0 0 0">
+                        <div class="row" style="margin: 0 0 0 0">
+                            <div class="col-md-2" style="padding: 0 0 0 0">
+                                <div class="box" style="padding: 1.7vh 0 ">
+                                    Methodology
+                                </div>
+                            </div>
+                            <div class="col-md-10" style="padding: 0 0 0 0">
+                                <div class="box" style="padding: 0 0 0 0">
+                                    <ul class="nav nav-tabs">
+                                        <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab1')" >Business Roadmap</a></li>
+                                        <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" >Organization Roadmap</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin: 0 0 0 0">
+                            <div class="col-md-2" style="padding: 0 0;">
+                                <a href="#" class="list-group-item">1. SCQ Analysis</a>
+                                <a href="#" class="list-group-item"><ul><li>Working Deck</li></ul></a>
+                                <a href="#" class="list-group-item"><ul><li>SCQ</li></ul></a>
+                                <a href="#" class="list-group-item"><ul><li><b>Issue Analysis</b></li></ul></a>
+                                <a href="#" class="list-group-item"><ul><li>Work Plan</li></ul></a>
+                                <a href="#" class="list-group-item"><ul><li>Final Presentation</li></ul></a>
+                                <a href="#" class="list-group-item">2. Other Methodology</a>
+                            </div>
+                            <div class="col-md-10" style="padding: 0 0;">
+                                <div class="row" style="margin: 0 0;">
+                                    <div class="col-md-12" style="padding: 0 0;">
+                                        <div class="box" style="text-align: left;padding: 10px 0 10px 15px;background-color: #dcdcdc">
+                                            <b>
+                                                Issue Analysis
+                                            </b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin: 0 0 0 0">
+                                    <div class="col-md-12" style="padding: 0 0; height: 61vh; overflow: auto">
+                                        <img class="img-responsive" src="18.JPG">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -223,281 +253,225 @@
     </div>
     <div class="col-md-2" style="padding: 0 0 0 0">
         <div class="col-md-4" style="padding: 0 0 0 0">
-            <div class="box" style="padding: 10.6vh 0">
+            <div class="box" style="padding: 10px 0">
                 <span style="color: limegreen">web</span><span style="color: #2aabd2">ex</span>
             </div>
         </div>
         <div class="col-md-8" style="padding: 0 0 0 0">
-            <div class="box" style="padding: 10.6vh 0">
+            <div class="box" style="padding: 10px 0">
                 Conference Call
             </div>
         </div>
-    </div>
-</div>
-<div class="row" style="margin: 0 0 0 0">
-    <div id="konten" class="col-md-10" style="padding: 0 0 0 0">
-        <div class="row" style="margin: 0 0 0 0">
-            <div class="col-md-2" style="padding: 0 0 0 0">
-                <div class="box" style="padding: 1.7vh 0 ">
-                    Methodology
-                </div>
-            </div>
-            <div class="col-md-10" style="padding: 0 0 0 0">
-                <div class="box" style="padding: 0 0 0 0">
-                    <ul class="nav nav-tabs">
-                        <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab1')" >Business Roadmap</a></li>
-                        <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" >Organization Roadmap</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row" style="margin: 0 0 0 0">
-            <div class="col-md-2" style="padding: 0 0;">
-                <a href="#" class="list-group-item">1. SCQ Analysis</a>
-                <a href="#" class="list-group-item"><ul><li>Working Deck</li></ul></a>
-                <a href="#" class="list-group-item"><ul><li>SCQ</li></ul></a>
-                <a href="#" class="list-group-item"><ul><li><b>Issue Analysis</b></li></ul></a>
-                <a href="#" class="list-group-item"><ul><li>Work Plan</li></ul></a>
-                <a href="#" class="list-group-item"><ul><li>Final Presentation</li></ul></a>
-                <a href="#" class="list-group-item">2. Other Methodology</a>
-            </div>
-            <div class="col-md-10" style="padding: 0 0;">
-                <div class="row" style="margin: 0 0;">
-                    <div class="col-md-12" style="padding: 0 0;">
-                        <div class="box" style="text-align: left;padding: 10px 0 10px 15px;background-color: #dcdcdc">
-                            <b>
-                                Issue Analysis
-                            </b>
+        <div class="col-md-12" style="padding: 0 0; height: 87vh; overflow: auto">
+            <div class="row" style="margin: 0 0;">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default" style="margin: 0 0;">
+                        <div class="panel-heading" role="tab" id="headingZero" style="background-color: #ffffff">
+                            <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+                                    Client
+                                </a>
+                            </p>
                         </div>
-                    </div>
-                </div>
-                <div class="row" style="margin: 0 0 0 0">
-                    <div class="col-md-12" style="padding: 0 0; height: 63vh; overflow: auto">
-                        <img class="img-responsive" src="18.JPG">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-2" style="padding: 0 0; height: 70vh; overflow: auto">
-        <div class="row" style="margin: 0 0;">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default" style="margin: 0 0;">
-                    <div class="panel-heading" role="tab" id="headingZero" style="background-color: #ffffff">
+                        <div id="collapseZero" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body" style="padding: 0 0;">
+                                <a href="#" onclick="openContent(event, 'problem1')">
+                                    <div class="col-md-12 box-left">
+                                        <div class="col-md-6"><img src="a1.JPG" class="img-responsive"></div>
+                                        <div class="col-md-6" style="color: #000000">
+                                            Mike
+                                            <br>Dept. 1
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" onclick="openContent(event, 'problem2')">
+                                    <div class="col-md-12 box-left">
+                                        <div class="col-md-6"><img src="a2.JPG" class="img-responsive"></div>
+                                        <div class="col-md-6" style="color: #000000">
+                                            Tom
+                                            <br>Dept.2
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" onclick="openContent(event, 'problem3')" id="defaultOpen">
+                                    <div class="col-md-12 box-left">
+                                        <div class="col-md-6"><img src="a3.JPG" class="img-responsive"></div>
+                                        <div class="col-md-6" style="color: #000000">
+                                            Mary
+                                            <br>Dept. 3
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" onclick="openContent(event, 'problem4')">
+                                    <div class="col-md-12 box-left">
+                                        <div class="col-md-6"><img src="a4.JPG" class="img-responsive"></div>
+                                        <div class="col-md-6" style="color: #000000">
+                                            Jane
+                                            <br>Dept. 4
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div><div class="panel panel-default" style="margin: 0 0;">
+                    <div class="panel-heading" role="tab" id="headingOne" style="background-color: #ffffff">
                         <p class="panel-title" style="font-size: 12px; text-decoration: none">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
-                                Client
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Strategy Consultant
                             </a>
                         </p>
                     </div>
-                    <div id="collapseZero" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                         <div class="panel-body" style="padding: 0 0;">
                             <a href="#" onclick="openContent(event, 'problem1')">
                                 <div class="col-md-12 box-left">
-                                    <div class="col-md-6"><img src="a1.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
                                     <div class="col-md-6" style="color: #000000">
-                                        Mike
-                                        <br>Dept. 1
+                                        Debora
+                                        <br>Public Sector Strategy
                                     </div>
                                 </div>
                             </a>
                             <a href="#" onclick="openContent(event, 'problem2')">
                                 <div class="col-md-12 box-left">
-                                    <div class="col-md-6"><img src="a2.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
                                     <div class="col-md-6" style="color: #000000">
-                                        Tom
-                                        <br>Dept.2
+                                        Sanjay
+                                        <br>Merger & Acquisitions
                                     </div>
                                 </div>
                             </a>
                             <a href="#" onclick="openContent(event, 'problem3')" id="defaultOpen">
                                 <div class="col-md-12 box-left">
-                                    <div class="col-md-6"><img src="a3.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
                                     <div class="col-md-6" style="color: #000000">
-                                        Mary
-                                        <br>Dept. 3
+                                        DR.Roy Adhie
+                                        <br>Org. Strategy
                                     </div>
                                 </div>
                             </a>
                             <a href="#" onclick="openContent(event, 'problem4')">
                                 <div class="col-md-12 box-left">
-                                    <div class="col-md-6"><img src="a4.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
                                     <div class="col-md-6" style="color: #000000">
-                                        Jane
-                                        <br>Dept. 4
+                                        Tyna Singh
+                                        <br>Functional Strategy
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
-                </div><div class="panel panel-default" style="margin: 0 0;">
-                <div class="panel-heading" role="tab" id="headingOne" style="background-color: #ffffff">
-                    <p class="panel-title" style="font-size: 12px; text-decoration: none">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Strategy Consultant
-                        </a>
-                    </p>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body" style="padding: 0 0;">
-                        <a href="#" onclick="openContent(event, 'problem1')">
-                            <div class="col-md-12 box-left">
-                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
-                                <div class="col-md-6" style="color: #000000">
-                                    Debora
-                                    <br>Public Sector Strategy
+                    <div class="panel panel-default" style="margin: 0 0">
+                        <div class="panel-heading" role="tab" id="headingTwo" style="background-color: #ffffff">
+                            <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Operation Consultant
+                                </a>
+                            </p>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body" style="padding: 0 0">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Debora
+                                        <br>Public Sector Strategy
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" onclick="openContent(event, 'problem2')">
-                            <div class="col-md-12 box-left">
-                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
-                                <div class="col-md-6" style="color: #000000">
-                                    Sanjay
-                                    <br>Merger & Acquisitions
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Sanjay
+                                        <br>Merger & Acquisitions
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" onclick="openContent(event, 'problem3')" id="defaultOpen">
-                            <div class="col-md-12 box-left">
-                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
-                                <div class="col-md-6" style="color: #000000">
-                                    DR.Roy Adhie
-                                    <br>Org. Strategy
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        DR.Roy Adhie
+                                        <br>Org. Strategy
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" onclick="openContent(event, 'problem4')">
-                            <div class="col-md-12 box-left">
-                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
-                                <div class="col-md-6" style="color: #000000">
-                                    Tyna Singh
-                                    <br>Functional Strategy
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-                <div class="panel panel-default" style="margin: 0 0">
-                    <div class="panel-heading" role="tab" id="headingTwo" style="background-color: #ffffff">
-                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Operation Consultant
-                            </a>
-                        </p>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="panel-body" style="padding: 0 0">
-                            <div class="col-md-12 box-left">
-                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
-                                <div class="col-md-6" style="color: #000000">
-                                    Debora
-                                    <br>Public Sector Strategy
-                                </div>
-                            </div>
-                            <div class="col-md-12 box-left">
-                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
-                                <div class="col-md-6" style="color: #000000">
-                                    Sanjay
-                                    <br>Merger & Acquisitions
-                                </div>
-                            </div>
-                            <div class="col-md-12 box-left">
-                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
-                                <div class="col-md-6" style="color: #000000">
-                                    DR.Roy Adhie
-                                    <br>Org. Strategy
-                                </div>
-                            </div>
-                            <div class="col-md-12 box-left">
-                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
-                                <div class="col-md-6" style="color: #000000">
-                                    Tyna Singh
-                                    <br>Functional Strategy
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Tyna Singh
+                                        <br>Functional Strategy
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="panel panel-default" style="margin: 0 0">
-                    <div class="panel-heading" role="tab" id="headingThree" style="background-color: #ffffff">
-                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Operations Consultant
-                            </a>
-                        </p>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                        <div class="panel-body" style="padding: 0 0">
-                            <div class="col-md-12 box-left">
-                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
-                                <div class="col-md-6" style="color: #000000">
-                                    Debora
-                                    <br>Public Sector Strategy
+                    <div class="panel panel-default" style="margin: 0 0">
+                        <div class="panel-heading" role="tab" id="headingThree" style="background-color: #ffffff">
+                            <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Operations Consultant
+                                </a>
+                            </p>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body" style="padding: 0 0">
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Debora
+                                        <br>Public Sector Strategy
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-12 box-left">
-                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
-                                <div class="col-md-6" style="color: #000000">
-                                    Sanjay
-                                    <br>Merger & Acquisitions
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Sanjay
+                                        <br>Merger & Acquisitions
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-12 box-left">
-                                <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
-                                <div class="col-md-6" style="color: #000000">
-                                    DR.Roy Adhie
-                                    <br>Org. Strategy
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="organizing.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        DR.Roy Adhie
+                                        <br>Org. Strategy
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-12 box-left">
-                                <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
-                                <div class="col-md-6" style="color: #000000">
-                                    Tyna Singh
-                                    <br>Functional Strategy
+                                <div class="col-md-12 box-left">
+                                    <div class="col-md-6"><img src="flow.JPG" class="img-responsive"></div>
+                                    <div class="col-md-6" style="color: #000000">
+                                        Tyna Singh
+                                        <br>Functional Strategy
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="panel panel-default" style="margin: 0 0">
-                    <div class="panel-heading" role="tab" id="headingFour" style="background-color: #ffffff">
-                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Financial Advisory
-                            </a>
-                        </p>
+                    <div class="panel panel-default" style="margin: 0 0">
+                        <div class="panel-heading" role="tab" id="headingFour" style="background-color: #ffffff">
+                            <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Financial Advisory
+                                </a>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="panel panel-default" style="margin: 0 0">
-                    <div class="panel-heading" role="tab" id="headingFive" style="background-color: #ffffff">
-                        <p class="panel-title" style="font-size: 12px; text-decoration: none">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                IT Advisory
-                            </a>
-                        </p>
+                    <div class="panel panel-default" style="margin: 0 0">
+                        <div class="panel-heading" role="tab" id="headingFive" style="background-color: #ffffff">
+                            <p class="panel-title" style="font-size: 12px; text-decoration: none">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    IT Advisory
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <script type="text/javascript">
     $("ul.navbar-nav a").click(function (e) {
         e.preventDefault();
         $(this).tab('show');
     });
-</script>
-<script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='https://www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-XXXXX-X');ga('send','pageview');
-
 </script>
 <script src="js/vendor.js"></script>
 <script src="js/plugins.js"></script>

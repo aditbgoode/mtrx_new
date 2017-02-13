@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
 
@@ -13,40 +13,46 @@
     <script src="chart/highcharts.js"></script>
 </head>
 <body>
+<div class="col-md-12 box" style="padding: 0 0">
+    <ul class="nav navbar-nav">
+        <li class="box-none"><a href="#set1">Country</a></li>
+        <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2">PESTLE Analysis</a></li>
+    </ul>
+</div>
 <div class="row" style="margin: 0 0 0 0;">
     <div id="btnmenu" class="col-md-2" style="padding: 0 0 0">
-        <div class="box" style="padding: 2.8vh 0">
+        <div class="box" style="padding: 10px 0">
             <span id="menu"><b>Country</b></span>
         </div>
     </div>
     <div id="menu2" class="col-md-8" style="padding: 0 0 0 0">
-        <div class="box" style="padding: 0 0 0 0">
+        <div class="box" style="padding: 0; font-size: .8em;">
             <ul class="nav nav-tabs">
-                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab1')" style="width:20vh; color: #000000;"><b>Business Confidence</b></a></li>
-                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="width:20vh; color: #000000"><b>Competitiveness Index</b></a></li>
-                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="width:20vh; color: #000000"><b>Competitiveness Rank</b></a></li>
-                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="width:15vh; color: #ffffff;background-color: steelblue;"><b>Corruption Index</b></a></li>
-                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="width:15vh; color: #000000"><b>Corruption Rank</b></a></li>
-                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="width:20vh; color: #000000"><b>Ease of Doing Business</b></a></li>
+                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab1')" style="width:10px 0; color: #000000;"><b>Business Confidence</b></a></li>
+                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="width:10px 0; color: #000000"><b>Competitiveness Index</b></a></li>
+                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="width:10px 0; color: #000000"><b>Competitiveness Rank</b></a></li>
+                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="width:10px 0; color: #ffffff;background-color: steelblue;"><b>Corruption Index</b></a></li>
+                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="width:10px 0; color: #000000"><b>Corruption Rank</b></a></li>
+                <li class="box-none"><a href="javascript:void(0)" class="tablinks" onclick="opeTab2(event, 'tab2')" style="width:10px 0; color: #000000"><b>Ease of Doing Business</b></a></li>
             </ul>
         </div>
     </div>
     <div class="col-md-2" style="padding: 0 0 0 0">
         <div class="col-md-4" style="padding: 0 0 0 0">
-            <div class="box" style="padding: 2.8vh 0">
+            <div class="box" style="padding: 10px 0">
                 <span style="color: limegreen">web</span><span style="color: #2aabd2">ex</span>
             </div>
         </div>
         <div class="col-md-8" style="padding: 0 0 0 0">
-            <div class="box" style="padding: 2.8vh 0">
+            <div class="box" style="padding: 10px 0">
                 Conference Call
             </div>
         </div>
     </div>
 </div>
 <div class="row" style="margin: 0 0 0 0">
-    <div id="list" class="col-md-2" style="padding: 0 0; overflow: auto; height: 90vh">
-        <div class="box-;eft" style="padding: 0 0 27% 0">
+    <div id="list" class="col-md-2" style="padding: 0 0; overflow: auto; height: 87vh">
+        <div class="box-left">
             <ul class="sidebar-menu">
                 <li class="active"><a href="#"><span>Asia</span></a>
                     <ul class="sidebar-submenu">
@@ -96,7 +102,7 @@
             </ul>
         </div>
     </div>
-    <div id="konten" class="col-md-8" style="padding: 0 0; overflow: auto;height: 90vh">
+    <div id="konten" class="col-md-8" style="padding: 0 0; overflow: auto;height: 87vh">
         <div class="box" style="padding: 0 10px 0 10px">
             <br>
             <div id="container" style="width: 100%;height: auto;"></div>
@@ -183,7 +189,7 @@
             <p align="left" style="color:#afd9ee;margin-left: 65px">Read More...</p>
         </div>
     </div>
-    <div class="col-md-2" style="padding: 0 0; overflow: auto;height: 90vh">
+    <div class="col-md-2" style="padding: 0 0; overflow: auto;height: 87vh">
         <div class="row" style="margin: 0 0 0 0">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default" style="margin: 0 0;">

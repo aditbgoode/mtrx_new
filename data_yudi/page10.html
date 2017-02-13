@@ -6,7 +6,13 @@
 	<link rel="stylesheet" href="./dist/sidebar-menu.css">
 </head>
 <body>
-	<div class="col-md-12 vh-16">
+    <div class="col-md-12 box" style="padding: 0 0">
+        <ul class="nav navbar-nav">
+            <li class="box-none"><a href="#set1">Country</a></li>
+            <li class="box-none" style="background-color:#dfdfdf;"><a href="#set2">PESTLE Analysis</a></li>
+        </ul>
+    </div>
+	<div class="col-md-12">
 		<div class="tabbable boxed parentTabs">
 			<div class="col-md-12 bordered-bottom-title">
 				<ul class="nav navbar-nav">
@@ -62,8 +68,82 @@
 				</div>
 			</div>
 		</div>
+		<div class="col-md-7">
+			<div class="bordered-bottom-title">
+				<div>
+					<nav class="navbar navbar-default" role="navigation" id="topmenu">
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+								<a href="#" data-toggle="collapse2" id="defaultOpen"><b>Data Source</b></a>
+							</li>
+							<li class="dropdown">
+								<a href="#" data-toggle="collapse2" ><b>Primary Data</b></a>
+							</li>
+							<li class="dropdown">
+								<a href="#" data-toggle="collapse2" ><b>Secondary Data</b></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="tab-content vh-75">
+				<div class="tab-content left-sidebar-menu">
+					<table class="table table-bordered table-stripped">
+						<thead style="color:46abc3;">
+							<th align="center">Key Drivers</th>
+							<th align="center">Strengths</th>
+							<th align="center">Weakness</th>
+							<th align="center">Opportunities</th>
+							<th align="center">Treaths</th>
+						</thead>
+						<tr>
+							<td>Earning</td>
+							<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+							<td>Suspendisse vehicula, massa a blandit venenatis, nibh orci</td>
+							<td>Pellentesque ullamcorper mollis sollicitudin. </td>
+							<td>Donec non rhoncus sapien, a euismod libero.</td>
+						</tr>
+						<tr>
+							<td>Sales & Marketing</td>
+							<td>Duis finibus viverra gravida. Etiam tempor tellus lorem,</td>
+							<td>Aenean quis odio diam. Etiam vitae lorem vitae libero faucibus sagittis.</td>
+							<td>In a aliquam lectus. Nullam metus eros, venenatis non</td>
+							<td>Sed elementum purus eget dui ullamcorper, vel sodales ante pharetra</td>
+						</tr>
+						<tr>
+							<td>Operating</td>
+							<td>Mauris vitae maximus erat, quis hendrerit mi. Donec sit amet mattis libero. </td>
+							<td>Suspendisse potenti. Etiam eu rhoncus felis. In et lectus urna. Cras tincidunt lorem sed</td>
+							<td>Vivamus et felis ut nunc vehicula commodo. Duis ullamcorper</td>
+							<td>Phasellus nec mi id risus ullamcorper maximus. Sed sit amet scelerisque leo, convallis gravida risus.</td>
+						</tr>
+						<tr>
+							<td>Investing</td>
+							<td>Nulla vel lacus turpis. In lobortis lectus tristique diam viverra</td>
+							<td>Nullam eget nisl libero. Fusce et volutpat nisl, vel tempus odio.</td>
+							<td>Suspendisse et ligula erat. Lorem ipsum dolor sit amet, </td>
+							<td>Etiam facilisis tortor sed magna fringilla venenatis. Proin non tincidunt libero. </td>
+						</tr>
+						<tr>
+							<td>Funding</td>
+							<td>Suspendisse sagittis tincidunt tellus, eget fermentum lacus aliquet vel.</td>
+							<td>Quisque at diam et sem consectetur blandit. Morbi dapibus mollis sapien,</td>
+							<td>Vestibulum id dictum odio, non maximus libero. Nulla vitae nisi a enim tincidunt suscipit.</td>
+							<td>Nunc ac risus sed arcu dapibus congue. Integer eros turpis, ultrices at enim a, porta lobortis dui.</td>
+						</tr>
+						<tr>
+							<td>Cashflow Management</td>
+							<td>Mauris vitae maximus erat, quis hendrerit mi. Donec sit amet mattis libero. </td>
+							<td>Suspendisse potenti. Etiam eu rhoncus felis. In et lectus urna. Cras tincidunt lorem sed</td>
+							<td>Vivamus et felis ut nunc vehicula commodo. Duis ullamcorper</td>
+							<td>Phasellus nec mi id risus ullamcorper maximus. Sed sit amet scelerisque leo, convallis gravida risus.</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
 		<div class="col-md-3">
-			<div class="bordered-bottom-title vh-8">
+			<div class="bordered-bottom-title">
 				<div>
 					<nav class="navbar navbar-default" role="navigation" id="topmenu">
 						<ul class="nav navbar-nav">
@@ -162,80 +242,6 @@
 							</tr>
 						</table>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-7">
-			<div class="bordered-bottom-title vh-8">
-				<div>
-					<nav class="navbar navbar-default" role="navigation" id="topmenu">
-						<ul class="nav navbar-nav">
-							<li class="dropdown">
-								<a href="#" data-toggle="collapse2" id="defaultOpen"><b>Data Source</b></a>
-							</li>
-							<li class="dropdown">
-								<a href="#" data-toggle="collapse2" ><b>Primary Data</b></a>
-							</li>
-							<li class="dropdown">
-								<a href="#" data-toggle="collapse2" ><b>Secondary Data</b></a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<div class="tab-content vh-75">
-				<div class="tab-content left-sidebar-menu">
-					<table class="table table-bordered table-stripped">
-						<thead style="color:46abc3;">
-							<th align="center">Key Drivers</th>
-							<th align="center">Strengths</th>
-							<th align="center">Weakness</th>
-							<th align="center">Opportunities</th>
-							<th align="center">Treaths</th>
-						</thead>
-						<tr>
-							<td>Earning</td>
-							<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
-							<td>Suspendisse vehicula, massa a blandit venenatis, nibh orci</td>
-							<td>Pellentesque ullamcorper mollis sollicitudin. </td>
-							<td>Donec non rhoncus sapien, a euismod libero.</td>
-						</tr>
-						<tr>
-							<td>Sales & Marketing</td>
-							<td>Duis finibus viverra gravida. Etiam tempor tellus lorem,</td>
-							<td>Aenean quis odio diam. Etiam vitae lorem vitae libero faucibus sagittis.</td>
-							<td>In a aliquam lectus. Nullam metus eros, venenatis non</td>
-							<td>Sed elementum purus eget dui ullamcorper, vel sodales ante pharetra</td>
-						</tr>
-						<tr>
-							<td>Operating</td>
-							<td>Mauris vitae maximus erat, quis hendrerit mi. Donec sit amet mattis libero. </td>
-							<td>Suspendisse potenti. Etiam eu rhoncus felis. In et lectus urna. Cras tincidunt lorem sed</td>
-							<td>Vivamus et felis ut nunc vehicula commodo. Duis ullamcorper</td>
-							<td>Phasellus nec mi id risus ullamcorper maximus. Sed sit amet scelerisque leo, convallis gravida risus.</td>
-						</tr>
-						<tr>
-							<td>Investing</td>
-							<td>Nulla vel lacus turpis. In lobortis lectus tristique diam viverra</td>
-							<td>Nullam eget nisl libero. Fusce et volutpat nisl, vel tempus odio.</td>
-							<td>Suspendisse et ligula erat. Lorem ipsum dolor sit amet, </td>
-							<td>Etiam facilisis tortor sed magna fringilla venenatis. Proin non tincidunt libero. </td>
-						</tr>
-						<tr>
-							<td>Funding</td>
-							<td>Suspendisse sagittis tincidunt tellus, eget fermentum lacus aliquet vel.</td>
-							<td>Quisque at diam et sem consectetur blandit. Morbi dapibus mollis sapien,</td>
-							<td>Vestibulum id dictum odio, non maximus libero. Nulla vitae nisi a enim tincidunt suscipit.</td>
-							<td>Nunc ac risus sed arcu dapibus congue. Integer eros turpis, ultrices at enim a, porta lobortis dui.</td>
-						</tr>
-						<tr>
-							<td>Cashflow Management</td>
-							<td>Mauris vitae maximus erat, quis hendrerit mi. Donec sit amet mattis libero. </td>
-							<td>Suspendisse potenti. Etiam eu rhoncus felis. In et lectus urna. Cras tincidunt lorem sed</td>
-							<td>Vivamus et felis ut nunc vehicula commodo. Duis ullamcorper</td>
-							<td>Phasellus nec mi id risus ullamcorper maximus. Sed sit amet scelerisque leo, convallis gravida risus.</td>
-						</tr>
-					</table>
 				</div>
 			</div>
 		</div>

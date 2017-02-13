@@ -1,96 +1,48 @@
 <html>
 <head>
 	<title>Page4</title>
-	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+<!--	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">-->
 	<link rel="stylesheet" type="text/css" href="assets/style-dimas.css">
 	<!-- <link rel="stylesheet" href="./dist/sidebar-menu.css"> -->
 	<link rel="stylesheet" href="assets/main.css">
 </head>
 <body>
 <div class="col-md-12">
+    <div class="col-md-12 border" style="padding: 0 0">
+            <ul class="nav navbar-nav">
+                <li class="box-none"><a href="#set1" style="padding:10px;">Country</a></li>
+                <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2" style="padding: 10px;">PESTLE Analysis</a></li>
+            </ul>
+        </div>
+		<div class="col-md-9 border">
+			<ul class="nav navbar-nav">
+                <li class="box-none"><a href="#set1" style="padding:10px;">Overview</a></li>
+                <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2" style="padding: 10px;">Market Research</a></li>
+                <li class="box-none"><a href="#set1" style="padding:10px;">Negotiations</a></li>
+                <li class="box-none"><a href="#set1" style="padding:10px;">Expert Opinion</a></li>
+            </ul>
+		</div>
+		
+        <div class="col-md-3">
+            <div>
+                <div class="col-md-12">
+                    <div class="col-md-3">
+                        <div class="title-section" style="border:solid #eee 1px;">
+                            <a href="#"><span style="color: limegreen">web</span><span style="color: #2aabd2">ex</span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="title-section" style="border:solid #eee 1px;">
+                            Conference Call
+                        </div>
+                    </div>
+                </div>
 
-		<div class="col-md-1 ani">
-			<div class="title-section" style="border:solid #eee 1px;padding-bottom: 11px;">
-				<a href="#" style=" display: block; height: 3%; width: 100%; text-decoration: none;" class="fontsize"><b>Overview</b></a>
-			</div>
-		</div>
-		<div class="col-md-1 ani">
-		<div class="title-section lala" style="border:solid #eee 1px;">
-				<a href="#" style=" display: block; height: 3%; width: 100%; text-decoration: none;" onclick="openTab(event, 'market')" id="openmarket" class="fontsize marketp4"><b>Market Research</b></a>
-			</div>
-		</div>
-		<div class="col-md-1 ani">
-			<div class="title-section" style="border:solid #eee 1px;padding-bottom: 11px;">
-				<a href="#" style=" display: block; height: 3%; width: 100%; text-decoration: none;"  class="fontsize"><b>Negotiations</b></a>
-			</div>
-		</div>
-		<div class="col-md-1 ani">
-			<div class="title-section" style="border:solid #eee 1px; padding-bottom: 11px;">
-				<a href="#" style=" display: block; height: 3%; width: 100%; text-decoration: none;" class="fontsize expertp4"><b>Expert Opinion</b></a>
-			</div>
-		</div>
-		<div class="col-md-5" style="border:solid #eee 1px; padding-bottom: 42px;"></div>
-			<div class="col-md-3">
-				<div>
-					<div class="col-md-12">
-						<div class="col-md-3">
-							<div class="title-section" style="border:solid #eee 1px;">
-								<a href="#"><span style="color: limegreen">web</span><span style="color: #2aabd2">ex</span></a>
-							</div>
-						</div>
-						<div class="col-md-9">
-							<div class="title-section" style="border:solid #eee 1px;">
-								Conference Call
-							</div>
-						</div>
-					</div>
-					<div class="faq-right-side-bar">
-						<section>
-							<ul class="sidebar-menu">
-								<li><a href="#" class="noncolor" id="click1"><span><b>Client</b></span></a>
-									<ul class="sidebar-submenu">
-										<li class="noncolor"><img src="assets/img/a1.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Mike</span><br><span>Dept. 1</span></a></li>
-										<li class="noncolor"><img src="assets/img/a2.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Tom</span><br><span>Dept. 2</span></a></li>
-										<li class="noncolor"><img src="assets/img/a3.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Mary</span><br><span>Dept. 3</span></a></li>
-										<li class="noncolor"><img src="assets/img/a4.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Jane</span><br><span>Dept. 4</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</section>
-						<section>
-							<ul class="sidebar-menu">
-								<li><a href="#" class="noncolor" id="click2"><span><b>Stategy Consultant</b></span></a>
-									<ul class="sidebar-submenu">
-										<li class="noncolor"><img src="assets/img/organizing.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Debra</span><br><span>Public Sector Strategy</span></a></li>
-										<li class="noncolor"><img src="assets/img/flow.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Sanjay</span><br><span>Mergers & Acquisitions</span></a></li>
-										<li class="noncolor"><img src="assets/img/organizing.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">DR. Roy Adhie</span><br><span>Org. Strategy</span></a></li>
-										<li class="noncolor"><img src="assets/img/flow.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Tina Singh</span><br><span>Functional Strategy</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</section>
-						<section>
-							<ul class="sidebar-menu">
-								<li><a href="#" class="noncolor"><span><b>Operations Consultant</b></span></a></li>
-							</ul>
-						</section>
-						<section>
-							<ul class="sidebar-menu">
-								<li><a href="#" class="noncolor"><span><b>OD&HC Consultant</b></span></a></li>
-							</ul>
-						</section>
-						<section>
-							<ul class="sidebar-menu">
-								<li><a href="#" class="noncolor"><span><b>Fincancial Advisory</b></span></a></li>
-							</ul>
-						</section>
-
-					</div>
-				</div>
-			</div>
-			<div id="market" class="col-md-12 contentBody" style="margin-top: -90vh">
-		<div class="col-md-2">
-			<div class="left-sidebar-menu">
+            </div>
+        </div>
+<!--        <div id="market" class="col-md-12">-->
+		<div class="col-md-2" style="overflow:auto; height:75vh;">
+<!--			<div class="left-sidebar-menu">-->
 				<section>
 					<ul class="sidebar-menu">
 						<li>
@@ -102,9 +54,9 @@
 						</li>
 					</ul>
 				</section>
-			</div>
+<!--			</div>-->
 		</div>
-		<div id="pestle" class="contentBody">
+<!--		<div id="pestle" class="contentBody">-->
 		<div class="col-md-7">
 			<div class="tabs" data-example-id="togglable-tabs">
 	          <ul class="nav nav-tabs dk-nav dk-nav-3" id="myTabs" role="tablist">
@@ -115,7 +67,7 @@
             <div class="tab-pane fade active in" id="1" role="tabpanel" aria-labelledby="1">
               <div class="article">
                 <div class="row">
-                	<div class="col-md-12" style="background-color: lightgrey"><h4><b>PESTLE Analysis</b></h4></div>
+                	<div class="col-md-12" style="background-color: lightgrey; padding: 0 10px;"><h4><b>PESTLE Analysis</b></h4></div>
 				<div class="col-md-12">
 	                <div class="col-md-1" style="padding: 10px 0 0 0">
 	                    <img src="assets/img/user.png" height="40px" width="40px">
@@ -132,7 +84,7 @@
 	                </div>
 	            </div>
 
-	            <div class="col-md-12" style="height: 69vh; overflow-y: auto;">
+	            <div class="col-md-12 border" style="height: 65vh; overflow: auto;">
 	                <div class="col-md-1"></div>
 	                <div class="col-md-11">
 	                    <table class="table" id="factor" style="border: solid 1px lightgrey;">
@@ -229,7 +181,57 @@
           </div>
         </div>
 		</div>
-	</div>
+<!--	</div>-->
+<div class="col-md-3 border" style="overflow:auto; height:87vh;">
+<!--<div class="faq-right-side-bar">-->
+<!--						<section>-->
+							<ul class="sidebar-menu">
+								<li><a href="#" class="noncolor" id="click1"><span><b>Client</b></span></a>
+									<ul class="sidebar-submenu">
+										<li class="noncolor"><img src="assets/img/a1.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Mike</span><br><span>Dept. 1</span></a></li>
+										<li class="noncolor"><img src="assets/img/a2.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Tom</span><br><span>Dept. 2</span></a></li>
+										<li class="noncolor"><img src="assets/img/a3.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Mary</span><br><span>Dept. 3</span></a></li>
+										<li class="noncolor"><img src="assets/img/a4.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Jane</span><br><span>Dept. 4</span></a></li>
+									</ul>
+								</li>
+							</ul>
+<!--
+						</section>
+						<section>
+-->
+							<ul class="sidebar-menu">
+								<li><a href="#" class="noncolor" id="click2"><span><b>Stategy Consultant</b></span></a>
+									<ul class="sidebar-submenu">
+										<li class="noncolor"><img src="assets/img/organizing.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Debra</span><br><span>Public Sector Strategy</span></a></li>
+										<li class="noncolor"><img src="assets/img/flow.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Sanjay</span><br><span>Mergers & Acquisitions</span></a></li>
+										<li class="noncolor"><img src="assets/img/organizing.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">DR. Roy Adhie</span><br><span>Org. Strategy</span></a></li>
+										<li class="noncolor"><img src="assets/img/flow.jpg" width="70px" style="float: left;"><a href="#"><span style="float: left;">Tina Singh</span><br><span>Functional Strategy</span></a></li>
+									</ul>
+								</li>
+							</ul>
+<!--
+						</section>
+						<section>
+-->
+							<ul class="sidebar-menu">
+								<li><a href="#" class="noncolor"><span><b>Operations Consultant</b></span></a></li>
+							</ul>
+<!--
+						</section>
+						<section>
+-->
+							<ul class="sidebar-menu">
+								<li><a href="#" class="noncolor"><span><b>OD&HC Consultant</b></span></a></li>
+							</ul>
+<!--
+						</section>
+						<section>
+-->
+							<ul class="sidebar-menu">
+								<li><a href="#" class="noncolor"><span><b>Fincancial Advisory</b></span></a></li>
+							</ul>
+<!--						</section>-->
+<!--					</div>-->
 	</div>	
 	
 	<script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>

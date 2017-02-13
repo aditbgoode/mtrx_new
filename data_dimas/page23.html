@@ -1,16 +1,22 @@
 <html>
 <head>
     <title>Page23</title>
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+<!--    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">-->
     <link rel="stylesheet" type="text/css" href="assets/style-dimas.css">
     <link rel="stylesheet" href="assets/main.css">
-    <link rel="stylesheet" href="./dist/sidebar-menu.css">
+<!--    <link rel="stylesheet" href="./dist/sidebar-menu.css">-->
 </head>
 <body>  
-    <div>
+<!--    <div>-->
+       <div class="col-md-12 border" style="padding: 0 0">
+            <ul class="nav navbar-nav">
+                <li class="box-none"><a href="#set1" style="padding:10px;">Country</a></li>
+                <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2" style="padding: 10px;">PESTLE Analysis</a></li>
+            </ul>
+        </div>
         <div class="col-md-2">
             <div class="title-section" style="border-right: solid 1px #ddd;">Natural Resources</div>
-            <div class="left-sidebar-menu">
+<!--            <div class="left-sidebar-menu">-->
                 <section>
                     <ul class="sidebar-menu">
                         <li>
@@ -52,9 +58,9 @@
                         <li><a href="#"><span>Farming & Plantation</span></a></li>
                     </ul>
                 </section>
-            </div>
+<!--            </div>-->
         </div>
-         <div class="col-md-7">
+         <div class="col-md-7 border">
             <div class="tabs" data-example-id="togglable-tabs">
               <ul class="nav nav-tabs dk-nav dk-nav-3" id="myTabs" role="tablist">
                 <li class="" role="presentation" style="border-right: solid 1px #ddd;"><a id="home-tab" href="#1" role="tab" data-toggle="tab" aria-controls="1" aria-expanded="false">Commodity Market</a></li>
@@ -98,7 +104,7 @@
         <div class="col-md-3">
             <div id="commodityMarket" class="tabcontent">
                 <div class="title-section" style="border-left: solid #ddd 1px;">FAQ's</div>
-                <div class="faq-right-side-bar">
+                <div style="overflow:auto; height:85vh;">
                     <ul class="list-inline list-2">
                         <a data-toggle="collapse2" onclick="openContent(event, 'faqDefault')"></a>
                         <li role="presentation" class="active">
@@ -147,7 +153,7 @@
                 </div>
             </div>
         </div>
-    </div>
+<!--    </div>-->
     <script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
     <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="./dist/highcharts.js"></script>

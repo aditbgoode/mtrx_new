@@ -2,20 +2,26 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+<!--        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">-->
+        <link rel="stylesheet" type="text/css" href="assets/main.css">
         <link rel="stylesheet" type="text/css" href="assets/style-dimas.css">
-        <link rel="stylesheet" href="./dist/sidebar-menu.css">
+<!--        <link rel="stylesheet" href="./dist/sidebar-menu.css">-->
         <title>Page10</title>
     </head>
     <body>
         <div class="col-md-12">
-        
+        <div class="col-md-12 border" style="padding: 0 0">
+            <ul class="nav navbar-nav">
+                <li class="box-none"><a href="#set1" style="padding:10px;">Country</a></li>
+                <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2" style="padding: 10px;">PESTLE Analysis</a></li>
+            </ul>
+        </div>
             <div class="col-md-2">
                 <div class="tab-title">
                     Process Mapping
                 </div>
                 <div class="tab-content">
-                    <div class="left-sidebar-menu">
+                    <div class="left-sidebar-menu" style="overflow:auto; height:85vh;">
                         <section>
                             <ul class="sidebar-menu">
                                 <li><a href="#"><span>Process Mapping <br>Level 0</span></a></li>
@@ -41,30 +47,30 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" style="overflow:auto; height:80vh;">
                 <div class="col-md-12">
                     <nav class="navbar navbar-default" role="navigation" id="topmenu">
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
-                                <a href="#" id="click2" class="violet" data-toggle="collapse" data-target="#working1">Business Process L3</a>
+                                <a href="#" id="click2" class="violet" data-toggle="collapse" data-target="#working1" style="padding:10px;">Business Process L3</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="violet" data-toggle="collapse" data-target="#working2">KPI L3</a>
+                                <a href="#" class="violet" data-toggle="collapse" data-target="#working2" style="padding:10px;">KPI L3</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="violet" data-toggle="collapse" data-target="#working3">Unit</a>
+                                <a href="#" class="violet" data-toggle="collapse" data-target="#working3" style="padding:10px;">Unit</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-12 left-sidebar-menu">
+                <div class="col-md-12">
                     <div class="col-md-12 bordered-bottom-title padding-10">
                         <h6 align="center"><b>GATHERING PROCESS</b></h6>
                     </div>
                     <div class="col-md-12 ">
                         <br><br>
                         <div class="panel panel-default panel-black">
-                            <table class="table table-bordered"">
+                            <table class="table table-bordered">
                                 <tr>
                                     <td><b>107. Membuat perencanaan modifikasi / perbaikan kapasitas ...</b></td>
                                 </tr>
@@ -87,156 +93,157 @@
                 </div>
             </div>
             <div class="col-md-7">
-               <div class="tabbable boxed parentTabs">
-                        <div class="col-md-12 bordered-bottom-title">
-                            <ul class="nav navbar-nav">
-                                <li class=""><a href="#set1" class="purple">PDCA Cycles</a></li>
-                                <li><a href="#set2" id="click3" class="purple">Plan</a></li>
-                                <li><a href="#set3" class="purple">Do</a></li>
-                                <li><a href="#set4" class="purple">Check</a></li>
-                                <li><a href="#set5" class="purple">Act</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="tab-content">
-                                <div class="tab-pane fade" id="set1">
-                                    <div class="tabbable">
-                                        <div class="col-md-12 bordered-bottom-title">
-                                            <ul class="nav navbar-nav">
-                                                <li class=""><a href="#sub11">Overview 1</a></li>
-                                                <li><a href="#sub12">Overview 2</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-12 bordered-bottom-title">
-                                            <div class="tab-content">
-                                                <div class="tab-pane fade in" id="sub11">
-                                                    <ul class="nav navbar-nav">
-                                                        <li><a href="#">Tab 1.1.1</a></li>
-                                                        <li><a href="#">Tab 1.1.2</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="tab-pane fade" id="sub12">
-                                                    <ul class="nav navbar-nav">
-                                                        <li><a href="#">Tab 1.2.1</a></li>
-                                                        <li><a href="#">Tab 1.2.2</a></li>
-                                                    </ul>
-                                                </div>
+                <div class="tabbable boxed parentTabs">
+                    <div class="col-md-12 bordered-bottom-title">
+                        <ul class="nav navbar-nav">
+                            <li class=""><a href="#set1" class="purple">PDCA Cycles</a></li>
+                            <li><a href="#set2" id="click3" class="purple">Plan</a></li>
+                            <li><a href="#set3" class="purple">Do</a></li>
+                            <li><a href="#set4" class="purple">Check</a></li>
+                            <li><a href="#set5" class="purple">Act</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="tab-content">
+                            <div class="tab-pane fade" id="set1">
+                                <div class="tabbable">
+                                    <div class="col-md-12 bordered-bottom-title">
+                                        <ul class="nav navbar-nav">
+                                            <li class=""><a href="#sub11">Overview 1</a></li>
+                                            <li><a href="#sub12">Overview 2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-12 bordered-bottom-title">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade in" id="sub11">
+                                                <ul class="nav navbar-nav">
+                                                    <li><a href="#">Tab 1.1.1</a></li>
+                                                    <li><a href="#">Tab 1.1.2</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="sub12">
+                                                <ul class="nav navbar-nav">
+                                                    <li><a href="#">Tab 1.2.1</a></li>
+                                                    <li><a href="#">Tab 1.2.2</a></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="set2">
-                                    <div class="tabbable">
-                                        <div class="col-md-12 bordered-bottom-title">
-                                            <ul class="nav navbar-nav">
-                                                <li class=""><a href="#sub21" class="pink">Create Team & <br> Collect Information</a></li>
-                                                <li><a href="#sub22" class="pink">Definition Of <br> Problem</a></li>
-                                                <li><a href="#sub23" class="pink">Analysis Of <br> Problem</a></li>
-                                                <li><a href="#sub24" class="pink" id="click4">Identification Of <br> Causes</a></li>
-                                                <li><a href="#sub25" class="pink">Planning <br> Countermeasure</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-12 bordered-bottom-title">
-                                            <div class="tab-content">
-                                                <div class="tab-pane fade in" id="sub21">
-                                                    <ul class="nav navbar-nav">
-                                                        <li><a href="#">Tab 2.1.1</a></li>
-                                                        <li><a href="#">Tab 2.1.2</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="tab-pane fade" id="sub24">
-                                                    <ul class="nav navbar-nav">
-                                                        <li><a class="black" href="#subsub21">Effect</a></li>
-                                                        <li><a href="#subsub22" class="black" id="click5">Causal</a></li>
-                                                    </ul>
-                                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="set2">
+                                <div class="tabbable">
+                                    <div class="col-md-12 bordered-bottom-title">
+                                        <ul class="nav navbar-nav">
+                                            <li class=""><a href="#sub21" class="pink">Create Team & <br> Collect Information</a></li>
+                                            <li><a href="#sub22" class="pink">Definition Of <br> Problem</a></li>
+                                            <li><a href="#sub23" class="pink">Analysis Of <br> Problem</a></li>
+                                            <li><a href="#sub24" class="pink" id="click4">Identification Of <br> Causes</a></li>
+                                            <li><a href="#sub25" class="pink">Planning <br> Countermeasure</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-12 bordered-bottom-title">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade in" id="sub21">
+                                                <ul class="nav navbar-nav">
+                                                    <li><a href="#">Tab 2.1.1</a></li>
+                                                    <li><a href="#">Tab 2.1.2</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="sub24">
+                                                <ul class="nav navbar-nav">
+                                                    <li><a class="black" href="#subsub21">Effect</a></li>
+                                                    <li><a href="#subsub22" class="black" id="click5">Causal</a></li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <div class="col-md-12 bordered-bottom-title">
-                                            <div class="tab-content">
-                                                <div class="tab-pane fade in" id="subsub21">
-                                                    <ul class="nav navbar-nav">
-                                                        <li><a href="#" class="orange">Gathering Process Real. Rate</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="tab-pane fade" id="subsub22">
-                                                    <ul class="nav navbar-nav">
-                                                        <li><a href="#subsub21">Measurement</a></li>
-                                                        <li><a href="#subsub22">Process</a></li>
-                                                        <li><a href="#subsub23">Human</a></li>
-                                                        <li><a href="#subsub24"  onclick="openNav(event, 'tabmach')" id="click6" class="grey">Machine</a></li>
-                                                        <li><a href="#subsub25">Materials</a></li>
-                                                        <li><a href="#subsub26">Environment</a></li>
-                                                    </ul>
-                                                </div>
+                                    </div>
+                                    <div class="col-md-12 bordered-bottom-title">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade in" id="subsub21">
+                                                <ul class="nav navbar-nav">
+                                                    <li><a href="#" class="orange">Gathering Process Real. Rate</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="subsub22">
+                                                <ul class="nav navbar-nav">
+                                                    <li><a href="#subsub21">Measurement</a></li>
+                                                    <li><a href="#subsub22">Process</a></li>
+                                                    <li><a href="#subsub23">Human</a></li>
+                                                    <li><a href="#subsub24"  onclick="openNav(event, 'tabmach')" id="click6" class="grey">Machine</a></li>
+                                                    <li><a href="#subsub25">Materials</a></li>
+                                                    <li><a href="#subsub26">Environment</a></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="set3">
-                                    <div class="tabbable">
-                                        <div class="col-md-12 bordered-bottom-title">
-                                            <ul class="nav navbar-nav">
-                                                <li class=""><a href="#sub31">Negotiations 1</a></li>
-                                                <li><a href="#sub32">Negotiations 2</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-12 bordered-bottom-title">
-                                            <div class="tab-content">
-                                                <div class="tab-pane fade in" id="sub31">
-                                                    <ul class="nav navbar-nav">
-                                                        <li><a href="#">Sub Negotiations 1.1</a></li>
-                                                        <li><a href="#">Sub Negotiations 1.2</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="tab-pane fade" id="sub32">
-                                                    <ul class="nav navbar-nav">
-                                                        <li><a href="#">Sub Negotiations 2.1</a></li>
-                                                        <li><a href="#">Sub Negotiations 2.2</a></li>
-                                                    </ul>
-                                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="set3">
+                                <div class="tabbable">
+                                    <div class="col-md-12 bordered-bottom-title">
+                                        <ul class="nav navbar-nav">
+                                            <li class=""><a href="#sub31">Negotiations 1</a></li>
+                                            <li><a href="#sub32">Negotiations 2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-12 bordered-bottom-title">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade in" id="sub31">
+                                                <ul class="nav navbar-nav">
+                                                    <li><a href="#">Sub Negotiations 1.1</a></li>
+                                                    <li><a href="#">Sub Negotiations 1.2</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="sub32">
+                                                <ul class="nav navbar-nav">
+                                                    <li><a href="#">Sub Negotiations 2.1</a></li>
+                                                    <li><a href="#">Sub Negotiations 2.2</a></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade in" id="set4">
-                                    <div class="tabbable">
-                                        <div class="col-md-12 bordered-bottom-title">
-                                            <ul class="nav navbar-nav">
-                                                <li class=""><a href="#sub41">Strategy Consultant</a></li>
-                                                <li><a href="#sub42">Operations Consultant</a></li>
-                                                <li><a href="#sub43">OC & HC Consultant</a></li>
-                                                <li><a href="#sub43">Financial Advisory</a></li>
-                                                <li><a href="#sub44">IT Consultant</a></li>
+                            </div>
+                            <div class="tab-pane fade in" id="set4">
+                                <div class="tabbable">
+                                    <div class="col-md-12 bordered-bottom-title">
+                                        <ul class="nav navbar-nav">
+                                            <li class=""><a href="#sub41">Strategy Consultant</a></li>
+                                            <li><a href="#sub42">Operations Consultant</a></li>
+                                            <li><a href="#sub43">OC & HC Consultant</a></li>
+                                            <li><a href="#sub43">Financial Advisory</a></li>
+                                            <li><a href="#sub44">IT Consultant</a></li>
 
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-12 bordered-bottom-title">
-                                            <div class="tab-content">
-                                                <div class="tab-pane fade in" id="sub41">
-                                                    <ul class="nav navbar-nav">
-                                                        <li><a href="#">Corporate Strategy</a></li>
-                                                        <li><a href="#">Public Sector Strategy</a></li>
-                                                        <li><a href="#">Mergers & Acquisitions</a></li>
-                                                        <li><a href="#">Org. Strategy</a></li>
-                                                        <li><a href="#">Functional Strategy</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="tab-pane fade" id="sub42">
-                                                    <ul class="nav navbar-nav">
-                                                        <li><a href="#">Sub Negotiations 2.1</a></li>
-                                                        <li><a href="#">Sub Negotiations 2.2</a></li>
-                                                    </ul>
-                                                </div>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-12 bordered-bottom-title">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade in" id="sub41">
+                                                <ul class="nav navbar-nav">
+                                                    <li><a href="#">Corporate Strategy</a></li>
+                                                    <li><a href="#">Public Sector Strategy</a></li>
+                                                    <li><a href="#">Mergers & Acquisitions</a></li>
+                                                    <li><a href="#">Org. Strategy</a></li>
+                                                    <li><a href="#">Functional Strategy</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="sub42">
+                                                <ul class="nav navbar-nav">
+                                                    <li><a href="#">Sub Negotiations 2.1</a></li>
+                                                    <li><a href="#">Sub Negotiations 2.2</a></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
-                <div id="tabmach" class="tabcontent">
-                    <table class="machine">
+                </div>
+                <div class="col-md-7" style="overflow:auto; height:76vh;">
+                    <table class="table training">
                         <tr>
                             <td></td>
                             <td></td>
@@ -322,7 +329,7 @@
                         </tr>
                     </table>
                 </div>
-            </div>
+<!--            </div>-->
         </div>
         <script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
         <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>

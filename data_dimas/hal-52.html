@@ -1,0 +1,170 @@
+<html>
+<head>
+    <title>Page25</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/style-dimas.css">
+    <!-- <link rel="stylesheet" href="./dist/sidebar-menu.css"> -->
+    <link rel="stylesheet" href="assets/main.css">
+
+</head>
+<body>  
+        <div class="col-md-12 border" style="padding: 0 0">
+            <ul class="nav navbar-nav">
+                <li class="box-none"><a href="#set1" style="padding:10px;">Country</a></li>
+                <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2" style="padding: 10px;">PESTLE Analysis</a></li>
+            </ul>
+        </div>
+        <div class="col-md-12">
+            <div class="tabbable boxed parentTabs">
+                <div class="col-md-12 bordered-bottom-title">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#set1" style="padding:10px;">Natural Resource</a>
+                            </li>
+                            <li><a href="#set2" style="padding:10px;">Industry</a>
+                            <li><a href="#set3" style="padding:10px;">State-Owned Enterprise</a>
+                            <li><a href="#set4" style="padding:10px;">Consumer Demand</a>
+                            <li><a href="#set5" style="padding:10px;">Statistic</a>
+                            <li><a href="#set6" style="padding:10px;">Porter Five Forces</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="title-section" style="border:solid #eee 1px;">
+                <a href="#">Natural Resources</a>
+            </div>
+            <div class="left-sidebar-menu" style="overflow:auto; height:78vh;">
+                <section>
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="#"><span>Mining - Hidrocarbons</span></a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#">Crude Oil</a></li>
+                                <li><a href="#">Natural Gas</a></li>
+                                <li><a href="#">Coal</a></li>      
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-share"></i> <span>Mining - Mineral & Non Mineral</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#">Gold and Silver</a></li>
+                                <li><a href="#">Diamond</a></li>
+                                <li><a href="#">Iron Ore</a></li>
+                                <li><a href="#">Copper</a></li>
+                                <li><a href="#">Bronze</a></li>
+                                <li><a href="#">Nickel</a></li>
+                                <li><a href="#">Limestone</a></li>
+                                <li><a href="#">Manganese</a></li>
+                                <li><a href="#">Phosphate</a></li>
+                                <li><a href="#">Sulphur</a></li>
+                                <li><a href="#">Marble Stone</a></li>
+                                <li><a href="#">Granite</a></li>
+                                <li><a href="#">Gypsum</a></li>
+                                <li><a href="#">Silica</a></li>         
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-share"></i> <span>Fishery</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#" ><span>Farming & Plantation</span></a>
+                             <ul class="sidebar-submenu">
+                                <li class="active"><a href="#">Palm-Oil Plantation</a></li>
+                                <li><a href="#">Coconut Plantation</a></li>
+                                <li><a href="#">Rice Farmin</a></li>
+                                <li><a href="#">Sugarcane Plantation</a></li>
+                                <li><a href="#">Coffee Plantation</a></li>
+                                <li><a href="#">Cacao Plantation</a></li>
+                                <li><a href="#">Fruit & Vegetable Farming</a></li>
+                                <li><a href="#">Cow Farming</a></li>
+                                <li><a href="#">Chicken Farming</a></li>
+                                <li><a href="#">Goat Farming</a></li>
+                                <li><a href="#">Pig Farming</a></li>
+                                <li><a href="#">Fresh-Water Fish Farming</a></li>     
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="tabs" data-example-id="togglable-tabs">
+          <ul class="nav nav-tabs dk-nav dk-nav-3" id="myTabs" role="tablist">
+            <li class="" role="presentation"><a id="home-tab" href="#1" role="tab" data-toggle="tab" aria-controls="1" aria-expanded="false">Commodity Market</a></li>
+            <li class="active" role="presentation"><a id="profile-tab" id="click1" href="#2" role="tab" data-toggle="tab" aria-controls="2" aria-expanded="true">Commodity Market Faq’s</a></li>
+          </ul>
+          <div style="overflow:auto; height:78vh;">
+            <img src="../aset/prototype/52.png" alt="" style="width:100%;">
+          </div>
+        </div>
+        </div>
+    <script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./dist/highcharts.js"></script>
+    <script src="./dist/sidebar-menu.js"></script>
+    <script>
+        $.sidebarMenu($('.sidebar-menu'))
+    </script>
+    <script type="text/javascript">
+        $('.collapse').on('shown.bs.collapse', function (e) {
+          $('.collapse').not(this).removeClass('in');
+        });
+
+        $('[data-toggle=collapse]').click(function (e) {
+          $('[data-toggle=collapse]').parent('li').removeClass('active');
+          $(this).parent('li').toggleClass('active');
+        });
+
+        $('.collapse2').on('shown.bs.collapse2', function (e) {
+          $('.collapse2').not(this).removeClass('in');
+        });
+
+        $('[data-toggle=collapse2]').click(function (e) {
+          $('[data-toggle=collapse2]').parent('li').removeClass('active');
+          $(this).parent('li').toggleClass('active');
+        });
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        };
+
+        function openContent(evt, contentName) {
+            var i, contentBody, contentLinks;
+            contentBody = document.getElementsByClassName("contentBody");
+            for (i = 0; i < contentBody.length; i++) {
+                contentBody[i].style.display = "none";
+            }
+            contentLinks = document.getElementsByClassName("contentLinks");
+            for (i = 0; i < contentLinks.length; i++) {
+                contentLinks[i].className = contentLinks[i].className.replace(" active", "");
+            }
+            document.getElementById(contentName).style.display = "block";
+            evt.currentTarget.className += " active";
+        };
+        document.getElementById("click1").click();
+        document.getElementById("defaultOpen").click();
+        document.getElementById("open").click();
+        document.getElementById("defaultOpenFaq").click();
+        document.getElementById("defaultOpenContent").click();
+    </script>
+</body>
+</html>

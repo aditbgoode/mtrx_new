@@ -40,9 +40,15 @@
         <div class="left-side">
             <ul class="pagination">
                 <script>
-                    for (i=1; i<=350; i++) {
-                        document.write("<li><a href='"+i+".html'>Page " + i + "</a></li>")
+                    for (i=1; i<=353; i++) {
+                        document.write("<li><a href='"+i+".html' id='pos"+i+"'>Page " + i + "</a></li>")
                     }
+					var container = $('.left-side'),
+					scrollTo = $('#pos341');
+                    scrollTo.css("background-color","#dfdfdf");
+					container.scrollTop(
+						scrollTo.offset().top - container.offset().top + container.scrollTop()
+					);
                 </script>
             </ul>
         </div>
@@ -54,16 +60,9 @@
         }
     </style>
     <div class="col-md-11" style="margin-left:-15px;">
-<!--
-        <div class="header">
-            <a class="nav_menu klik" href="#">Country</a>
-            <a class="nav_menu klik" href="#">Pestle Analysis</a>
-        </div>
--->
         <div class="konten">
             <img src="../aset/img/page/page341.png" alt="" class="img-responsive">
         </div>
     </div>
-	
 </body>
 </html>

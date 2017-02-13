@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
     <link rel="stylesheet" href="css/position_bar.css">
@@ -14,19 +14,25 @@
     <script src="chart/highcharts.js"></script>
 </head>
 <body>
+    <div class="col-md-12 box" style="padding: 0 0">
+        <ul class="nav navbar-nav">
+            <li class="box-none"><a href="#set1">Country</a></li>
+            <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2">PESTLE Analysis</a></li>
+        </ul>
+    </div>
     <div class="col-md-2" style="padding: 0">
         <div class="row" style="margin: 0">
             <div class="col-md-12 box" style="padding: 0">
                 <div class="tabbable boxed parentTabs">
                     <ul class="nav navbar-nav">
-                        <li class="box-none" style="width: 60%"><a href="#set1">Suppliers of Comp. Products</a></li>
-                        <li class="box-none" style="width: 40%;"><a href="#set2" style="height: 10vh">SWOT</a></li>
+                        <li class="box-none" style="width: 60%;"><a href="#set1" style="line-height:1;">Suppliers of Comp. Products</a></li>
+                        <li class="box-none" style="width: 40%;"><a href="#set2" style="line-height:2;">SWOT</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="row" style="margin: 0">
-            <div class="col-md-12 box" style="padding: 0;overflow: auto;height: 92vh">
+            <div class="col-md-12 box" style="padding: 0;overflow: auto;height: 84vh">
                 <div class="box" style="background-color: powderblue">
                     <b>Substitute Goods</b>
                 </div>
@@ -63,24 +69,22 @@
                     <li class="box-none"><a href="#set1">Data Source</a></li>
                 </ul>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12" style="padding:0;">
                 <div class="tab-content">
                     <div class="tab-pane fade active in" id="set1">
                         <div class="tabbable">
-                            <div class="row">
                                 <div class="col-md-12 box" style="padding: 0 0">
                                     <ul class="nav navbar-nav">
                                         <li class="box-none"><a href="#sub11">Primary Data</a></li>
                                         <li class="box-none"><a href="#sub12">Second Data</a></li>
                                     </ul>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-12" style="padding: 0;overflow: auto;height: 80vh">
+        <div class="col-md-12" style="padding: 0;overflow: auto;height: 75vh">
             <table class="table-responsive table-bordered table-bordered">
                 <tr>
                     <td style="color: dodgerblue; text-align: center">Indicators</td>
@@ -114,8 +118,8 @@
         </div>
     </div>
     <div class="col-md-2" style="padding: 0;">
-        <div class="box" style="padding: 3.7vh 0"></div>
-        <div class="box-left" style="padding: 0 0 27% 0; overflow: auto; height: 100vh">
+<!--        <div class="box" style="padding: 3.7vh 0"></div>-->
+        <div class="box-left" style="padding: 0; overflow: auto; height: 90vh">
             <ul class="sidebar-menu">
                 <li><a href="#"><span>Business Roadmap</span></a></li>
                 <li><a href="#"><span>External</span></a></li>
@@ -132,15 +136,6 @@
             e.preventDefault();
             $(this).tab('show');
         });
-    </script>
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
-
     </script>
     <script src="js/vendor.js"></script>
     <script src="js/plugins.js"></script>

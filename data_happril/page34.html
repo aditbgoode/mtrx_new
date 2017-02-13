@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
     <link rel="stylesheet" href="css/position_bar.css">
@@ -14,7 +14,13 @@
     <script src="chart/highcharts.js"></script>
 </head>
 <body>
-    <div class="col-md-10" style="padding: 0;overflow: auto;height: 100vh">
+<div class="col-md-12 box" style="padding: 0 0">
+    <ul class="nav navbar-nav">
+        <li class="box-none"><a href="#set1">Country</a></li>
+        <li class="box-none active" style="background-color:#dfdfdf;"><a href="#set2">PESTLE Analysis</a></li>
+    </ul>
+</div>
+    <div class="col-md-10" style="padding: 0;overflow: auto;height: 92vh">
         <table class="table-bordered table-responsive">
             <tr>
                 <td style="background-color: orangered;color: #ffffff;text-align: center;">Earning</td>
@@ -52,7 +58,7 @@
         <div class="box" style="padding: 1vh 0;background-color: orangered;color: #ffffff">
             <span id="menu"><b>Process Mapping</b></span>
         </div>
-        <div id="list" class="col-md-12" style="padding: 0 0; overflow: auto; height: 95vh">
+        <div id="list" class="col-md-12" style="padding: 0 0; overflow: auto; height: 87vh">
             <div class="box-left" style="padding: 0 0 27% 0">
                 <ul class="sidebar-menu">
                     <li class="active"><a href="#"><span>Process Mapping Level 0</span></a>
